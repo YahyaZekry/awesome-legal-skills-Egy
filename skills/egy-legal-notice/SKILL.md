@@ -106,17 +106,40 @@ debtor committed **fraud or gross fault**.
 
 ### 2. Notice to vacate — إنذار بالإخلاء
 
-⚠️ **The most dangerous of the four, and the one most often drafted by amateurs.**
+> ⚠️⚠️ **CORRECTED 2026-10-12.** The tenancy regime changed on **5 August 2025**
+> (**Law 164/2025** and **Law 165/2025**, Gazette 31 bis). Read
+> `skills/egy-rental-agreement/` before drafting anything here. The points below
+> are what this skill needs to know, not the full picture.
 
-- It is governed by the **old vs new lease** distinction (إيجار قديم / إيجار جديد,
-  from Law 4/1996) and the termination procedure. The analysis is different enough
-  that a template applied to the wrong category is worse than no notice.
+- ⚠️ **A lease expiring is not an eviction.** Under **Civil Code Art. 598** the
+  lease **ends automatically at the end of the term — no notice is required for it
+  to end**. And under **Law 136/1981 Art. 18** the eviction grounds are a **closed
+  list** which **expressly does not include the expiry of the agreed term**.
+  → If the term has simply run out, this is a different job: establish the expiry
+  and apply under **Law 165/2025, new Art. 2 bis of Law 4/1996** (to the
+  **قاضي الأمور الوقتية**) — **not** a for-cause إنذار.
+- ⚠️ **Serve notice anyway.** **Arts. 599(1) and 600** — if the lessee stays on and
+  the lessor serves **no notice**, the fixed term converts into an **indefinite
+  periodic lease**. Not serving notice does not preserve the landlord's position; it
+  destroys it.
+- ⚠️ **Old-system leases now have an end date fixed by statute.** **Law 164/2025
+  Art. 2** ends old-system residential leases after **7 years** from 5 Aug 2025
+  (**≈ 5 Aug 2032**), and non-residential natural-person leases after **5 years**
+  (**≈ 5 Aug 2030**). **Art. 9** repeals Laws 49/1977, 136/1981 and 6/1997 outright.
+- ⚠️ **New eviction grounds exist.** **Law 164/2025 Art. 7** — including that the
+  lessee has **left the property shut up for more than one year**, and ⚠️ that the
+  lessee **owns another unit usable for the same purpose**. The second is new and
+  aggressive, and did not exist before 2025.
 - ⚠️ **Never attempt to change the locks, remove property, or cut off utilities.**
-  That is self-help, it exposes the landlord to a claim, and in several forms of
-  tenancy it is unlawful regardless of the lease terms.
-- ⚠️ **If a case is already filed, or the tenant has a strong claim, or the lease is
-  a new-system lease — get a lawyer.** This is the clearest case in the skill for
-  that advice.
+  That is self-help. 🟡 A tenancy-specific criminal provision was **not found** and
+  should not be asserted — but the civil consequences are severe, the tenant retains
+  the **Law 49/1977 Art. 28** rent-reduction remedy, and you have converted a good
+  claim into a bad one.
+- ⚠️ **The forum is contested.** Some first-instance divisions read the urgent-judge
+  route as the **only** route; a **Suez Court of Appeal** judgment (appeal No. 811 of
+  year 48, reported June 2026) held it is **additional** and does not oust the
+  substantive action. 🟡 Unverified — the judgment was not read. **Do both**: file
+  the substantive action **and** apply for the urgent order.
 - Use the bailiff. Prove the date of service. The date is what starts everything.
 
 ### 3. Contract breach — إنذار بإخلال

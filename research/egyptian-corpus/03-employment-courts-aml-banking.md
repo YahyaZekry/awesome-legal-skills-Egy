@@ -734,9 +734,17 @@ consolidated text):**
   jurisdiction over claims whose **value does not exceed EGP 200,000**; its judgment is **final where
   the value does not exceed EGP 30,000**, and final irrespective of value in an enumerated list of
   subject matters.
+  ⚠️ **SUPERSEDED — CORRECTED 2026-10-12 by file 05.** The pecuniary figures in
+  Arts. 42 and 47 were **amended twice** (Law **191/2020** and Law **157/2024**).
+  Current: District Court first instance up to **EGP 40,000**; final where value
+  **≤ EGP 5,000**. Court of First Instance final where value **≤ EGP 100,000**.
+  Do not quote EGP 200,000 / 30,000 as current.
 - **Art. 47** — the **Court of First Instance (محكمة الابتدائية)** has first-instance jurisdiction over
   all civil and commercial actions not within the District Court's jurisdiction; **its judgment is
-  final where the value does not exceed EGP 200,000**; it hears appeals against District Court and
+  final where the value does not exceed EGP 200,000**;
+  ⚠️ **SUPERSEDED — see the Art. 42 correction above.** Current finality threshold:
+  value **≤ EGP 100,000** (Law 191/2020, then Law 157/2024).
+  It hears appeals against District Court and
   judge-of-urgent-matters judgments; and it has jurisdiction over provisional/urgent applications,
   incidental applications, and applications connected with the principal claim **irrespective of
   value or nature**.
@@ -2387,7 +2395,10 @@ regulator in Egypt.
    **Jordanian** — it appears to be — and identify the correct Egyptian statutory basis.
 8. **The exact structure of the courts of summary civil matters (محاكم المواد الجزئية) after the most
    recent creation/redrawing of district court districts**, and whether the value thresholds of EGP
-   200,000 / EGP 30,000 in Arts. 42–43 and 47 of Law 13/1968 are current (they may have been amended
+   200,000 / EGP 30,000 in Arts. 42–43 and 47 of Law 13/1968 are **SUPERSEDED** — amended
+  by Law 191/2020 then Law 157/2024. Current: District Court first instance ≤ EGP 40,000;
+  District Court final ≤ EGP 5,000; First Instance final ≤ EGP 100,000. (The original line read:
+  "they may have been amended
    by a later law not captured here).
 9. **The identity of "Lab | IRRUT"** — no trace was found of any Egyptian institution called a
    "Supreme Labour Court". Confirm whether the term **محكمة النقض العمالية** appears in any Egyptian

@@ -68,12 +68,20 @@ against the corpus before serving anything.
 
 ## 2. Notice to vacate — إنذار بالإخلاء
 
-> ⚠️⚠️ **Use this only if all three hold.**
+> ⚠️⚠️ **This template may be the wrong instrument entirely. Check first.**
 >
-> - the lease category is identified — **إيجار قديم** (pre-1996) or **إيجار جديد**
->   (current regime, **Law 4 of 1996**)
-> - the notice period and manner of service are confirmed against the lease
-> - **no case is filed** and no summary relief is pending
+> - **If the term simply expired, this is NOT an eviction.** Under **Civil Code
+  Art. 598** the lease ends automatically at the end of the term, and **Law 136/1981
+  Art. 18**'s closed eviction list **expressly excludes** expiry of the agreed term.
+  Expiry goes under **Law 165/2025, new Art. 2 bis of Law 4/1996** — to the
+  **قاضي الأمور الوقتية** — not to a for-cause إنذار.
+> - **Serve notice even on expiry.** **Arts. 599(1) and 600**: no notice plus staying
+  on converts a fixed term into an **indefinite periodic lease**.
+> - Old-system leases have a **statutory end date** (**Law 164/2025 Art. 2**) —
+  ≈ 5 Aug 2032 residential, ≈ 5 Aug 2030 non-residential natural persons.
+> - The lease category is identified — **إيجار قديم** or **إيجار جديد**
+> - The notice period and manner of service are confirmed against the lease
+> - **No case is filed** and no summary relief is pending
 >
 > If any is uncertain, **get a lawyer and do not serve.**
 
@@ -113,6 +121,10 @@ against the corpus before serving anything.
    everything runs from.
 3. ⚠️ **Check the holiday calendar.** **Law 13/1968 Art. 15** — no service before
    7:00 a.m., after 8:00 p.m., or on an official holiday.
+4. ⚠️ **The forum is contested.** Some first-instance divisions treat the urgent-judge
+   route as the only route; a Suez Court of Appeal judgment (No. 811/48, reported
+   June 2026) says it is additional. 🟡 Unverified. **File the substantive action
+   AND apply for the urgent order.**
 
 ---
 

@@ -1,0 +1,10 @@
+Form, register and structure a company in Egypt — choosing between a limited liability company, joint stock company, one-person company, foreign branch or representative office; minimum capital; the two commercial registries and which one applies; post-incorporation tax, VAT and social insurance; and the printing rule that makes directors personally liable.
+
+Built around the four traps that catch people:
+
+- **Two registers, not one.** GAFI and the traditional commercial registry are separate tracks. A free-zone or investment-law company checked against the wrong one **has not been checked** — and a registry number means **nothing without its issuing governorate**, because numbering is sequential per governorate.
+- **Art. 6 — the printing rule.** Every contract, invoice and letterhead must carry the company name, its type, head office, and **the issued capital per the last financial statements**. Whoever uses the name disregarding this is **liable in their own assets for all obligations** — and if the capital figure is inflated, the counterparty may pursue that person personally for the shortfall.
+- **Art. 8 — founder thresholds dissolve the company.** Below three founders for a joint stock company or two for the others, the company is **dissolved by operation of law** unless something is restored, or converted to a one-person company, within six months.
+- **Art. 9 bis — the founders' agreement binds nobody by default.** It needs consent by a two-thirds majority of the ordinary general assembly, or at least three-quarters of the capital. A three-of-four founders' agreement is not binding on the fourth.
+
+Also carries **Art. 1(3)** (an Egyptian-incorporated company must have and register an Egyptian head office, and it is the address at which it is considered served), **Art. 4 bis** (the one-person designation must appear on the letterhead and every premises), **Art. 5** (LLCs and partnerships limited by shares may not carry on insurance, banking, savings, or invest money on behalf of others), and the fact that **from 1 January 2026 nine registry services became exclusive to Digital Egypt**, not to registry offices.

@@ -100,7 +100,7 @@
 | 57 | إيجار | — | lease / rent | 🔴 **Means both the contract AND the rent itself.** "the lease expired" and "the rent went up" are the same word. Disambiguate in English. | 🔴 |
 | 58 | إيجار قديم | — | old-system lease | ⚠️ **NOT "old".** A lease carried over from the **pre-1996 regime**. | ✅ **YES** |
 | 59 | إيجار جديد | — | new-system lease | ⚠️ **NOT "new".** A lease governed by the **current Civil Code regime** (Law 4/1996 and following). | ✅ **YES** |
-| 60 | إيجار مفروش | — | furnished lease | Law 4/1996 carved furnished property out of its scope. | ⚠️ |
+| 60 | إيجار مفروش | — | furnished lease | ❌ **INVERTED — do not say Law 4/1996 carved furnished leases out.** Law 4/1996 Art. 2 applies the Civil Code to places "خالية **أو مفروشة**" — unfurnished **or** furnished. A furnished letting since 31/01/1996 is an ordinary Civil Code lease. The special regime (Law 49/1977 Arts. 39-48) applied to old-system furnished leases only. | ❌ |
 | 61 | المالك / المستأجر | — | landlord / tenant | — | — |
 | 62 | الشقة / الدور / الدور الأرضي | — | flat / floor / ground floor | **Floor numbering ≠ English.** See the dedicated warning in §3.2. | ✅ **YES** |
 | 63 | عمارة | — | the building / the block | Not "imāra" to an Egyptian — it is just "the building". | — |
