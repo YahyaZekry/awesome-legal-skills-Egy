@@ -1,0 +1,5 @@
+Employment contracts, discipline and dismissal under Egyptian Labour Law No. 14 of 2025 — which repealed Law 12/2003 on 1 September 2025, so anything written before late 2025 describes a repealed statute.
+
+Built around the three things that actually decide cases: the **four-copy Arabic contract requirement** (Art. 89 — an English-only contract is not compliant and hands the employee the right to prove the relationship however they like); the **closed list of seven serious-misconduct grounds** beyond which dismissal is not lawful (Art. 148), two of which carry conditions employers routinely miss; and the **exhaustive list of protected reasons** (Art. 165) — notably that firing someone for complaining or suing is barred and carries **two months' wages per year of service**.
+
+Also flags the structural advantage most employers don't know exists: worker claims are **exempt from judicial fees at every stage** and can be ordered into immediate execution without bail (Art. 7).

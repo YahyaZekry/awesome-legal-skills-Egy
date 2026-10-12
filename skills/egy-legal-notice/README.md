@@ -1,0 +1,7 @@
+Draft and serve legal notices and formal demands in Egypt — إنذار — for unpaid debts, arrears, contract breach, a demand to vacate, and employment warnings.
+
+Covers the distinction that trips people up: an **إنذار is a formal legal act, not an "ultimatum", and it is not the same instrument as الإخطار** — though إنذار is also the everyday Egyptian word for "a warning", which is why the document has to read as a calm legal instrument rather than an angry message. Service is not just communication: under **Civil Code Arts. 383–384** a properly served notice **interrupts prescription**, and under **Art. 387** the court may **not** apply prescription of its own motion — the debtor must plead it. That is the protective reason to serve one.
+
+Only one of the three service methods is gold: **إنذار على يد محضر**, served by a court bailiff. Registered post is reasonable; a WhatsApp message is not service and starts nothing. Also carries the timing rules that break notices — **no service before 7 a.m., after 8 p.m. or on an official holiday** (Law 13/1968 Art. 15), and **Art. 18**'s holiday extension.
+
+Flags the three traps: the **Art. 227(1)** ceiling that silently cuts agreed interest to 7% whatever you demand; **Art. 225**, which makes a penalty clause a ceiling rather than a floor; and that the employment version is **not an إنذار at all** but an internal disciplinary document under **Labour Law 14/2025 Art. 141**, where serving it by bailiff creates a procedural problem instead of solving one.

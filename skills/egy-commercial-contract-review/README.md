@@ -1,0 +1,3 @@
+Reviews, drafts and negotiates commercial contracts governed by Egyptian law — NDAs, services, supply, distribution, agency, construction and SaaS. Produces a clause-by-clause issue log grounded in the Egyptian Civil Code, Commercial Code and Arbitration Law, with redlines in both English and Arabic, fallbacks and a risk rating.
+
+Built on a verified legislative corpus rather than model recall — because the four most commonly repeated facts about Egyptian contract law are wrong (the Commercial Code is 17/1999, not 12/1943; arbitration is 27/1994, not 34/1988; e-signature is 15/2004, not 15/2020; and Civil Code Art. 147(2) *does* contain a hardship clause).
