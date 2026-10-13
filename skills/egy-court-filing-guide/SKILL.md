@@ -89,7 +89,7 @@ one is dead either.
 
 | Dispute | Where |
 |---|---|
-| **Consumer Protection Law 181/2018** civil/commercial | **Economic Courts (محاكم ECONEconomic)** |
+| **Consumer Protection Law 181/2018** civil/commercial | **Economic Courts (محاكم الاقتصادية)** |
 | Consumer law, administrative | **Administrative Court (القضاء الإداري)** |
 | **Employment** | **Specialised labour courts** under **Labour Law 14/2025 Arts. 149–150** — each with its own enforcement department (Decision 4621/2025) |
 | **Possession and in rem** | ✅ **Civil Code Art. 50** — the court in whose district **the property lies** |

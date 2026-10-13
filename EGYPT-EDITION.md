@@ -61,24 +61,27 @@ article number is a real harm, not a cosmetic error.
 
 Each entry ships as two skills: `egy-x` (EN) and `egy-x-ar` (AR).
 
-### Status
+### Status — COMPLETE
 
-| Skill | EN | AR | Notes |
-|---|:--:|:--:|---|
-| `egy-context-operations` | ✅ | ✅ | Shared foundation. 92-term glossary in both |
-| `egy-legal-research` | ✅ | 🔄 | Source ladder, citation verification |
-| `egy-commercial-contract-review` | ✅ | ✅ | Flagship. Civil/Commercial Code, arbitration |
-| `egy-employment-contract` | ✅ | ✅ | Law 14/2025 |
-| `egy-employment-dispute` | ✅ | 🔄 | Wage and dismissal claims |
-| `egy-company-setup` | ✅ | ✅ | GAFI vs commercial registry |
-| `egy-invoice-and-payment-terms` | ✅ | ✅ | Interest ceilings, cheques, prescription |
-| `egy-ecommerce-compliance` | ✅ | ✅ | Law 181/2018 + 151/2020 |
-| `egy-legal-notice` | ✅ | ✅ | إنذار |
-| `egy-rental-agreement` | ✅ | ✅ | Law 164/2025 reform |
-| `egy-tax-and-einvoicing` | ✅ | 🔄 | No rates — deliberately |
-| `egy-court-filing-guide` | ✅ | 🔄 | Forum, thresholds, deadlines |
+| Skill | EN | AR |
+|---|:--:|:--:|
+| `egy-context-operations` | ✅ | ✅ |
+| `egy-legal-research` | ✅ | ✅ |
+| `egy-commercial-contract-review` | ✅ | ✅ |
+| `egy-employment-contract` | ✅ | ✅ |
+| `egy-employment-dispute` | ✅ | ✅ |
+| `egy-company-setup` | ✅ | ✅ |
+| `egy-invoice-and-payment-terms` | ✅ | ✅ |
+| `egy-ecommerce-compliance` | ✅ | ✅ |
+| `egy-legal-notice` | ✅ | ✅ |
+| `egy-rental-agreement` | ✅ | ✅ |
+| `egy-tax-and-einvoicing` | ✅ | ✅ |
+| `egy-court-filing-guide` | ✅ | ✅ |
 
-🔄 = in progress
+**12 skills × 2 languages = 24 directories, 54 markdown files, 8,860 lines.**
+**Verified corpus: 5 files, 6,356 lines.**
+
+Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contamination.
 
 ### Shared foundation
 | Skill | Covers |
