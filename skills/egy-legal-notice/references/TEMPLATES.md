@@ -112,7 +112,7 @@ against the corpus before serving anything.
 >
 > وتفضلوا بقبول فائق الاحترام.
 
-### The three hard rules
+### The four hard rules
 
 1. ⚠️ **No self-help, ever.** No changing locks, no cutting utilities, no removing
    property. In several forms of tenancy this is unlawful regardless of the lease

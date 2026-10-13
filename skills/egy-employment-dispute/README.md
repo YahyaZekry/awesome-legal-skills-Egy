@@ -1,0 +1,9 @@
+Bring or defend an employment claim in Egypt — what you are owed, the limits that will kill the claim, the evidence that survives, the labour court route, the fee exemption, and the deadlines.
+
+Built around the provision that decides most unpaid-wage cases: **Civil Code Art. 378** prescribes workers' wages after **one year**, and **Art. 378(2) requires whoever pleads that limit to swear on oath that he actually paid the debt**, with the judge directing it of his own motion. A false statement there is far worse than the unpaid wage — and if the employee was paid partly, in cash, or in another form, they must say so.
+
+Also carries the asymmetry that decides whether to bother: **Art. 387** — the court **may not** apply prescription of its own motion, so the employer must plead the one-year limit expressly and the claim survives if they forget. But **Art. 383** — and only the Art. 383 events, **not an informal demand** — interrupt it, so a WhatsApp message over months stops nothing.
+
+On the employer side: **Art. 141** means no disciplinary sanction at all is lawful without written notification, a hearing, and a record in the file; **Art. 148** restricts dismissal to a closed list of seven grounds, two of which fail on conditions employers miss (24-hour notification; safety rules **written and visibly posted**); and **Art. 165** makes the protected reasons **exhaustive**, including **firing someone for complaining or suing**, at **two months' wages per year of service**.
+
+And the structural point few employers know: **Art. 7** — worker claims are **exempt from judicial fees at every stage** and can be ordered into **immediate execution without bail**. That makes an employment claim in Egypt cheap to bring and expensive to absorb, which should shape any settlement decision.

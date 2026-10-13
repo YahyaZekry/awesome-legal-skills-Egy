@@ -135,7 +135,7 @@ appear only in Arts. 582–584, and there about the *lessee's* tenant-type repai
 **rent-reduction remedy**. This is a real answer to "the flat is broken and I am
 paying full rent".
 
-## Arrears — and the one-year cure
+## Arrears — and the statutory cure
 
 ⚠️ **Law 136/1981 Art. 18** is a **closed list** of eviction grounds. **The expiry of
 the agreed term is expressly NOT among them** — because a lease expiring is not an
