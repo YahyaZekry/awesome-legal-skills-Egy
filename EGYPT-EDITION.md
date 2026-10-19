@@ -77,9 +77,17 @@ Each entry ships as two skills: `egy-x` (EN) and `egy-x-ar` (AR).
 | `egy-rental-agreement` | ✅ | ✅ |
 | `egy-tax-and-einvoicing` | ✅ | ✅ |
 | `egy-court-filing-guide` | ✅ | ✅ |
+| `egy-client-explanation` | ✅ | ✅ |
+| `egy-chronology-builder` | ✅ | ✅ |
+| `egy-criminal-procedure` | ✅ | ✅ |
 
-**12 skills × 2 languages = 24 directories, 54 markdown files, 8,860 lines.**
-**Verified corpus: 5 files, 6,356 lines.**
+**15 skills × 2 languages = 30 directories, 64 markdown files, 12,033 lines.**
+**Verified corpus: 6 files, 8,183 lines.**
+
+⚠️ **In flight, not yet ready to count:** `07-family-law-egypt.md` and
+`08-intellectual-property-egypt.md` are still being written. **`08` currently ends
+mid-sentence**, so it is untracked on purpose — a corpus file is only committed once
+it is complete, because a truncated one looks finished.
 
 Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contamination.
 
@@ -88,6 +96,12 @@ Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contami
 |---|---|
 | `egy-context-operations` | EGP, national ID / commercial-registry / tax formats, governorates, phone formats, portals (GAFI, customs, tax, social insurance, NTRA, CBE), e-signature & electronic seal, cheques, mobile wallets, what gets filed online vs in person, EN↔AR glossary |
 | `egy-legal-research` | The two-gazette distinction (الجريدة الرسمية vs الوقائع المصرية), the source ladder from `elpai.idsc.gov.eg` and the MoJ encyclopedia to WIPO Lex, the portal false friends, Court of Cassation principles and why they are **not binding precedent**, how a citation gets verified |
+
+### Method — how to do the work, not what the law says
+| Skill | Covers |
+|---|---|
+| `egy-client-explanation` | Turning dense legal material into advice a non-lawyer can act on. ⚠️ **Explaining across a register, not a language** — the Arabic version is written, not translated. The gap between winning and collecting (execution is a separate stage). The numbers you must not honestly give |
+| `egy-chronology-builder` | Building a chronology the matter can be argued from, **with every entry attributed to the document it came from**. ⚠️ Its upstream core was English **CPR 31.22** — replaced, since Egypt has no equivalent rule |
 
 ### Business
 | Skill | Covers |
@@ -106,6 +120,7 @@ Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contami
 | `egy-rental-agreement` | Lease review, old vs new lease, rent increases, renewal, eviction grounds, utility and maintenance split |
 | `egy-employment-dispute` | Labour Court route, time limits, what evidence to gather, drafting a claim |
 | `egy-court-filing-guide` | Court structure, which court has which case, the **EGP 40,000 / 5,000 / 100,000** limits, why the 2024–25 fee tariffs are **not statutory**, service deadlines, execution. ⚠️ **Law 172/2018 is a Customs amendment, not e-litigation** |
+| `egy-criminal-procedure` | Arrest, the constitutional **24-hour rule**, the **mandatory lawyer** (Arts. 124–125), interrogation, pretrial detention and its **exact ceilings**, bail and its alternatives, **محضر vs بلاغ vs شكوى**, limitation, the victim's civil claim, and the appeal clocks. ⚠️ **The code in force is still Law 150/1950** — Law 174/2025 applies from **1 October 2027** |
 
 ## What the research overturned
 

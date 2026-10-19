@@ -226,6 +226,22 @@ PLUGINS = [
         "all. Triggers: \"chronology\", \"timeline\", \"statement of facts\", "
         "\"تسلسل زمني\", \"الوقائع\", \"ترتيب الأحداث\", \"صحيفة الدعوى\", \"محضر\".",
     ),
+    (
+        "egy-criminal-procedure",
+        "Criminal Law",
+        "Egyptian criminal procedure for someone who is not a lawyer — arrest, police "
+        "custody, the constitutional 24-hour rule, the mandatory lawyer, interrogation, "
+        "pretrial detention and its exact ceilings, bail, report (محضر) versus complaint "
+        "(شكوى), limitation periods, the victim's civil claim, and appeal and cassation "
+        "deadlines. Built around the three clocks that lose cases: the 24-hour rule, the "
+        "three-month complaint window, and prescription. Covers the felony-appeal right "
+        "created by Law 1/2024, and that the new Criminal Procedure Code — Law 174/2025 "
+        "— does NOT apply until 1 October 2027. Triggers: \"arrested\", \"detained "
+        "Egypt\", \"police custody\", \"bail\", \"pretrial detention\", \"criminal "
+        "complaint\", \"police report\", \"prosecution\", \"criminal appeal\", "
+        "\"cassation\", \"القبض\", \"الحبس الاحتياطي\", \"النيابة العامة\", \"محضر\", "
+        "\"بلاغ\", \"شكوى\", \"تلبس\", \"نقض\", \"الحبس\", \"إفراج\", \"كفالة\".",
+    ),
 ]
 
 

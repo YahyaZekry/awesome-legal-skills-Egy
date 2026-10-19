@@ -28,6 +28,9 @@
 | Explaining legal material to a non-lawyer, client updates, plain Arabic, "what does this mean for me" | `egy-client-explanation` | Owns the **register** rules. ⚠️ States no law itself |
 | Building a chronology or timeline from a matter file, statement of facts, date disputes | `egy-chronology-builder` | Owns date provenance and deadline computation |
 | Deciding whether to **sign** a commercial contract (not reviewing it) | `egy-commercial-contract-review` → `references/RISK-GRID.md` | The founder-facing half of the flagship. **Not** a separate skill — see the 40% rule in `roadmap.md` |
+| Arrest, police custody, bail, pretrial detention, "how long can they hold him" | `egy-criminal-procedure` | ⚠️ **The one skill that must open by saying the law is mid-change** — Law 150/1950 governs; Law 174/2025 applies **1 Oct 2027** |
+| Report a crime, محضر vs بلاغ vs شكوى, complaint deadlines, the victim's civil claim | `egy-criminal-procedure` | ⚠️ Owns the **three clocks**. Cross-references `egy-chronology-builder` for date provenance |
+| Criminal appeal, cassation, felony appeal after conviction | `egy-criminal-procedure` → `egy-court-filing-guide` | Criminal first (the 10/40/60-day clocks), then the filing mechanics |
 
 ---
 
@@ -71,7 +74,6 @@ audit grids, clause checks, risk grids). Five AR twins have their own today:
 | Candidate | Would load on | Overlap risk |
 |---|---|---|
 | `egy-nda-review` | "review this NDA", confidentiality clauses | ⚠️ High — `egy-commercial-contract-review` already covers NDAs. Add only if the NDA material outgrows a reference file |
-| `egy-criminal-procedure` | arrest, bail, criminal complaint, police report | None — empty category today |
 | `egy-family-law` | marriage, divorce, custody, inheritance, personal status | None — empty category today |
 | `egy-ip-registration` | trademark, patent, copyright registration in Egypt | None — WIPO Lex has verified EN translations |
 | `egy-debt-recovery` | enforcing a debt, execution, garnishment | ⚠️ Medium — overlaps `egy-invoice-and-payment-terms` (contract side) and `egy-court-filing-guide` (execution side). Would need a clear boundary |

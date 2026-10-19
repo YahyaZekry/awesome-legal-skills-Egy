@@ -97,6 +97,23 @@
   and half-finished sentences. Arabic **blockquote templates** are the highest-risk
   region. *(fixed across 2026-10-12 → 10-13)*
 
+⚠️ **`egy-legal-notice/references/TEMPLATES.md` — one language was better, not wrong.**
+The Arabic twin carried a `## المراجع` section (cross-links to sibling skills) that the
+English lacked. **Fixed by giving the ENGLISH the same cross-links**, not by deleting the
+Arabic section. Found by the **heading-structure check** on its first run — see
+`validators.md` §3a. *(fixed 2026-10-19)*
+
+⚠️ **`06-criminal-procedure-egypt.md` — a corpus file that looked finished and was not.**
+The file ran to **1,102 lines with 177 verified markers** and read as complete. It was
+**not**: nine forward references pointed at a **`§16` that did not exist**. *(fixed
+2026-10-19)* — and the diagnosis was better the second time. The first read said
+*"section 16 is missing"*. The agent sent back to fix it found the real defect: **§16
+did exist — it was the Emergency Law section — and the nine references meant the *new
+code* material, which was never written at all.** The fix was to **correct the
+references and write the missing §17**, not to renumber anything. **A dangling
+cross-reference is a numbering error until proven otherwise.** The file is now **1,715
+lines / 258 verified**, with §17 covering Law 174/2025 article by article.
+
 ---
 
 ## Decisions
@@ -208,6 +225,20 @@
   (glossary, templates, audit grids, clause checks, risk grids); the rest cite the EN
   sibling. **Match the disk, not the schema**, and note the discrepancy rather than
   "fixing" 11 directories. *(2026-10-19)*
+
+- **A corpus file is not finished because it is long.** `06-criminal-procedure-egypt.md`
+  arrived at 1,102 lines with 177 verified markers and a plausible shape, and was still
+  **incomplete and internally inconsistent**. A length-and-markers check would have passed
+  it. ⚠️ **Check corpus files for dangling cross-references and a truncated final
+  paragraph before using them** — `grep -c '§'` against the actual headings, and read the
+  last line. An agent that stops mid-write leaves a file that reads like a finished one.
+  *(2026-10-19)*
+- **When a cross-reference dangles, suspect the NUMBER, not the missing text.** The
+  first diagnosis was *"§16 was never written"*. It was wrong: §16 existed and was
+  occupied by a different topic, and the nine references were pointing at unwritten
+  material that belonged in a **new §17**. Correcting the references *and* writing §17
+  preserved §16's intact subsections; renumbering would have broken them. **Read the
+  headings before concluding a section is missing.** *(2026-10-19)*
 
 ---
 

@@ -12,7 +12,7 @@ Every article number below was read out of a retrieved primary or official-secon
 **The single most important fact in this file:** the operative Criminal Procedure Code in Egypt **today is still
 Law No. 150 of 1950**. The replacement code — **Law No. 174 of 2025** — was promulgated on 12 November 2025 but its
 entry into force was **postponed by Law No. 160 of 2026 to 1 October 2027**. It has **never been applied to any
-procedure**. See §16. Any statement that "the new criminal procedure code is in force" is wrong.
+procedure**. See §17. Any statement that "the new criminal procedure code is in force" is wrong.
 
 Companion files: `03-employment-courts-aml-banking.md` carries the court hierarchy and the fee structure;
 `05-tenancy-egypt.md` carries the Civil Code limitation rules (Arts. 374–387) which govern the **civil** limb of a
@@ -41,9 +41,9 @@ Nine things a model will get wrong, six of which were wrong in the brief I was g
 | 4 | "There is a **Supreme Labour Court** / a specialist criminal court you can name offhand." | ❌ **There is no such court.** Name only the courts that appear in the texts: **محكمة الجنايات / محكمة جنايات أول درجة** and **محكمة الجنايات المستأنفة** (felony court, first degree and appellate), **محكمة الجنح** and **محكمة الجنح المستأنفة** (misdemeanour court and its appellate court, sitting in **غرفة المشورة** for detention matters), **محكمة المخالفات**, **المحكمة الجزئية / القاضي الجزئي**, **قاضي التحقيق** (investigating judge), **محكمة النقض** (Court of Cassation), and the **القضاء العسكرى** within its constitutional limits (Const. Art. 204). *(Carried from `03-employment-courts-aml-banking.md`.)* |
 | 5 | "A felony judgment in Egypt cannot be appealed — only cassation." | ❌ **OUT OF DATE since 16 January 2024.** **Law No. 1 of 2024** (Gazette No. **2 bis**, **16 January 2024**, in force **17 January 2024**) inserted a **whole new Chapter Two — «في استئناف مواد الجنايات», Arts. 419 bis and 419 bis 1 to 419 bis 9** — creating a **first appeal in felony cases**. It also renamed the trial court «محكمة جنايات أول درجة» and created «محكمة الجنايات المستأنفة». Const. Art. 96 sentence 2 now expressly says «وينظم القانون استئناف الأحكام الصادرة فى الجنايات». |
 | 6 | "A state of emergency is in force in Egypt." | ⚠️ **The state of emergency LAPSED and was not extended in October 2021.** No new cases are referred to the State Security Emergency Courts, pending cases continue with appeal rights, and PM Decision 1664/2021 on referring offences to the emergency courts was suspended. **But the Emergency Law itself — Law No. 162 of 1958 — remains on the statute book**, and the constitutional power to declare an emergency remains: ⚠️ it is **Constitution Art. 154**, not Art. 152. |
-| 7 | "The complaint period for offences requiring a شكوى is three months." | ⚠️ **Right for the law in force — wrong for the law about to apply.** ✅ **CrPC 150/1950 Art. 3** gives **three months** from the victim's knowledge of the crime and the offender. ✅ **New Art. 3 of Law 174/2025** gives **ninety days (تسعين يومًا)** — the same length, different unit and a different clock. See §16.3. |
+| 7 | "The complaint period for offences requiring a شكوى is three months." | ⚠️ **Right for the law in force — wrong for the law about to apply.** ✅ **CrPC 150/1950 Art. 3** gives **three months** from the victim's knowledge of the crime and the offender. ✅ **New Art. 3 of Law 174/2025** gives **ninety days (تسعين يومًا)** — the same length, different unit and a different clock. See §17.3. |
 | 8 | "Torture is a crime but it times out like any other." | ❌ **WRONG.** ✅ **Constitution Art. 52**: «التعذيب بجميع صوره وأشكاله، جريمة لا تسقط بالتقادم.» Torture **is not subject to prescription at all**. And ✅ **Penal Code Art. 126** punishes it by **aggravated imprisonment (السجن المشدد) or imprisonment of three to ten years**, rising to the premeditated-murder penalty if the victim dies. **Under the new code, ✅ Art. 17 para. 2 additionally brings Penal Code Arts. 280, 281 and 282 into the no-prescription list** — but those are the *unlawful-arrest* articles, and that is future law. |
-| 9 | "Anyone who detains someone unlawfully faces a serious penalty." | ⚠️ **Worse and stranger than that.** ✅ **Penal Code Art. 280** — unlawful arrest, imprisonment or detention by a private person — carries **imprisonment or a fine not exceeding EGP 200 (مايتي جنيه مصري)**. That figure has **never been updated** and is absurd. But ✅ **Art. 282** escalates to **السجن** where the offender wore a government uniform/assumed a false capacity/showed a forged order, and to **السجن المشدد** in **all** cases where the detention was accompanied by a **death threat or physical torture**. See §14. |
+| 9 | "Anyone who detains someone unlawfully faces a serious penalty." | ⚠️ **Worse and stranger than that.** ✅ **Penal Code Art. 280** — unlawful arrest, imprisonment or detention by a private person — carries **imprisonment or a fine not exceeding EGP 200 (مايتي جنيه مصري)**. That figure has **never been updated** and is absurd. But ✅ **Art. 282** escalates to **السجن** where the offender wore a government uniform/assumed a false capacity/showed a forged order, and to **السجن المشدد** in **all** cases where the detention was accompanied by a **death threat or physical torture**. See §15. |
 
 Also carried over from the project's earlier files and **not** re-researched here:
 the Official Gazette is **not** on `gcc.gov.eg` (that is the Cultural Development Fund), `alqalam.idsc.gov.eg` and `ela.gov.eg`
@@ -60,7 +60,7 @@ plus the primary gazette text of Law 1/2024.
 **Every article used in this file was extracted locally from a downloaded file** — Python tag-strip + `html.unescape`
 for HTML, `pdftotext -layout` for PDFs, and a Unicode-normalising pass before reading.
 **Never trust a scraper's or a search engine's "query" mode on an Arabic legal PDF** — it silently returns the wrong
-article number or a summary of a *different* law. This file's §16 exists in its present form only because a proxy
+article number or a summary of a *different* law. This file's §17 exists in its present form only because a proxy
 text-extraction of the gazette PDF was read article by article.
 
 ---
@@ -176,7 +176,7 @@ Nine operative consequences, in order:
 - ✅ **Art. 96:** «**المتهم برئ حتى تثبت إدانته فى محاكمة قانونية عادلة**، تُكفل له فيها ضمانات الدفاع عن نفسه.
   **وينظم القانون استئناف الأحكام الصادرة فى الجنايات.** وتوفر الدولة الحماية للمجنى عليهم والشهود والمتهمين
   والمبلغين عند الاقتضاء، وفقًا للقانون.» Presumption of innocence; **the law regulates appeal of felony
-  judgments** (this sentence is the constitutional hook for Law 1/2024 — see §10.4); and the state provides
+  judgments** (this sentence is the constitutional hook for Law 1/2024 — see §11.2); and the state provides
   protection for **victims, witnesses, defendants and informants** as required. ⚠️ ⚠️ **PARTIAL on one point:** the
   felony-appeal sentence appears in the **current consolidated** text; I did **not** independently verify whether it
   was in the original 2014 text or was **added in 2019**. Do not date it without checking.
@@ -358,7 +358,7 @@ vocabulary.** Read together with the articles above, in practice:
 
 ⚠️ **So:** a **شكوى** is not a synonym for a **بلاغ**. Telling a client "file a complaint" without saying which is the
 single most common way an offence that needs a شكوى gets time-barred under Art. 3's three-month rule.
-⚠️ **And note the direction of travel:** the **new code makes it 90 days, not three months** — see §16.3.
+⚠️ **And note the direction of travel:** the **new code makes it 90 days, not three months** — see §17.3.
 
 ---
 
@@ -376,7 +376,7 @@ investigator must:
 2. **inform him of the charge**;
 3. **record his statement**;
 4. *(and by the parallel Art. 104 of the new code, which the old article does not spell out in the same words —
-   see §16.6 — inform him of his rights in writing and warn him of his right to silence. ⚠️ **PARTIAL:** the
+   see §17.6 — inform him of his rights in writing and warn him of his right to silence. ⚠️ **PARTIAL:** the
    **Law 150/1950 Art. 123 text I read does not contain the "in writing" and "right to silence" clauses**; those
    appear in **new Art. 104**. Do not attribute them to the 1950 code.)*
 
@@ -438,7 +438,7 @@ Year 16, judgment of 20 May 1995 (Gazette No. 23, 8 June 1995).** Read from the 
 # 6. Pretrial detention (الحبس الاحتياطى) — the whole apparatus
 
 **Law 150/1950 as consolidated to 16 January 2024. All ✅ unless marked.**
-⚠️ **Read §16.5 alongside this section: these are the numbers that govern TODAY, and the new code changes them.**
+⚠️ **Read §17.5 alongside this section: these are the numbers that govern TODAY, and the new code changes them.**
 
 ## 6.1 The order to detain — Arts. 134, 136–139
 
@@ -544,7 +544,7 @@ The order below is the order in which the clock actually runs. **All ✅.**
   يطلب الحبس الاحتياطي أو أن يسمع رأيه في الإفراج**» — the **victim or the civil claimant may NOT apply for
   detention and may NOT be heard on release.** *This is an important and counter-intuitive rule: a victim cannot
   push for the accused's detention, and cannot oppose his release.*
-- ✅ **New Art. 205 of the new code is the equivalent** — see §16.5. *(No material change in structure.)*
+- ✅ **The new code's equivalent is Art. 166** — «**يجوز للمتهم أن يستأنف الأمر الصادر بحبسه احتياطيًا أو بمد مدة الحبس**، وللنيابة العامة إذا استلزمت ضرورة التحقيق أن تستأنف الأمر الصادر بالإفراج المؤقت عن المتهم المحبوس احتياطيًا.» ⚠️ **The accused may appeal a DETENTION ORDER and an EXTENSION order in exactly the same terms as Art. 205 today.** *(Note: **new Art. 205 is about something else entirely** — it applies Arts. 108, 116, 152 and 157 to the investigating judge's orders. **Do not cite new Art. 205 for the detention appeal** — the article is **166**. See §17.9.)*
 
 ## 6.4 The alternative measures to detention — Arts. 201, 202, 203
 
@@ -721,7 +721,7 @@ Stated plainly:
 - ✅ **Art. 18** — «**وإذا تعدد المتهمون فإن انقطاع المدة بالنسبة لأحدهم يترتب عليه انقطاعها بالنسبة للباقين ولو
   لم تكن قد اتخذت ضدهم إجراءات قاطعة للمدة.**» **Interruption as to one accused interrupts as to ALL of them**,
   **even if no interrupting act was taken against them**. *(In the new code this became Art. 19 with the same
-  content and the same wording — see §16.4.)*
+  content and the same wording — see §17.4.)*
 
 ⚠️ ⚠️ **The practical trap:** because **Art. 16 forbids suspension** but **Art. 17 allows interruption**, almost
 every long-running Egyptian case is preserved by **interruption** rather than suspended. So when a client asks "the
@@ -1014,7 +1014,7 @@ Four separate texts, none of which alone is the whole rule:
 ⚠️ ⚠️ **The honest limit on all of this, stated so an agent does not over-promise:** I found **no article in
 Law 150/1950 that says in terms "the accused must be warned of his right to silence."** The **right** is in
 **Constitution Art. 55**; the **warning (تنبيهه إلى أن من حقه الصمت)** appears explicitly only in **Art. 104 of the
-NEW code** — see §16.6. **Do not tell a client in 2026 that the 1950 code required a silence warning.**
+NEW code** — see §17.6. **Do not tell a client in 2026 that the 1950 code required a silence warning.**
 *(The 1950 code's protection is procedural — no interrogation without counsel, no separation — not a warning.)*
 
 ## 14.2 The consequences of a coerced confession, in the three places they bite
@@ -1096,6 +1096,619 @@ downloaded, tag-stripped, **read verbatim article by article**. **As of:** 2026-
   the only official-offence route a civil claimant can use directly.**
 
 ---
+
+# 16. The Emergency Law, exceptional courts, and what is left of them
+
+**Citation:** **قرار رئيس الجمهورية بالقانون رقم ١٦٢ لسنة ١٩٥٨ بشأن حالة الطوارئ** — Presidential Decree-Law No. 162
+of 1958 on the state of emergency, **27 September 1958**.
+**Status:** ⚠️ **the LAW is still on the statute book**; ⚠️ **the STATE OF EMERGENCY itself lapsed and was NOT
+extended in October 2021.**
+**Source:** the Arabic text as a PDF on the **ILO NATLEX** database —
+`https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/111245/EGY111245.pdf` — downloaded and extracted locally.
+**As of:** 2026-10-19.
+
+## 16.1 The constitutional footing — Art. 154 (⚠️ not Art. 152)
+
+✅ **Constitution Art. 154**, quoted in full in §1.4: the President declares the state of emergency **after
+consulting the Cabinet**; the declaration **must be put to the House of Representatives within the following seven
+days**; the House must approve by **an absolute majority of its members**; the declaration is **for a specified
+period not exceeding THREE MONTHS**, renewable only for a similar period **and only with a two-thirds majority**;
+and **the House may not be dissolved while the state of emergency is in force.**
+⚠️ **The article number is 154.** Several secondary sources and at least one earlier note in this project said 152.
+**Art. 152 is the presidential-appointments article.**
+
+## 16.2 Status of the emergency regime
+
+⚠️ **PARTIAL — read the caveat.** What I can state:
+
+- ✅ **Law 162/1958 exists and governs the declaration**, and its constitutional counterpart is Art. 154.
+- ⚠️ **The state of emergency lapsed and was not extended in October 2021.** Consequently **no new cases are referred
+  to the State Security Emergency Courts (محاكم أمن الدولة طوارئ)**, **pending cases continue with appeal rights**,
+  and **PM Decision 1664/2021 on referring offences to the emergency courts was suspended**.
+  ⚠️ **This finding is from the project's earlier research on the reported non-extension, not from an article of
+  Law 162/1958 that I re-read this session.** Treat the *dates and the mechanism* as ⚠️ **PARTIAL**; treat only the
+  bare proposition "the emergency law remains enacted" as ✅.
+- 🟡 **Article numbers within Law 162/1958** — I downloaded the NATLEX PDF but **did not read the articles this
+  session**. **Do not cite an article of Law 162/1958.**
+
+## 16.3 The constitutional bar on exceptional courts — and how it is worked around
+
+✅ **Constitution Art. 97, final clause:** «**ولا يحاكم شخص إلا أمام قاضيه الطبيعى، والمحاكم الاستثنائية محظورة.**»
+— no one is tried except before his **natural judge**, and **exceptional courts are prohibited.**
+⚠️ **The honest reading, which an agent must not soften:** the bar is real and is the constitutional hook any defence
+uses; **but Egypt's emergency and terrorism legislation has repeatedly been justified on the footing that a court
+with a statutory basis and a defined subject-matter is not an "exceptional court" within Art. 97.** **Do not tell a
+client that a case can never be heard by a security court.** Say: the constitutional argument is available, and the
+controlling texts must be read for the specific case.
+✅ **Constitution Art. 204** (quoted in §1.4) is a **closed list** of the situations in which a **civilian** may be
+tried before the **military judiciary**. Anything outside it is a constitutional objection.
+
+## 16.4 What is NOT established here — say so rather than guess
+
+🟡 **The continued operation, jurisdiction and current docket of the State Security Courts (محاكم أمن الدولة) that are
+not the emergency courts** — I did **not** verify the statute establishing them, their current membership, or whether
+their subject-matter has been folded into the ordinary felony circuits. **Do not name them as an available forum.**
+🟡 **Whether any terrorism-specific chamber or circuit is currently operating** — the felonies of **Book Two, Parts
+One, Two, Two bis, Three and Four** of the Penal Code have a **designated circuit** under ✅ **CrPC Art. 366**
+(§10.3), which is an ordinary **محكمة جنايات أول درجة** circuit with a designated bench, **not an exceptional
+court**. **That is the verifiable answer to "where does a terrorism case go" — a designated circuit of the ordinary
+felony court.**
+
+---
+
+# 17. The NEW Criminal Procedure Code — Law 174/2025 — **NOT IN FORCE until 1 October 2027**
+
+⚠️ ⚠️ **THIS SECTION IS FUTURE LAW. NOTHING IN IT HAS EVER BEEN APPLIED TO ANY PROCEDURE.**
+**Everything in §§1–16 above is what governs today. This section exists so an agent knows what is coming and does not
+confuse the two.**
+
+## 17.1 The instrument and the postponement
+
+**Citation:** **قانون رقم ١٧٤ لسنة ٢٠٢٥ بإصدار قانون الإجراءات الجنائية** (Law No. 174 of 2025 issuing the Criminal
+Procedure Code), and **قانون رقم ١٦٠ لسنة ٢٠٢٦** (Law No. 160 of 2026).
+**Status:** **promulgated; applies from 1 October 2027.**
+**Sources — and this is the strongest sourcing in the file:**
+
+1. **The primary gazette PDF, read in full.** `https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/119035/174-2025%20egy.pdf`
+   — **الجريدة الرسمية، العدد ٤٥ مكرر (د)، ١٢ نوفمبر ٢٠٢٥**, **139 pages**, Year 68, priced 15 EGP, signed
+   **عبد الفتاح السيسى**, issued **21 Jumada I 1447 H = 12 November 2025**. ⚠️ **The ILO server returns HTTP 403 to
+   plain `curl` even with a browser User-Agent and Referer.** It was obtained through a **text-extraction proxy**
+   (`https://r.jina.ai/<url>`), which returned the whole 139-page document as text; it was then **Unicode-normalised
+   locally and read article by article**. ⚠️ **This proxy route is the finding to reuse:** the primary gazette is
+   reachable, just not by `curl`.
+2. **The gazette issue's official metadata** — `https://dspace.id.com.eg/items/93ba93c3-ec6a-4720-ad84-ba6113f7e408/full`
+   (the **دار الكتب والوثائق القومية** / National Library depository): confirms title, publisher (المطابع الأميرية),
+   date (2025-11-12) and the file name «العدد 45 مكرر د - مؤمن.pdf», 761.14 KB. **This is the independent confirmation
+   that the PDF above is the genuine gazette issue.**
+3. **The Executive's own summary** — `https://www.presidency.eg/ar/قسم-الأخبار/أخبار-رئيسية/news12112025/`.
+4. **The postponement** — **Law 160/2026**, Gazette No. **39 bis (ب)**, **30 September 2026** (signed 18 Rabi'
+   al-Thani 1448 H = 30 September 2026). Reported at `https://www.elwatannews.com/news/details/8368891`;
+   full text at `https://www.eastlaws.com/legislation-full-text/ar/egypt/law/30-09-2026/no-160?id=5672063&sub=16684427&type=1`;
+   `https://blog.iqrar.ai/news/gnews_gaz_717beeac0fc8_0000/`; and
+   `https://alhasswalawfirm.com/articles/egypts-new-criminal-procedure-law-postponed-to-october-2027-law-no-160-of-2026`.
+   **Law 160/2026 substitutes «الأول من أكتوبر لعام ٢٠٢٧» for «الأول من أكتوبر التالي لتاريخ نشره» in Art. 6 of
+   Law 174/2025**, and its own Art. 2 makes it **in force from the day after publication** (1 October 2026).
+   ⚠️ **PARTIAL:** the **gazette PDF of Law 160/2026 itself was not read**; the substitution is established from
+   four independent secondary reports plus the law's gazette coordinates. **The date is safe; the verbatim amending
+   wording is not.**
+
+**The structure of the new code, read from the gazette:** **546 articles** (verified: a scan of the normalised text
+found **544 article markers running 1–546 with NO duplicate and NO gap**, so the count and numbering are reliable).
+
+## 17.2 The promulgating articles (Arts. 1–6 of the issuing law) — ✅ read verbatim
+
+| Art. | Text |
+|---|---|
+| **1** | «مع عدم الإخلال بالأحكام الإجرائية المنصوص عليها في القوانين الأخرى، **يُعمل بأحكام هذا القانون والقانون المرافق له في شأن الإجراءات الجنائية**.» |
+| **2** | **Appeals in in-absentia MISDEMEANOUR judgments** pending before the new code applies **continue under the old rules**. |
+| **3** | 🚨 **«لا تسري أحكام الاستئناف في مواد الجنايات إلا على الدعاوى التي لم يفصل فيها من محاكم الجنايات اعتبارًا من تاريخ العمل بالقانون رقم ١ لسنة ٢٠٢٤»** — the felony-appeal provisions apply only to cases **not decided** by felony courts as of **17 January 2024**. *(See §11.3.)* |
+| **4** | 🚨 **«يُلغى قانون الإجراءات الجنائية الصادر بالقانون رقم ١٥٠ لسنة ١٩٥٠، والقانون رقم ١٤٠ لسنة ٢٠١٤ في شأن الأحكام الخاصة بتسليم المتهمين ونقل المحكوم عليهم، كما يُلغى كل حكم يخالف أحكام هذا القانون»** — **repeals Law 150/1950 and Law 140/2014** (extradition/transfer of convicts), and **any conflicting provision**. ⚠️ **Note exactly what is NOT repealed: Law 57/1959 (cassation) is not in this list** — see §12. |
+| **5** | The **Minister of Justice** issues the executive decisions; **existing decisions continue** until then, so far as they do not conflict. |
+| **6** | ⚠️ **«يُنشر هذا القانون في الجريدة الرسمية، ويعمل به اعتبارًا من الأول من أكتوبر التالي لتاريخ نشره»** — as **substituted by Law 160/2026**: **applies from 1 OCTOBER 2027**. |
+
+## 17.3 Criminal action and the complaint — new Arts. 1–11 ✅ read verbatim
+
+- ✅ **New Art. 1** — «**تتولى النيابة العامة التحقيق، وتحريك، ومباشرة الدعوى الجنائية**، ولا تتخذ هذه الإجراءات من
+  غيرها إلا في الأحوال المحددة في القانون. **ولا يجوز ترك الدعوى الجنائية، أو وقفها، أو تعطيل سيرها إلا في
+  الأحوال المحددة في القانون.**»
+- ✅ **New Art. 2** — the **Attorney-General** exercises it **himself or through a member of the Prosecution**.
+- ✅ **New Art. 3 — the complaint clock changes:** the same core list (**PC Arts. 185, 274, 277, 279, 292, 293, 303,
+  306, 307, 308** and other cases the law states), the complaint may be **oral or written**, by the victim **or his
+  special agent**, to the **Prosecution or a judicial officer** — and then: «**ولا تقبل الشكوى بعد تسعين يومًا من
+  يوم علم المجني عليه بالجريمة وبمرتكبها**» — **NOT accepted after NINETY DAYS from the day the victim learned of
+  the crime and of the perpetrator.** ⚠️ **Same length as today's three months; different unit and textually a
+  different clock. Do not present the change as an extension — present it as a restatement.**
+- ✅ **New Art. 4** — multiple victims: one suffices; multiple accused: a complaint against one counts against the
+  rest. *(Identical to Art. 4 in force.)*
+- ✅ **New Art. 7** — «**ينقضي الحق في الشكوى بموت المجني عليه**، وإذا حدث الموت **بعد تقديم الشكوى فلا يؤثر على
+  سير الدعوى الجنائية**.» ⚠️ **A real change:** the right to complain dies with the victim, **but a death AFTER the
+  complaint does not affect the case.**
+- ✅ **New Art. 8** — **written request of the Minister of Justice** for Penal Code **Arts. 181 and 182.**
+- ✅ **New Art. 9** — **no criminal action** in the **Penal Code Art. 116 bis (a)** offences … *(the article continues
+  into text the proxy extraction garbled; the opening is clear and the rest is not — **PARTIAL**).*
+- ✅ **New Art. 11** — investigation steps require the **complaint, request or permission** where the law makes them a
+  condition; **the exception is now narrower and expressly enumerated**: investigation may proceed without them in
+  offences under **PC Arts. 185, 303, 306, 307, 308** where the victim is a **public official**, a person with a
+  **public representative capacity**, or **charged with a public service**, and the crime was committed **because of**
+  that office, representation or service. ⚠️ **Compare Art. 9 in force, which lists Art. 185, 302, 306, 307, 308 —
+  so the new article drops 302 and adds 303.** **Do not apply the old list to the new code.**
+- ✅ **New Art. 15** — the **felony court in both degrees, or the Court of Cassation**, may itself institute a criminal
+  action where acts tend to **breach its orders, the respect due to it, or influence its adjudication or its
+  witnesses**, in connection with a request or case before it.
+
+## 17.4 Limitation of the criminal action — new Arts. 16–19 ✅ read verbatim
+
+- ✅ **New Art. 16** — the criminal action **is extinguished by the accused's death, by lapse of time, by a final
+  judgment, by general amnesty, by settlement or reconciliation (الصلح أو التصالح), or by the other causes the law
+  states.** **The accused's death during the case does not prevent a confiscation judgment** in the case stated in
+  **Penal Code Art. 30 para. 2**; and **extinction of the criminal action after it was brought does not prevent a
+  restitution judgment, or a judgment of the financial penalties in Parts Three and Four of Book Two of the Penal
+  Code.** ⚠️ **That last clause is why a حفظ or a time-bar does not automatically wipe the money.**
+- ✅ **New Art. 17 — the periods are UNCHANGED, the no-prescription list GROWS:**
+  «تنقضي الدعوى الجنائية في مواد الجنايات بمضي **عشر سنين**، وفي مواد الجنح بمضي **ثلاث سنين**، وفي مواد المخالفات
+  بمضي **سنة**…
+  واستثناءً من حكم الفقرة الأولى، لا تنقضي بمضي المدة الدعوى الجنائية الناشئة عن الجرائم المنصوص عليها في المواد
+  **١١٧، ١٢٦، ١٢٧، ١٦١ مكررًا، ٢٨٠، ٢٨١، ٢٨٢، ٣٠٩ مكررًا، ٣٠٩ مكررًا (أ)**، والجرائم المنصوص عليها في **الباب
+  الأول** و**القسم الأول من الباب الثاني** من الكتاب الثاني من قانون العقوبات.»
+  🚨 **The additions are the story: `161 bis`, `280`, `281` and `282` join the no-prescription list, and `Book Two
+  Part One` joins `Part Two Section One`.** **Consequence: unlawful arrest (PC 280), lending premises for unlawful
+  detention (PC 281) and aggravated unlawful arrest with a death threat or physical torture (PC 282) will NO LONGER
+  PRESCRIBE once the new code applies.** ⚠️ *Today, under Art. 15, only **282** is in the list — 280 and 281 are not.*
+- ✅ **New Art. 18** — «**لا يوقف سريان المدة التي تنقضي بها الدعوى الجنائية لأي سبب.**» **No suspension for any
+  reason** — identical to Art. 16 in force.
+- ✅ **New Art. 19** — **interruption** by **acts of investigation, accusation, trial, the criminal order, or acts of
+  evidence-gathering taken against the accused or officially notified to him**; the period runs anew from the day of
+  interruption, and **from the date of the LAST act** where there are several; and **interruption as to one accused
+  interrupts as to the rest** even if no interrupting act was taken against them. *(Substantively identical to
+  Arts. 17–18 in force, merged into one article.)*
+
+## 17.5 Pretrial detention under the new code — new Arts. 112–124 ✅ read verbatim
+
+**This is the part an agent will be asked about, and the numbers are DIFFERENT from today's.**
+
+- ✅ **New Art. 112** — the Prosecution **must interrogate an arrested accused IMMEDIATELY**; if that is impossible he
+  is **deposited in a reform-and-rehabilitation centre or a detention place until interrogated, and the deposit may
+  NOT exceed 24 HOURS**; after that the centre's manager **must send him to the Prosecution for immediate
+  interrogation, failing which a release order must issue.** ⚠️ **New exception:** where interrogation is impossible
+  **because his instructed or appointed lawyer is absent** in a **detainable offence**, the Prosecution may order his
+  deposit until interrogation **in the presence of a lawyer** — **and the deposit then follows the same rules as
+  pretrial detention as to grounds, procedure, duration, extension and appeal.**
+- ✅ **New Art. 113 — the Prosecution's own order (⭐):** where **the evidence is sufficient after interrogation** and
+  the offence is a **felony** or a **misdemeanour punished by imprisonment of at least one year**, a prosecution
+  member **of at least deputy-prosecutor rank (وكيل نيابة على الأقل)** may, **after hearing the defence**, issue a
+  **REASONED order** detaining him **for a maximum of FOUR DAYS** following the arrest or hand-over, **if one of**
+  these grounds applies:
+  1. the offence is **flagrante and the sentence must be executed on issue**;
+  2. **fear of flight**;
+  3. **fear of harm to the investigation** — influencing the victim or witnesses, tampering with physical evidence
+     or indications, or **making agreements with the other offenders to change the truth or efface its traces**;
+  4. **prevention of a serious breach of security and public order** that may follow from the gravity of the crime.
+  And: **in all cases he may be detained if he has no known fixed residence in Egypt** and the offence is a felony
+  or an imprisonable misdemeanour. *(Essentially Art. 134 in force, with the residence ground added as an express
+  unlimited ground.)*
+- ✅ **New Art. 114 — SEVEN alternatives to detention (was three):**
+  1. **not leaving his home or his locality**;
+  2. **reporting to a police station at set times**;
+  3. **being banned from specified places**;
+  4. 🆕 **not leaving a defined GEOGRAPHICAL AREA without the Prosecution's permission**;
+  5. 🆕 **refraining from receiving, meeting or contacting specified persons in any way**;
+  6. 🆕 🆕 **a TEMPORARY BAN on possessing or keeping FIREARMS and their ammunition, and SURRENDERING them to the
+     police station of his residence's district**;
+  7. 🆕 🆕 🆕 **the use of TECHNICAL MEANS to TRACK the accused** where the operational conditions exist, **by a
+     decision of the Minister of Justice in co-ordination with the Ministers of Interior and Communications.**
+  ⚠️ **Items 6 and 7 are new species of restriction in Egyptian criminal procedure and item 7 is electronic
+  monitoring in all but name.**
+- ✅ **New Art. 117** — prosecution members of **at least chief-prosecutor rank** have **investigating-judge powers**
+  in felony investigations — **excluding** the felonies of **Part Three of Book Two** of the Penal Code — **as to the
+  DURATION OF PRETRIAL DETENTION**; and they additionally have the **powers of the Misdemeanour Appeal Court sitting
+  in the consultation chamber (under new Art. 123)** for the crimes of **Book Two, Part One and Part Two Section
+  One** — **subject to the detention not exceeding FIFTEEN DAYS at a time.**
+  *(⚠️ Note the exclusion: **Part Three of Book Two is carved out** of the prosecutor's detention-extension power.
+  And new Art. 117 also contains the **communications-interception** power — social-media content not publicly
+  available, e-mail, textual/audio/visual messages on phones and devices, seizing the media carrying them, and
+  **recordings of conversations held in a private place** — **renewable** by a similar order, and the constitutional
+  hook is Art. 57.)*
+- ✅ **New Art. 118** — a **copy of the detention order must be handed to the manager of the reform centre or
+  detention place against signature on the original.** *(Same as Art. 138 in force.)*
+- ✅ **New Art. 119 — a NEW protection (⭐):** «**لا يجوز للقائم على إدارة مركز الإصلاح والتأهيل أو أماكن الاحتجاز أن
+  يسمح لأحد من رجال السلطة العامة أو مأموري الضبط القضائي بأن يتصل بنفسه أو بواسطة غيره بالمحبوس احتياطيًا داخل ذلك
+  المركز أو المكان إلا بإذن كتابي من النيابة العامة**، وعليه أن يدون في الدفتر المعد لذلك اسم الشخص الذي سُمح له
+  ووقت المقابلة وتاريخ ومضمون الإذن، **ويقع باطلًا كل إجراء يخالف ذلك**.» — **no public-force member or judicial
+  officer may have contact with the detained accused without the Prosecution's WRITTEN permission**, the register
+  must record who, when and what, and **any step taken in breach is VOID.** ⚠️ **There is no equivalent article in
+  Law 150/1950.** This is the single most significant addition to the detention regime.
+- ✅ **New Art. 120** — the Prosecution may at all times order **no contact with other detainees and no visits** —
+  «**وذلك دون الإخلال بحق المتهم في الاتصال دائمًا بالمدافع عنه دون حضور أحد**» — **without prejudice to the accused's
+  right to contact his defence counsel AT ALL TIMES, WITH NOBODY PRESENT.** *(Same substance as Art. 141 in force.)*
+- ✅ **New Art. 121 — the extension tier (⭐):** if the Prosecution wants to extend, **before the FOUR DAYS of Art. 113
+  expire** it **must put the papers before the DISTRICT JUDGE (القاضي الجزئي)**, who issues a **REASONED order after
+  hearing the Prosecution and the accused**, either **releasing him** or **extending detention for successive
+  periods of no more than FIFTEEN DAYS EACH, with a TOTAL of no more than FORTY-FIVE DAYS.**
+  And ✅ **the misdemeanour rule carried over:** «**وفي مواد الجنح يجب الإفراج حتمًا عن المتهم المقبوض عليه بعد مرور
+  ثمانية أيام من تاريخ استجوابه إذا كان له محل إقامة معروف في مصر وكان الحد الأقصى للعقوبة المقررة قانونًا لا يتجاوز
+  سنة واحدة ولم يكن عائدًا أو سبق الحكم عليه بالحبس أكثر من سنة.**» — **MANDATORY release in misdemeanours after
+  EIGHT DAYS from the interrogation** if he has a **known residence in Egypt**, the **statutory maximum penalty does
+  not exceed one year**, and he is **not a repeat offender previously sentenced to imprisonment of more than a year.**
+  *(Same as Art. 142 in force.)*
+- ✅ **New Art. 122** — an **alternative-measure order** is **effective for the TEN DAYS following the start of its
+  execution**, and the **same rules as pretrial detention apply** to its duration, maximum and appeal.
+- ✅ **New Art. 123 — the consultation chamber, and a NEW 90-day Attorney-General review:** where the Prosecution
+  wants to extend **beyond the Arts. 121/122 limits**, or in the **new Art. 117 para. 3** cases, it **must put the
+  papers before the Misdemeanour Appeal Court sitting in the consultation chamber** before the detention expires, for
+  a **reasoned order after hearing the Prosecution and the accused** — either **extending for successive periods of
+  no more than FORTY-FIVE DAYS EACH** where the investigation so requires, or **releasing** him, or **ending the
+  measure**. And 🆕 **«ومع ذلك يتعين عرض الأمر على النائب العام كلما انقضى تسعون يومًا على حبس المتهم بجناية
+  احتياطيًا أو مده»** — **the order MUST be put before the ATTORNEY-GENERAL every time NINETY DAYS elapse on the
+  detention of a person on a FELONY charge**, for him to take the steps he considers capable of finishing the
+  investigation. ✅ *Same 90-day AG review as Art. 143 para. 2 in force, but **expressly limited to felonies** — the
+  article in force says «ثلاثة شهور» without that word.*
+- ✅ **New Art. 124 — THE CAPS, AND THEY ARE LOWER (⭐ the single most-cited change):** read verbatim —
+  «**لا يجوز أن تزيد مدة الحبس الاحتياطي أو التدبير على ثلاثة أشهر في مواد الجنح** ما لم يكن المتهم قد أعلن بإحالته
+  إلى المحكمة المختصة قبل انتهاء هذه المدة، ويجب على النيابة العامة في هذه الحالة أن **تعرض أمر الحبس أو التدبير
+  خلال خمسة أيام على الأكثر** من تاريخ الإعلان بالإحالة إلى المحكمة المختصة وفقًا للأحكام الفقرة الأولى من المادة
+  **١٣٢** من هذا القانون… **وإلا وجب الإفراج عن المتهم**… **فإذا كانت التهمة المنسوبة إليه جناية فلا يجوز أن تزيد
+  مدة الحبس الاحتياطي أو التدبير على خمسة أشهر** إلا بعد الحصول قبل انقضائها على **أمر من المحكمة المختصة بمد الحبس
+  أو التدبير مدة لا تزيد على خمسة وأربعين يومًا قابلة للتجديد**… وإلا وجب الإفراج…
+  **وفي جميع الأحوال، لا يجوز أن تجاوز مدة الحبس الاحتياطي في مرحلة التحقيق الابتدائي وسائر مراحل الدعوى الجنائية
+  ثلث الحد الأقصى للعقوبة السالبة للحرية، بحيث لا تجاوز أربعة أشهر في الجنح واثني عشر شهرًا في الجنايات، وثمانية
+  عشر شهرًا إذا كانت العقوبة المقررة للجريمة هي السجن المؤبد أو الإعدام، ويجوز لمحكمة الجنايات المستأنفة ولمحكمة
+  النقض إذا كان الحكم صادرًا بالإعدام أو السجن المؤبد أن تأمر بحبس المتهم احتياطيًا لمدة خمسة وأربعين يومًا قابلة
+  للتجديد لمدد أخرى بما لا يجاوز سنتين.**»
+
+  **Side by side — the change, and it is the thing to get right:**
+
+  | | **Law 150/1950 Art. 143 (IN FORCE TODAY)** | **Law 174/2025 Art. 124 (from 1 Oct 2027)** |
+  |---|---|---|
+  | **Misdemeanours** | **6 months** | **4 months** |
+  | **Felonies** | **18 months** | **12 months** |
+  | **Life imprisonment / death** | **2 years** | **18 months** |
+  | **General 3-month / 5-month gateways** | 3 months general, 5 months for a felony | **identical** — 3 months general, 5 months for a felony |
+  | **Cassation / appellate-felony-court override** | 45 days, renewable, **without** any ceiling | 45 days, renewable, **up to a maximum of 2 YEARS** |
+
+  ⚠️ **Two traps in one table.** (1) **The three-month and five-month gateways do NOT change** — an agent who "knows
+  the new code" and skips the 5-month gateway will be wrong. (2) **The override changes in the opposite direction
+  from everything else:** today it has **no ceiling**; from 2027 it **is capped at two years.** So for a
+  murder or death-penalty case the new code is **stricter**, not more generous.
+
+## 17.6 Interrogation, counsel and surveillance under the new code — new Arts. 104, 105, 117 ✅ read verbatim
+
+- ✅ **New Art. 104 — first appearance (⭐ the article the new code adds and the old one lacks):** «**يجب على عضو
+  النيابة العامة عند حضور المتهم لأول مرة في التحقيق أن يدون جميع البيانات الخاصة بإثبات شخصيته، ويحيطه بحقوقه
+  كتابة وبالتهمة المنسوبة إليه، ويثبت في المحضر ما قد يبديه في شأنها من أقوال، وأن يمكنه من الاتصال بذويه ومحاميه
+  وذلك بعد تنبيهه إلى أن من حقه الصمت، وذلك كله مع مراعاة توفير المساعدة اللازمة للأشخاص ذوي الإعاقة والمسنين وفقًا
+  للإجراءات المقررة قانونًا.**»
+  → open a record of his identity; **inform him of his rights IN WRITING AND of the charge**; record his statements;
+  **enable him to contact his FAMILY and his LAWYER**; and 🆕 **all of that AFTER WARNING HIM THAT HE HAS THE RIGHT
+  TO REMAIN SILENT**; with **assistance for persons with disabilities and the elderly.**
+  ⚠️ ⚠️ **This is the express statutory silence warning in Egyptian law, and it is NEW. The equivalent article in
+  force (Art. 123) does not contain it. See §14.1.**
+- ✅ **New Art. 105** — **no interrogation and no confrontation before CALLING the accused's lawyer**; **if he has
+  none, or his lawyer does not attend after being invited, the investigator MUST APPOINT ONE of his own motion**; an
+  urgency route where the investigator asks the **Bar's branch syndicate (نقابة المحامين الفرعية)** to appoint a
+  lawyer for an immediate interrogation; **if the lawyer does not attend, the interrogation proceeds** — but **the
+  instructed or appointed lawyer may attend if he arrives before it ends and inspect what was done in his absence**;
+  the accused **must state his lawyer's name** in the investigation record, at the Prosecution's criminal registry, or
+  to the officer in charge of the place of detention, and **the lawyer may do it himself**; **the lawyer may record
+  defences, requests or observations**; and **the investigator issues, on the appointed lawyer's request, an order
+  ASSESSING HIS FEES** — **guided by the fee schedule issued by decision of the Minister of Justice after consulting
+  the Bar** — and **the fees have the force of judicial fees.**
+- ✅ **New Art. 117 — surveillance and communications interception (the new code's Art. 206 / 206 bis, ⭐ the privacy
+  gate).** It is **one long article** and it does three separate things. This is the article a client with a
+  communications-privacy problem will be subject to **after 1 October 2027**; **§5.5 is what governs today.**
+  - **1. The surveillance power.** **Members of the Public Prosecution of at least chief-prosecutor rank
+    (رئيس نيابة على الأقل)**, investigating the **felonies in Book Two, Parts ONE, TWO, TWO bis, THREE and FOUR of the
+    Penal Code**, have — in addition to the Prosecution's established competences — the power to issue **a REASONED
+    ORDER (أمر مسبب) for a period not exceeding THIRTY DAYS** to:
+    - **seize letters, messages, telegrams, newspapers, publications and parcels** (ضبط الخطابات والرسائل والبرقيات
+      والجرائد والمطبوعات والطروف);
+    - **monitor wired and wireless communications** (مراقبة الاتصالات السلكية واللاسلكية);
+    - 🆕 **monitor SOCIAL-MEDIA ACCOUNTS and their various contents that are NOT AVAILABLE TO THE PUBLIC, e-mail, and
+      text, audio or image messages on phones and devices and any other technical means** (حسابات مواقع التواصل
+      الاجتماعي ومحتوياتها المختلفة غير المتاحة للجميع، والبريد الإلكتروني، والرسائل النصية أو المسموعة أو المصورة
+      على الهواتف والأجهزة وأي وسيلة تقنية أخرى) — **and to seize the media containing them**;
+    - **or make recordings of conversations that took place in a PRIVATE PLACE** where that serves the appearance of
+      the truth.
+    **And the order may be RENEWED for one or more similar periods.** ⚠️ **Note the transfer of the gate-keeper:**
+    under **Art. 206 in force** the prior reasoned order comes from **the district judge (القاضي الجزئي)** — §5.5.
+    Under the new article it is issued **by the Prosecution itself**, at chief-prosecutor rank. **That is a real
+    change in who checks the wiretap, and it is the single most consequential thing in new Art. 117.**
+  - **2. The detention-duration power.** The same members have, in these investigations, **the power of the district
+    judge (القاضي الجزئي) over the DURATION of pretrial detention** — **EXCEPT** for the felonies in **Book Two,
+    Part Three** of the Penal Code.
+  - **3. The consultation-chamber power.** They additionally have **the power of the `محكمة الجنح المستأنفة` sitting in
+    the consultation chamber (غرفة المشورة) referred to in Art. 123 of this law**, when investigating the offences in
+    **Book Two, PART ONE and SECTION ONE OF PART TWO** of the Penal Code — **on condition that the detention period
+    does not exceed FIFTEEN DAYS each time** (بشرط ألا تزيد مدة الحبس في كل مرة على خمسة عشر يومًا).
+  - ⚠️ **PARTIAL, and this is the caveat to carry:** the **proxy extraction renders this article without its paragraph
+    breaks**, so I **cannot state which clause is paragraph 2, 3 or 4.** New Art. 123 (the detention-extension article)
+    cross-refers to «**الفقرة الثالثة من المادة ١١٧**», which pins **one** of them as para. 3 — but I did **not**
+    verify the numbering. ⚠️ **Also: the scope list is Parts One, Two, Two bis, THREE and Four — which is ONE PART
+    WIDER than Art. 206 bis in force (Parts One, Two, Two bis and Four, §5.5).** 🟡 **I have not verified the subject
+    matter of each Part from the Penal Code's own table of contents**, so **do not label the Parts by subject**; cite
+    the Part numbers as the article does.
+
+## 17.7 Release and bail under the new code — new Arts. 125–131 ✅ read verbatim
+
+- ✅ **New Art. 125** — the **Prosecution may order PROVISIONAL RELEASE (إفراج مؤقت)** or termination of the measure
+  **at any time**, on its own motion or on the accused's request, **with or without bail**, **on condition that he
+  undertakes to appear whenever the Prosecution requires**.
+- ✅ **New Art. 126** — where release is **not mandatory**, **he is not released with or without security until he has
+  designated a domicile, a MOBILE PHONE NUMBER, or an E-MAIL ADDRESS** as set out in **Art. 72 para. 2.**
+  🆕 **The phone number and e-mail address are new: the "domicile" condition has been modernised for electronic
+  notification.**
+- ✅ **New Art. 127** — release or termination **may be made conditional on a SURETY (كفالة)**, the amount fixed by the
+  **prosecution member, the District Judge, or the Misdemeanour Appeal Court in the consultation chamber**, as the
+  case may be. **HALF (نصف) is allocated as the sanction for non-appearance** at any step of the investigation, the
+  case, the presentation for execution, and the other duties imposed on him; **the other half to government
+  expenses first, then to any financial penalties imposed.** **If the surety is fixed WITHOUT ALLOCATION, it secures
+  appearance, non-evasion of execution and the other duties.** ⚠️ **The old Art. 146 did not fix the split at half;
+  the new article does.** *Useful for a client: the unallocated half is what he gets back.*
+- ✅ **New Art. 128** — payment by the **accused or by someone else**, **in cash, government or government-guaranteed
+  bonds, an accepted bank cheque, a bank guarantee letter, or any NON-CASH PAYMENT MEANS under the Law Regulating
+  the Use of Non-Cash Payment Means, Law No. 18 of 2019**; and **a solvent third party's undertaking to pay, or a
+  bank guarantee letter, is accepted, taken down in the investigation record or by a registry report — and that
+  record or report HAS THE FORCE OF AN ENFORCEABLE INSTRUMENT.**
+  🆕 **The reference to Law 18/2019 is how a fresh Egyptian code modernises a bail provision — note it, because an
+  agent asked "can I pay bail by transfer" needs it.**
+- ✅ **New Art. 129** — **if the accused fails to perform one of the obligations without acceptable excuse, the FIRST
+  part of the surety becomes the property of the Government BY A REASONED DECISION (بقرار مسبب) of the competent
+  investigation or trial authority**; **the SECOND part is returned if a no-case decision or an acquittal is made.**
+  ⚠️ **This is a real change: the old Art. 148 made the first part state property «بغير حكم» — without any judgment.
+  The new article requires a REASONED DECISION.** **Do not describe the old rule as if it survives.**
+- ✅ **New Art. 130** — where his **condition does not allow a surety**, he may be required to **report to the
+  competent police station at set times, having regard to his special circumstances**; and he may be **asked to
+  choose a place of residence other than the scene of the crime**, or **banned from frequenting a specified place.**
+  *(Substantively Art. 149 in force.)*
+- ✅ **New Art. 131** — **a release order does NOT prevent a NEW prosecution order of ARREST or DETENTION** where the
+  **evidence against him has strengthened**, or **he has breached the duties imposed on him**, or **circumstances
+  require that step** — **without prejudice to Arts. 123 and 124.** *(Art. 150 in force.)*
+
+## 17.8 Trial, the felony appeal and cassation under the new code
+
+- ✅ **New Art. 407 — the felony appeal deadline is the SAME as today:** «**يحصل الاستئناف بتقرير في قلم كتاب المحكمة
+  التي أصدرت الحكم، وذلك خلال أربعين يومًا من تاريخ صدور الحكم.** فإذا كان مرفوعًا من النيابة العامة يجب أن يكون
+  التقرير موقعًا من **محام عام على الأقل**. وإذا كان الاستئناف مرفوعًا من هيئة قضايا الدولة يجب أن يكون التقرير
+  موقعًا من **مستشار بها على الأقل**. **وللنائب العام أن يستأنف الحكم خلال ستين يومًا** من تاريخ صدوره، وله أن يقرر
+  بالاستئناف في قلم كتاب المحكمة المختصة بنظر الاستئناف.»
+  → **40 days** for the report at the registry of the court that issued the judgment; **60 days** for the
+  **Attorney-General**, who may also report at the **appellate** court's registry. ✅ **Identical in effect to
+  Art. 419 bis 4 in force.**
+- ✅ **New Art. 412** — where an **in-presence DEATH sentence** is **not appealed** within the period, the
+  **Prosecution must follow Art. 46 of the Cassation Law, Law 57/1959.** 🚨 **This is the cross-reference that keeps
+  Law 57/1959 alive — see §12.**
+- ✅ **New Art. 413** — **an appeal does NOT suspend execution of a first-degree felony judgment UNLESS the appellate
+  felony court decides to suspend it, or the sentence is DEATH.** *(Art. 419 bis 9 in force — carried forward.)*
+- ✅ **New Arts. 414–420 — RETRIAL (إعادة النظر), not cassation.** Grounds: the supposed murder victim is found
+  alive; two contradictory judgments on the same facts where one convict's innocence follows; a witness or expert
+  convicted of **false testimony** or a **forged document** proved to have influenced the judgment; the judgment was
+  based on a **civil or family-court judgment later annulled**; **and new facts or documents discovered after the
+  judgment that would establish the convict's innocence.** Brought by the **Attorney-General and the convict or his
+  special agent or legal representative**, or by his **relatives or spouse after his death**; **a non-prosecution
+  applicant files a petition with the Attorney-General**, who **must bring it to the Court within THREE MONTHS of
+  its submission**; **a security of EGP 5,000** must be deposited by a convict-applicant in the first four grounds
+  (unless the **legal-aid committee** of the Court of Cassation exempts him), allocated to the **Art. 422** fine;
+  the parties are notified at least **eight days** before the session; and the Court of Cassation **decides after
+  hearing the parties**, **quashing and acquitting if innocence is apparent**, otherwise **remitting to a differently
+  constituted bench**, or **deciding the merits itself where retrial is impossible** (death, mental disorder,
+  prescription).
+- 🚨 **The new code contains NO cassation chapter.** Verified directly: the phrase **«الطعن بالنقض» does not appear
+  as a heading anywhere in the 139 pages**, and **«قانون حالات وإجراءات الطعن أمام محكمة النقض» appears exactly once
+  — in new Art. 412.** **Therefore, when the new code applies, cassation continues under Law 57/1959 (§12)**, and the
+  **60-day report period, the EGP 300 security, the EGP 20,000 misdemeanour exclusion** and the **Art. 30 grounds**
+  remain the law.
+
+## 17.9 The no-case order, referral, and appeals against orders under the new code ✅ read verbatim
+
+**These are the new code's replacements for the حفظ الأوراق machinery in §§4.1 and 9 of this file.** ⚠️ **None of it
+is in force yet; §4.1 and §9 are what govern today.**
+
+- ✅ **New Art. 152 — the no-case order (أمر بأن لا وجه لإقامة الدعوى), the successor to حفظ الأوراق:**
+  «إذا رأت النيابة العامة بعد التحقيق أنه **لا وجه لإقامة الدعوى** تصدر أمرًا بذلك، **وتأمر بالإفراج عن المتهم
+  المحبوس** ما لم يكن محبوسًا لسبب آخر، **ولا يكون صدور الأمر بأن لا وجه لإقامة الدعوى في الجنايات إلا من المحامي
+  العام أو من يقوم مقامه.** ويجب أن يكون الأمر **مكتوبًا**، وأن يشتمل على **الأسباب** التي بني عليها. **ويبين
+  بالأمر اسم المتهم، ولقبه، وسنه، ومحل ميلاده، وسكنه، ومهنته، ورقمه القومي أو رقم وثيقة سفره، وموطنه إن كان أجنبيًا،
+  والواقعة المنسوبة إليه ووصفها القانوني.** ويُعلن الأمر **للمتهم وللمجني عليه وللمدعي بالحقوق المدنية**، وإذا كان
+  أيهم قد توفى يكون الإعلان **لورثته جملة دون ذكر أسمائهم** في آخر موطن كان لمورثهم.»
+  → Note the two teeth: **in felonies only the Attorney-General (المحامي العام) or his deputy may issue it**, and it
+  **must be reasoned and announced to the victim and the civil claimant**, not only to the accused.
+  *(This is the new code's version of Arts. 61–62 in force — see §4.1.)*
+- ✅ **New Art. 163 — a no-case order is a bar, with one door:** «الأمر الصادر من النيابة العامة بأن لا وجه لإقامة
+  الدعوى **يمنع من العودة إلى التحقيق، إلا إذا ظهرت أدلة جديدة قبل انتهاء المدة المقررة لانقضاء الدعوى الجنائية**.»
+  And **what counts as new evidence** is spelled out: **witness statements, records (محاضر) and documents carrying
+  other evidence that was not presented to the Prosecution**, where they would **strengthen evidence found
+  insufficient** or **add the clarification that leads to the truth.**
+- ✅ **New Art. 164 — appealing the no-case order:** «**يجوز للمتهم وللمدعي بالحقوق المدنية استئناف الأمر الصادر من
+  النيابة العامة بأن لا وجه لإقامة الدعوى**، ما لم يكن صادرًا في تهمة موجهة **ضد موظف أو مستخدم عام أو أحد رجال
+  الضبط لجريمة وقعت منه أثناء تأدية وظيفته أو بسببها**، ما لم تكن من الجرائم المنصوص عليها في **المادة ١٢٣ من
+  قانون العقوبات**.»
+  - **Who:** the **accused AND the civil claimant**.
+  - **How long:** **by report at the registry (تقرير في قلم الكتاب) within TEN DAYS from the date of ANNOUNCEMENT
+    of the order** (الإعلان بالأمر).
+  - **Where:** to the **`محكمة جنايات أول درجة` sitting in the consultation chamber` for felonies**, and to the
+    **`محكمة الجنح المستأنفة` sitting in the consultation chamber for misdemeanours.**
+  - ⚠️ **The official bar:** not available where the charge is against a **public official, public employee or a
+    judicial officer** for a crime committed **in the course of or because of** his duty — **unless it is a Penal
+    Code Art. 123 crime.**
+  - **On cancelling the order**, the consultation chamber **must return the case to the Prosecution** specifying the
+    offence committed, the applicable legal provision, the prosecution witness statements and the content of the other
+    evidence — **for referral to the competent court.**
+  - 🚨 **«وتكون القرارات الصادرة من غرفة المشورة وفق الأحكام هذا الفصل نهائية»** — **the chamber's decisions under
+    this chapter are FINAL.** ⚠️ **That is a bigger change than it looks: it makes the felony consultation chamber
+    the last word on un-blocking a prosecution, with no cassation from that decision.** *(Compare Art. 205 in force,
+    which routes detention appeals through the ordinary order-appeal machinery in Arts. 165–168 — §6.3.)*
+- ✅ **New Art. 165** — **all parties** may appeal **orders on jurisdiction questions**; **the appeal does not suspend
+  the investigation**, and **a finding of no jurisdiction does not nullify the investigation steps taken**; the
+  period is **ten days from the announcement of the order to the parties.**
+- ✅ **New Art. 166 — the detention and extension appeal (⭐ this is the article, not 205):**
+  «**يجوز للمتهم أن يستأنف الأمر الصادر بحبسه احتياطيًا أو بمد مدة الحبس**، وللنيابة العامة إذا استلزمت ضرورة
+  التحقيق **أن تستأنف الأمر الصادر بالإفراج المؤقت** عن المتهم المحبوس احتياطيًا.»
+  → **The accused may appeal a detention order AND an extension order.** The **Prosecution may appeal a provisional
+  release order** where the investigation requires it. ⚠️ **Confirmed by reading the article: new Art. 205 is
+  unrelated** — it merely applies Arts. 108, 116, 152 and 157 to the investigating judge's orders. **An agent who
+  has "Art. 205" in a note from the new code has the wrong article.**
+- ✅ **New Art. 157 — referral in felonies, and a NEW duty to appoint counsel (⭐):** a felony case is brought by a
+  **charge report (تقرير اتهام)** from the **المحامي العام** or his deputy **to the `محكمة جنايات أول درجة`**, stating
+  the accused's details, his **national number**, the offence attributed to him **with its constituent elements**,
+  **all aggravating and mitigating circumstances**, and **the articles of law to be applied**, **with a list of the
+  content of the witness statements and the other evidence of proof attached**;
+  «**ويُندب المحامي العام من تلقاء نفسه محاميًا لكل متهم بجناية صدر أمر بإحالة إلى محكمة جنايات أول درجة إذا لم يكن
+  قد وكّل محاميًا للدفاع عنه**» — **the المحامي العام MUST APPOINT A LAWYER OF HIS OWN MOTION for every accused
+  charged with a felony referred to the first-degree felony court who has not instructed one.**
+  And the Prosecution must **announce the referral order to the parties within the TEN DAYS following its issue.**
+  ⚠️ **There is no equivalent duty in the 1950 code at this stage — the 1950 duty sits at Art. 124 (interrogation) and
+  Art. 237 (trial). Read together with Const. Art. 54's final paragraph, the new article makes the appointment
+  automatic and mandatory at referral in felonies.**
+- ✅ **New Art. 108** — every order must include the **accused's name, surname, occupation, residence and NATIONAL
+  NUMBER**, the **charge**, the **date**, the **travel-document number and domicile if he is foreign**, the
+  **signature of the prosecution member and the official seal**; a **summons order** must fix a **set date**; and a
+  **seizure-and-bring order (أمر الضبط والإحضار)** must instruct the **public force to arrest the accused and bring
+  him before a prosecution member if he refuses to attend voluntarily.**
+- ✅ **New Art. 116** — a **detention order** must additionally state, beyond the Art. 108 data, **the offence
+  attributed to the accused and its prescribed penalty, the REASONS on which the order is based, and an instruction
+  to the manager of the reform centre or detention place to accept the accused and place him in it** — and
+  **the same rule applies to extension orders.**
+  *(These are the new code's equivalents of Arts. 136 and 138 in force — §6.1.)*
+
+## 17.10 The practical bottom line as at 19 October 2026, and what to tell a client
+
+**For a non-lawyer in Egypt TODAY:**
+
+1. **Law 150/1950 governs.** Everything in **§§1–16** of this file applies. Law 174/2025 applies **nothing**.
+2. **A statute that is not yet in force creates no rights and imposes no duties.** You cannot rely on the new code's
+   **4-month** misdemeanour cap, its **seven** alternative measures, its **Art. 119** ban on police contact with a
+   detainee without written permission, its **Art. 104** silence warning, or its **Art. 157** automatic appointment of
+   counsel in felonies **until 1 October 2027.** **Today those protections do not exist**, and a lawyer who argues
+   them today will lose.
+3. **What DOES give something today is the Constitution** — Arts. **52, 54, 55, 56, 57, 95, 96, 97, 98** (§1).
+   These are in force now, they bind the police and the Prosecution now, and **Art. 54's 24-hour rule, Art. 54's
+   lawyer requirement, Art. 55's right to silence and Art. 55's exclusion of coerced statements** are the four
+   provisions to reach for.
+4. **And the 1950 code's own protections are real but procedural** — **Art. 36** (two consecutive 24-hour periods),
+   **Art. 40** (no detention without an order, humane treatment), **Art. 43** (a prosecutor who learns of unlawful
+   detention must go immediately and release), **Art. 124** (no interrogation or confrontation before the lawyer is
+   called; if none, one is appointed), **Art. 125** (no separation of accused and lawyer), **Art. 143** (the caps and
+   the consultation chamber), **Art. 205** (the appeal against detention and extension), **Art. 152** (the victim
+   cannot ask for detention or be heard on release).
+5. **On the transitional question generally:** the new code's own promulgating **Arts. 2 and 3** are *exceptions*
+   carved out of an assumed general rule that a procedural law applies immediately to pending cases once it
+   commences. ⚠️ **I verified those two articles are transitional provisions; I did NOT verify a general
+   transitional rule in the new code.** **Since the code has never commenced, the point is academic until
+   1 October 2027** — but it is the question to expect on 2 October 2027.
+
+**Four sentences to give a client, which a non-lawyer can act on:**
+
+> The code in force in Egypt today is still **Law 150/1950**. If someone is arrested, the police must tell him why
+> **immediately**, tell him his rights **in writing**, let him call **his family and a lawyer immediately**, and get
+> him before the prosecution **within 24 hours** — and the prosecution must question him **within another 24 hours**
+> and then either release him or send him to a judge (**Constitution Art. 54; CrPC Arts. 36, 39–40**). He **cannot be
+> questioned without his lawyer**, and if he has no lawyer **the investigator must appoint one for him** —
+> **"I have nothing to say until my lawyer is present" is a sentence he is entitled to say, and any statement the
+> prosecution says he made while being coerced is void** (**CrPC Arts. 124–125; Constitution Art. 55**). Detention
+> is then capped at **4 days by the prosecution, 45 days by the district judge, then 6 months in a misdemeanour and
+> 18 months in a felony, or two years if the charge carries life or death** — with one **45-day renewable** exception
+> for life/death cases, and the accused has a **right to appeal every detention and extension order**
+> (**CrPC Arts. 201–205 and 143**). **A new code (Law 174/2025) exists but has been postponed to 1 October 2027 and
+> has never been applied** — do not let anyone tell you it is your protection today.
+
+---
+
+# 18. Widely repeated but UNVERIFIED — do not state these as fact
+
+**This section is deliberately blunt. Everything below was either found only in secondary sources, left unread, or
+contradicted by another source. None of it may be stated as a legal proposition.**
+
+| # | The claim | What I actually established | Marker |
+|---|---|---|---|
+| 1 | "**Law 172/2018** is the electronic litigation amendment." | Nothing was verified about Law 172/2018 in this file's research. The assertion that it is a **Customs** amendment is **the project's earlier correction** carried from `03-employment-courts-aml-banking.md`; I did **not** re-verify it here. It does **not** appear in the CrPC's amendment chain, which is the only thing I verified. | 🟡 **Do not cite Law 172/2018 in criminal-procedure work at all.** |
+| 2 | "There is no **2021 amendment** to the CrPC." | ⚠️ **PARTIAL, and solid but not primary.** The consolidated amendment chains in the **alhasswa** and **ghazy** reproductions both end at **Law 1/2024**, with **Law 177/2020** before it. I did **not** obtain the Official Gazette's own index of CrPC amendments for 2021–2023. The **content** claims about Law 141/2021 (Penal Code, harassment) and Law 146/2021 (Lakes and Fisheries) are from targeted searches, not from gazette text. | ⚠️ Safe to say "no 2021 amendment appears in the consolidated amendment chain". **Do not say "there is no such law" without the gazette index.** |
+| 3 | "**Constitution Art. 96's** felony-appeal sentence was added in 2019." | I verified the **sentence exists in the current consolidated text** and I verified the PDF is post-2019 (the emergency article carries the 2019 three-month/two-thirds rule). I did **not** compare against the 2014 original to see whether that sentence was already there. | 🟡 **Do not date it.** Quote the sentence; do not attribute the amendment. |
+| 4 | "**Law 162/1958** Art. N governs referral to the State Security Emergency Courts and the appeal from them." | I downloaded the NATLEX Arabic PDF of Law 162/1958 and did **not** read its articles in this session. The statement that the state of emergency lapsed in October 2021 and that **PM Decision 1664/2021** was suspended is from the project's earlier secondary research. | 🟡 **Do not cite an article of Law 162/1958, and do not date the lapse from this file.** |
+| 5 | "The **State Security Courts (محاكم أمن الدولة)** are available / sit in your client's case." | Not verified. I did not identify the enabling statute, the current membership, or whether the subject-matter has been absorbed into the ordinary **designated felony circuit** under CrPC Art. 366. ⚠️ **The only verifiable answer is the Art. 366 designated circuit** (§10.3). | 🟡 |
+| 6 | "**Law 57/1959 Art. 46** means a death sentence is automatically reviewed by the Court of Cassation." | I verified that **CrPC Art. 419 bis 8** and **new Art. 412** both **cross-refer to Art. 46 of Law 57/1959** for an **un-appealed in-presence death sentence**. I did **not** read Art. 46 itself. | ⚠️ **PARTIAL.** The obligation to follow Art. 46 is ✅; **what Art. 46 requires is 🟡.** |
+| 7 | "The **Child Law's Art. 96** protects the identity of a child victim." | I verified **CrPC Art. 113 bis** (added by Law 177/2020) says the **identity of the victim may not be disclosed** in, among other things, **Art. 96 of the Child Law**. I did **not** read the Child Law. | ⚠️ **PARTIAL** — the CrPC hook is ✅; the Child Law article is 🟡. |
+| 8 | "**Law 140/2014** is repealed." | ⚠️ **Only when the new code applies.** ✅ New (promulgating) **Art. 4** repeals it — but that Art. 4 sits inside a law whose commencement was postponed to **1 October 2027**. **Until then Law 140/2014 stands.** | ✅ on the fact; ⚠️ on any statement "it is repealed today". |
+| 9 | "The **Public Prosecution's ranks** (وكيل نيابة / رئيس نيابة / محام عام) form a defined ladder." | I read the **rank thresholds the articles themselves impose** — **وكيل نيابة على الأقل** to order detention (**CrPC Art. 201**; **new Art. 113**), **رئيس نيابة على الأقل** for the interception powers (**CrPC Art. 206 bis**; **new Art. 117**), **المحامي العام** to issue a felony no-case order (**new Art. 152**) and to sign a felony-appeal report (**CrPC Art. 419 bis 4**). I did **not** verify the career structure itself. | ⚠️ **Cite only the threshold the article states.** |
+| 10 | "**Law 150/1950**'s consolidated text I used is the gazette text." | ⚠️ **It is not.** It is a **secondary reproduction** (`alhasswalawfirm.com`) that **states it is transcribed from بوابة تشريعات محكمة النقض** and carries per-article amendment footnotes with gazette numbers, corroborated against two independent reproductions. **Article NUMBERS are reliable. WORDING is reliable to the extent three independent consolidations agree — but it is not the Official Gazette.** The **only primary gazette text in this file is Law 174/2025** (139 pages, read in full) and — for Law 1/2024 — the 33-article gazette reproduction. | ⚠️ **PARTIAL as to source class.** |
+| 11 | "The **emergency-law article** is Constitution Art. 152." | ❌ **Resolved: it is Art. 154.** Verified by reading Arts. 152, 153, 154 and 155 in sequence in the official PDF (§1.4). **Art. 152 is presidential appointments; Art. 154 is the emergency.** | ✅ |
+| 12 | "Art. 143's caps come from Law 83/2013." | ⚠️ The **footnotes** on Art. 143 cite **Law 145/2006**, **Law 153/2007** and **Law 83/2013** (Gazette 38 bis (أ), 23 Sept 2013). The **paragraph-to-amendment mapping is not unambiguous** in the reproduction. | ⚠️ **PARTIAL.** Quote the **current consolidated wording**; do not attribute a paragraph to a named law. |
+| 13 | "The **pretrial-detention caps** are 4 months / 12 months / 18 months." | ❌ **Those are the NEW code's figures (new Art. 124).** The figures **in force** are **6 / 18 / 24** (Art. 143). ⭐ **Both sets are ✅ verified from article text** — the error is in which one applies. **See the side-by-side table in §17.5.** | ✅ for both sets; ❌ for mixing them. |
+| 14 | "**Law 174/2025** replaced Law 150/1950." | ❌ **The repeal is enacted but NOT operative.** ✅ **New (promulgating) Art. 4** repeals Law 150/1950; ✅ **Art. 6 as substituted by Law 160/2026** makes the code apply from **1 October 2027**. **Two different propositions that a careless summary collapses into one.** | ✅ |
+
+**And one honest gap in the SOURCING that a reader should know:** the **Ministry of Justice legislation encyclopedia
+(`serviceapi.egyptianlaws.com`)** — this project's first-priority source — **was down (HTTP 500) throughout
+2026-10-19** and is cited for **nothing** in this file. **The next re-verification pass should re-read §§3–15 against
+the gazette or the Cassation portal once that portal is reachable.**
+
+---
+
+# 19. Open questions and things I could NOT resolve
+
+| # | Question | What I searched | Status |
+|---|---|---|---|
+| 1 | The **full gazette text of Law 160/2026** (the postponement) | `elwatannews.com/news/details/8368891` · `eastlaws.com/legislation-full-text/ar/egypt/law/30-09-2026/no-160` · `blog.iqrar.ai` · `alhasswalawfirm.com/articles/egypts-new-criminal-procedure-law-postponed-to-october-2027-law-no-160-of-2026` | ⚠️ **PARTIAL — four independent secondary sources agree**, and the gazette coordinates are consistent (39 bis (ب), 30 Sept 2026; signed 18 Rabi' al-Thani 1448 H). **The substitution «الأول من أكتوبر لعام ٢٠٢٧» for «الأول من أكتوبر التالي لتاريخ نشره» is not read from the gazette PDF.** **The date is safe; the verbatim wording is not.** |
+| 2 | The **primary gazette PDF of Law 174/2025** | `natlex.ilo.org/…/119035/174-2025%20egy.pdf` returns **HTTP 403** to `curl` (with browser UA + Referer) **and** with a plain UA. **Obtained instead via the text-extraction proxy `https://r.jina.ai/<url>`,** which returned the whole **139-page** document as text; then Unicode-normalised and read article by article. Independently confirmed as the genuine issue through `dspace.id.com.eg/items/93ba93c3-ec6a-4720-ad84-ba6113f7e408/full` (National Library depository, 761.14 KB PDF, «العدد 45 مكرر د - مؤمن.pdf», publisher المطابع الأميرية) | ✅ **RESOLVED — 546 articles, 544 markers with no duplicate and no gap; promulgating Arts. 1–6 and new Arts. 1–19, 104–131, 152, 157, 163–166, 407–420 read verbatim.** ⚠️ The proxy extraction **garbles a minority of passages** (a small number of sentences and short article openings); **where a passage was garbled I did not use it** and said so. ⚠️ **New Art. 9 is a partial read** and is marked as such. |
+| 3 | Whether the **`manshurat.org`** attribution of the 5 Sept 2020 CrPC amendment to **Law 189/2020** is a typo or a real instrument | Compared against the gazette references in the **alhasswa** and **ghazy** article footnotes, which both say **Law 177/2020**, Gazette No. **36 bis**, **5 September 2020** | ⚠️ **UNRESOLVED as a documentary question; resolved as a citation question.** **Use Law 177/2020.** Law **189/2020** is recorded in the project as amending the **Penal Code** on bullying. |
+| 4 | What **Law 57/1959 Art. 46** actually requires for a death sentence | Read from the **new code itself**: **new Art. 412** says «وجب على النيابة العامة اتباع حكم المادة ٤٦ من قانون حالات وإجراءات الطعن أمام محكمة النقض الصادر بالقانون رقم ٥٧ لسنة ١٩٥٩», and **CrPC Art. 419 bis 8** says the same | ✅ **RESOLVED that Art. 46 is the cross-referenced article.** 🟡 **NOT resolved: what Art. 46 says.** |
+| 5 | Whether **Law 1/2024's** felony-appeal chapter applies to a case **decided before 17 Jan 2024 but appealed later** | Read **promulgating Art. 3 of Law 174/2025** verbatim, which is the only transitional text on the point: it limits the felony-appeal provisions to cases **not decided by the felony courts as of** the Law 1/2024 commencement date | ⚠️ **PARTIAL — the article is clear on its face and I quoted it (§11.3), but it is a provision of the NEW code, not of Law 1/2024**, which is a strange place for the rule to live. **Verify against the gazette text of Law 1/2024 for a transitional article of its own.** |
+| 6 | Whether **Law 1/2024** contains its **own** transitional article in addition to Art. 5 (commencement) | The 33-article gazette reproduction was read for the operative substitutions and the new chapter; **the remaining articles were not itemised** | 🟡 **UNVERIFIED.** |
+| 7 | A **consolidated, amendment-annotated text of Law 150/1950 from an official source** | `serviceapi.egyptianlaws.com` — **HTTP 500 on every path** (including its own tenancy URL); `elpai.idsc.gov.eg` — search returns counts (670 legislation, 112,165 Cassation results) **but results load via JavaScript and appear subscription-gated; no article text extractable** | 🟡 **Get it from بوابة تشريعات محكمة النقض directly.** The three reproductions agree article-for-article, so numbers are safe; **wording should be re-confirmed.** |
+| 8 | The **Child Law (Law 12/1996)** criminal-procedure provisions — the age of criminal responsibility, the specialised child courts, and Art. 96 | Not researched in this session | 🟡 **UNVERIFIED — and it matters, because CrPC Art. 113 bis and the new code both cross-refer to it.** **This is the most significant gap in the file for a practitioner with a juvenile client.** |
+| 9 | Whether the **death penalty procedure** in Egypt includes any mandatory review **outside** cassation, and the role of the **Mufti** and the **President** | Not researched in this session | 🟡 **UNVERIFIED.** |
+| 10 | Whether **any court fee or security** other than the **EGP 300** (cassation, Law 57/1959 Art. 36), the **EGP 5,000** (retrial, new Art. 417) and the **civil-claimant deposits** (CrPC Art. 256) is payable in a criminal matter | The articles read impose no other figure; `03-employment-courts-aml-banking.md` carries the civil fee structure | ⚠️ **PARTIAL — read across Arts. 36, 256 and new Art. 417 only.** |
+| 11 | Whether **Law 162/1958** was amended after 2021, and the **current** text of its referral and appeal provisions | Downloaded the NATLEX PDF; **did not read the articles** | 🟡 **UNVERIFIED.** |
+
+---
+
+# 20. Trap list for the agent — the twelve things that go wrong most
+
+1. **Saying the new code is in force.** ❌ It is **not**. Law 150/1950 governs until **1 October 2027**, extended by **Law 160/2026**. **Every** new-code number (4 months, 12 months, 18 months, seven measures, Art. 119) is 🟡 **future law** and worthless as a present argument.
+2. **Mixing the two sets of detention caps.** **6 / 18 / 24 months in force** (Art. 143) vs **4 / 12 / 18 months** (new Art. 124). The **3-month and 5-month gateways are identical in both** — so a "new code" answer that skips the 5-month gateway is wrong under either.
+3. **Missing that a felony judgment is now APPEALABLE.** Since **17 January 2024** (Law 1/2024, Arts. **419 bis – 419 bis 9**), the report must be filed **within 40 days** at the **trial court's registry**. Advising cassation as the only route is a **lost appeal**.
+4. **Confusing the three clocks.** **10 days** (misdemeanour appeal, Art. 406) · **40 days** (felony appeal, Art. 419 bis 4) · **60 days** (cassation, Law 57/1959 Art. 34). And the **Attorney-General's** periods are **30 days** (appeal, Art. 406) and **60 days** (felony appeal, Art. 419 bis 4) and **60 days** (cassation).
+5. **Running a detention clock from the wrong start.** **Art. 36:** the officer must **hear** him **immediately** and send him within **24 h**; the Prosecution then has **another 24 h** to interrogate and must order detention or release. **Two consecutive periods, not one.**
+6. **Thinking the victim can push for detention.** ✅ **Art. 152**: the victim and the civil claimant **may not apply for detention and may not be heard on release.** Their role is the **money**.
+7. **Filing the victim's civil claim for the first time in the appellate court.** ✅ **Art. 251**: it may be made **until the close of the pleadings in the FIRST-instance court** — «**وليس أمام محكمة الاستئناف**». It is lost on appeal.
+8. **Assuming prescription runs cleanly.** ✅ **Art. 16**: **never suspended.** ✅ **Art. 17**: interrupted by investigation, accusation, trial, criminal order, or evidence-gathering acts **taken against or officially notified to** the accused — and it restarts from the **last** act. ✅ **Art. 18**: interruption as to one accused interrupts as to **all**. **Compute from the last interrupting act, not from the offence.**
+9. **Believing torture times out.** ✅ **Const. Art. 52** — **no prescription, ever.** And ✅ **CrPC Art. 15 para. 2** adds **Penal Code Arts. 117, 126, 127, 282, 309 bis and 309 bis (a)** and all of **Book Two Part Two Section One** to the same list.
+10. **Treating a محضر, a بلاغ and a شكوى as one thing.** ✅ **Art. 3**: where the law requires a **شكوى**, there is **no prosecution and no investigation step** without it, **no arrest** without the complainant's declaration (Art. 39), and it **expires in three months** from knowledge of the crime **and** the offender. **Naming the wrong instrument is how a case dies.**
+11. **Challenging a confession only by alleging torture.** Lead with the **procedure** instead: an interrogation held without the lawyer having been **called** (Art. 124) — or with the accused **separated** from his lawyer (Art. 125) — is **void independently**, and a nullity affecting the judgment is **an express cassation ground** (Law 57/1959 **Art. 30(3)**). **No bruise required.**
+12. **Quoting new Art. 205 for the detention appeal.** ❌ **Wrong article.** It is **new Art. 166**. New Art. 205 is about applying **new Arts. 108, 116, 152 and 157** to the investigating judge's orders.
+
+---
+
+# 21. Under-verified areas — what a next pass should do first
+
+Stated so the file is usable rather than merely long:
+
+1. **Read a consolidated Law 150/1950 from بوابة تشريعات محكمة النقض directly,** and re-verify §§3–15 article by article. The three reproductions agree, so the **numbers** are safe; the **wording** deserves a primary check. **Everything in §§3–15 is cited as ⚠️ PARTIAL as to source class** — see §18 row 10.
+2. **Read Law 57/1959 Art. 46** (the death-sentence procedure) — the cross-reference is confirmed, the content is not.
+3. **Read the Child Law (Law 12/1996)** — the juvenile regime is entirely absent from this file and Art. 113 bis cross-refers to it.
+4. **Read Law 162/1958's articles** and settle the current state of the emergency regime and any post-2021 amendment.
+5. **Read the gazette text of Law 160/2026** to replace the four-source corroboration with a primary reading.
+6. **Settle the Law 189/2020 vs 177/2020 attribution** from the 5 September 2020 gazette issue itself.
+7. **Settle whether Const. Art. 96's felony-appeal sentence was added in 2019** by comparing the 2014 original against the consolidated text.
+
+---
+
+*File compiled 2026-10-19. **This is the first version of this file**; there is no earlier date for any section. Arabic
+statutory text quoted verbatim from the sources named in each section — the **official 2014 Constitution PDF**
+(Ministry of State server), the **primary Official Gazette PDF of Law 174/2025** (Gazette No. 45 bis (د),
+12 November 2025, 139 pages, read in full), the **gazette reproduction of Law 1/2024** (Gazette No. 2 bis,
+16 January 2024), three corroborating consolidations of **Law 150/1950**, and one of the **Penal Code**.
+Article numbers without a source are not asserted anywhere in this file.*
+
+*⚠️ **Source-class warning that applies to §§3–15:** the consolidated Law 150/1950 used here is a **secondary
+reproduction** that states its own transcription origin (بوابة تشريعات محكمة النقض) and carries per-article amendment
+footnotes — it is **not** the Official Gazette. The Ministry of Justice encyclopedia
+(`serviceapi.egyptianlaws.com`) was **down (HTTP 500)** on 2026-10-19 and is cited for nothing. Treat §§3–15 as
+**⚠️ PARTIAL as to source class**; §§1, 16 and 17 rest on **primary** documents.*
+
+*Companion files: `01-commercial-corporate-contract.md` (Civil Code Arts. 1–388, including the prescription rules in
+Arts. 374–387 that govern the **civil** limb of a criminal case) · `03-employment-courts-aml-banking.md` (court
+hierarchy, Law 13/1968 pecuniary limits, and the two corrections carried into the corrections table of this file) ·
+`04-practical-operations-egypt.md` (practical filing) · `05-tenancy-egypt.md` (the format model for this file).*
+
+
 
 
 

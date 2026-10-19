@@ -70,8 +70,8 @@ ported, one became an extension, and two were rejected.
 Egyptian law and instead point at skills that have verified it. That is why they were
 cheap to add safely, and it is the shape a port should take.
 
-- [x] **Register the new skills** in `register-egypt.py` and re-run it. Now **14**
-      plugins / 278 total, re-verified byte-identical on re-run. *(done: 2026-10-19)*
+- [x] **Register the new skills** in `register-egypt.py` and re-run it. Now **15**
+      plugins / 279 total, re-verified byte-identical on re-run. *(done: 2026-10-19)*
 - [ ] ⚠️ **Do not port** US-state procedure, tribunal, or ISO/NIST/SOC 2 skills. An
       Egyptian version of an international criminal tribunal skill is worse than the
       original. Already recorded in `EGYPT-EDITION.md`. *(added: 2026-10-19)*
