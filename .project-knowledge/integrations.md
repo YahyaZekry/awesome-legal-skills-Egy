@@ -162,7 +162,39 @@ warning, because nobody re-checks a thing that now looks right.
 
 ---
 
-## 6. Validation + registration scripts
+## 7. Egyptian legal sources — availability log
+
+⚠️ **The best source found in this project went down.** Recorded here because two
+running research agents were pointed at it, and because a dead source silently
+degrades every skill that cites it.
+
+| Source | URL | Status | Note |
+|---|---|---|---|
+| **MoJ gazette PDF server** | `moj.gov.eg:73/Doc/...` | ✅ **working** | **New best source for gazette text.** Serves the Official Gazette **page by page** as a PDF. Requires `curl -k` (self-signed cert) and a **non-standard port 73**. Extract locally with `pdftotext -layout`. Confirmed 200 on 2026-10-19 |
+| MoJ legislation encyclopedia | `serviceapi.egyptianlaws.com` | ❌ **DOWN** | Was documented as *"the single best source found in this project"* — it carried SCC rulings annotated inline. Now **HTTP 500 / SQL login failure on every path**, including its own recorded URLs. **Quotations already taken from it stand** (they were captured on earlier dates and are dated in the corpus); anything new needs a substitute |
+| ELP (Egyptian Legislation Portal) | `elpai.idsc.gov.eg` | ⚠️ works | Cabinet portal. Secondary to the gazette PDFs |
+| Egyptian Laws (mirror) | `egyptianlaws.org` | ⚠️ works | Reproduces gazette text. Secondary — verify against a primary |
+| WIPO Lex | `wipolex.wipo.int` | ✅ works | **Verified English translations** of Egyptian IP law. The best-sourced topic in the project |
+| Gazettes / press | `alamiria.com` | ⚠️ works | Gazette text, but slow to confirm |
+| SCC rulings (NGO mirror) | `mksegypt.org` | ✅ works | Reproduces Supreme Constitutional Court judgments verbatim — e.g. Case 85/Y17 of 22 Mar 1997. Useful precisely because the MoJ encyclopedia is down |
+| Gazette scan mirrors | `gate.ahram.org.eg` | ⚠️ works | Publication metadata (gazette number + date) |
+
+### Portals that waste time — already tested, do not re-test
+
+These are recorded in `skills/egy-context-operations/references/PORTALS.md` and have
+burned time more than once:
+
+- `alqalam.idsc.gov.eg`, `ela.gov.eg` — **no DNS record**
+- `gcc.gov.eg` — returns HTTP **200** but is the **Cultural Development Fund**, not
+  the gazette. A 200 is not evidence it is the right site
+- `gafi.gov.eg` legacy `/English/...` paths — 200 into a styled 404
+- `itida.gov.eg` is the real ITIDA domain. `itda.gov.eg` is a typo that once shipped
+  into a file — **except** `itda.gov.eg/registry.aspx` and `itda.gov.eg/sgl.aspx`,
+  which are genuine working paths. Do not blanket-replace
+
+---
+
+## 8. Validation + registration scripts
 
 Both live in `.project-knowledge/scripts/`. Neither is sync-managed.
 

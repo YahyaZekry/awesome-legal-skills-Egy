@@ -150,27 +150,62 @@ the ELP at `elpai.idsc.gov.eg`, then the relevant authority.
       Appeal administrative tariffs **under challenge in ECESR Case 51843/79**.
       Affects `egy-court-filing-guide` and `egy-invoice-and-payment-terms`.
       *(added: 2026-10-12)*
-- [ ] 🟡 **Exact day-precise tenancy sunset dates.** The statute says "7 years from
-      entry into force"; the skill computes ≈5 Aug 2032 from 5 Aug 2025.
-      *(added: 2026-10-12)*
-- [ ] 🟡 **Whether the 15% rent increase began 1 September 2026.** Today is
-      **2026-10-19** — this date has now passed, so it is checkable today.
-      *(added: 2026-10-12)*
-- [ ] 🟡 **The Law 164/2025 Art. 8 alternative-unit window** — press reports conflict
-      (**1 July 2026** vs **12 April 2026**). Both dates have now passed. Verify with
-      the Cabinet before advising anyone a window is open. *(added: 2026-10-12)*
-- [ ] 🟡 **Whether Arts. 25 and 26 of Law 49/1977 bind leases newly signed after
-      August 2025.** *(added: 2026-10-12)*
+- [x] ✅ ~~**Exact day-precise tenancy sunset dates**~~ — **RESOLVED 2026-10-19.** They are
+      **computed, not printed** in the statute, and are now carried with that caveat:
+      **5 Aug 2032** residential (Art. 2) · **5 Aug 2030** non-residential natural
+      persons · **6 Aug 2032** repeal of Laws 49/1977, 136/1981, 6/1997 (Art. 9 —
+      deliberately the *next* day, «من اليوم التالى») · **7 Mar 2027** expiry /
+      **8 Mar 2027** vacate for the **Law 10/2022** track. ⚠️ The old «≈ April 2027»
+      figure was **wrong by a month** and is corrected.
+- [x] ✅ ~~**Whether the 15% rent increase began 1 September 2026**~~ — **RESOLVED
+      2026-10-19: YES.** It is **self-executing** (Law 164/2025 Art. 6 read with Art. 4);
+      no implementing instrument was ever needed. ⚠️ It runs on the **new** legal rent,
+      not the pre-reform rent: 250 → **287.50**, 400 → **460**, 1,000 → **1,150**.
+- [x] ✅ ~~**The Law 164/2025 Art. 8 alternative-unit window**~~ — **RESOLVED 2026-10-19:
+      there was never a conflict.** It was a chain of three-month extensions, and the
+      window **closed on 12 Oct 2026**. PM Decisions 53/2025 → 12 Jan 2026 · **4/2026**
+      (Gazette 2 bis «ج») → 12 Apr 2026 · **24/2026** → 12 Jul 2026 · **59/2026**
+      (Gazette 33, 13 Aug 2026) → 12 Oct 2026. ~102,000 applications. **No further
+      extension found as of 2026-10-19. Do not tell a client a window is open.**
+- [x] ✅ ~~**Whether Arts. 25 and 26 of Law 49/1977 bind leases newly signed after
+      August 2025**~~ — **RESOLVED 2026-10-19: no.** On **SCC Case 85 of year 17
+      دستورية (22 Mar 1997)**, for premises within Law 4/1996 Art. 1 the Civil Code
+      applies alone. ⚠️ But a **continuation** lease (e.g. under Law 49/1977 Art. 29)
+      is still an old-system lease, and there the two articles do bite until 6 Aug 2032.
+      *(Added 2026-10-12)*
 - [ ] 🟡 **The two Supreme Court judgments of 12 April 2025** (Cases 105/Y30 and
       273/Y24) — only the listing was found, not the holdings. They may matter.
       *(added: 2026-10-12)*
 - [ ] 🟡 **Whether Law 159/1981 (Companies) has been amended after Law 4/2018.**
       Affects `egy-company-setup`. *(added: 2026-10-12)*
 
+### ⚠️ Live challenge to the tenancy reform — new
+
+- [ ] 🟡 **The 2026 constitutional challenges to Law 164/2025 are pending and unruled.**
+      Cases **34/Y47** (Arts. 2, 7), **37/Y47** (Arts. 2, 4, 5, 6, 7), **38/Y47**,
+      **43/Y47** (whole law, especially Art. 7) and a reported **21/Y48** are before the
+      Commissioners; next session **8 Nov 2026**. ~1,700 annulment actions are pending in
+      the administrative courts. **No merits ruling as of 2026-10-19.** ⚠️ A pending
+      challenge does **not** suspend the statute — the standing warning in both
+      `egy-rental-agreement` skills. *(added: 2026-10-19)*
+
 ### Worth closing
 
-- [ ] 🟡 **Criminal penalty for a landlord who cuts utilities or changes locks** — no
-      tenancy-specific penal article found. Do not assert one. *(added: 2026-10-12)*
+- [x] ✅ ~~**Criminal penalty for a landlord who cuts utilities or changes locks**~~ —
+      **RESOLVED 2026-10-19, as a negative.** There is **no tenancy-specific penal
+      article**, and the citation everyone uses is **wrong**: **Penal Code Art. 375
+      bis** is the **البلطجة** article, and the widely-quoted wording «تعمد قطع المياه
+      أو الكهرباء…» **is not in it** — it is a fabrication of the commentary layer.
+      Also ruled out: **Art. 162 bis** (damage to *public* electricity lines) and
+      **Law 49/1977 Art. 76** (closed list that **excludes** Art. 28). The remedies are
+      **civil** — **Law 49/1977 Art. 28** plus Civil Code **Arts. 564/567/568/571/575**.
+      ⚠️ Two further corrections: **Law 49/1977 Art. 77** is «بالحبس … **و**غرامة» —
+      **imprisonment *and* a fine of double the amount, plus mandatory restitution**;
+      both the "or" version and the "no restitution clause" claim are wrong. And
+      **Law 136/1981 Art. 24** abolished the custodial limb, so on the Arts. 25/26
+      limb the **fine** is the live sanction. ✅ Bonus verified: **Law 49/1977 Art. 81**
+      is the landlord-side criminal article (acts endangering a building to have it
+      treated as آيل للسقوط). *(added: 2026-10-12)*
 - [ ] 🟡 **Current penalties for late tax filing / non-registration.**
       *(added: 2026-10-12)*
 - [ ] 🟡 **Whether e-invoicing integration has further staged mandates** beyond the

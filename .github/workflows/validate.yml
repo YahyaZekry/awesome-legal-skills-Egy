@@ -1,0 +1,55 @@
+name: validate
+
+# What this guards
+# ---------------
+# The Egypt edition is Markdown that an agent reads. Every class of error it actually
+# produces is invisible to a Markdown linter: a wrong article number is valid Markdown,
+# a contaminated Arabic token is valid UTF-8, and a skill citing a repealed statute
+# parses fine. `.project-knowledge/scripts/validate.py` is the bespoke, content-aware
+# gate that catches those.
+#
+# ⚠️ Advisory only. The upstream Lawve sync reaches this fork by MERGING
+# `upstream/main` — there is no sync job in this repo — so nothing upstream reads this
+# file and a red check will never block a sync. It exists to stop a defect reaching a
+# commit.
+#
+# Warnings do NOT fail the build, deliberately. Article- and law-number differences are
+# reported as `review:` / `drift:` because the extractor reads Arabic that inflects,
+# prefixes, abbreviates and uses list constructions, and it therefore has documented
+# blind spots. The script's docstring lists them. Gating on a heuristic would train
+# everyone to ignore the check, and then the real defect hides in the noise.
+# Only FAILURES — unparseable frontmatter, dangling references, contamination, a
+# missing EN/AR twin, a URL present in one language only, bad registration — exit 1.
+
+on:
+  push:
+    branches:
+      - egypt-edition
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: python3 -m pip install --quiet pyyaml
+
+      - name: Validate the Egypt edition
+        run: python3 .project-knowledge/scripts/validate.py
+
+      - name: Confirm plugin registration is in sync
+        run: |
+          # Fails if the 12 Egypt plugins are missing from marketplace.json, or if an
+          # egy-* skill exists on disk but is unregistered. Catches the case where a
+          # new skill was added but register-egypt.py was never re-run.
+          python3 .project-knowledge/scripts/register-egypt.py --check
