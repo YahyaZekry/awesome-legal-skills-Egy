@@ -55,25 +55,50 @@ check `triggers.md` for overlap.
       compatible** — many are US-state-specific (e.g. `california-bar-complete`,
       `connecticut-divorce-planner`) and would be actively wrong for Egypt.
       *(added: 2026-10-19)*
-- [ ] Highest-value likely ports: `contract-risk-analyzer`, `case-briefer`,
-      `chronology-builder`, `disclosure-list`, `client-explanation-translator` —
-      method skills rather than jurisdiction skills. *(added: 2026-10-19)*
+✅ **DONE (2026-10-19).** All five candidates were read before deciding; two were
+ported, one became an extension, and two were rejected.
+
+| Candidate | Outcome |
+|---|---|
+| `client-explanation-translator` | ✅ **Ported** → `egy-client-explanation` (EN+AR). Fully jurisdiction-neutral *method*, and it serves the actual user — a non-lawyer. Egyptian value-add: the register problem, winning-vs-collecting, the imported mental model, and the honesty rules for the four numbers clients ask for |
+| `chronology-builder` | ✅ **Ported** → `egy-chronology-builder` (EN+AR). Its core safety mechanism was **CPR 31.22**, which is England-only, so that section was replaced rather than translated — Egypt has no disclosure regime for an implied undertaking to attach to |
+| `contract-risk-analyzer` | ⚠️ **Extended, not ported.** >40% covered by `egy-commercial-contract-review`, so it became `references/RISK-GRID.md` (EN+AR) on the **existing** skill — the founder-facing half of the flagship. Stated the three Egyptian ceilings that change what a signed number is worth |
+| `disclosure-list` | ❌ **Rejected.** CPR PD 57AD Models A–E, form N265. Egypt has no disclosure regime, so an Egyptian rewrite would be **inventing a procedure** |
+| `case-briefer` | ❌ **Rejected.** US law-school education (memory jogger, LaTeX casebook chapters). Worse: it presumes **binding precedent**, and Egyptian Cassation principles are not binding |
+
+⚠️ **Both new skills are deliberately method-first** — they assert almost no new
+Egyptian law and instead point at skills that have verified it. That is why they were
+cheap to add safely, and it is the shape a port should take.
+
+- [x] **Register the new skills** in `register-egypt.py` and re-run it. Now **14**
+      plugins / 278 total, re-verified byte-identical on re-run. *(done: 2026-10-19)*
 - [ ] ⚠️ **Do not port** US-state procedure, tribunal, or ISO/NIST/SOC 2 skills. An
       Egyptian version of an international criminal tribunal skill is worse than the
       original. Already recorded in `EGYPT-EDITION.md`. *(added: 2026-10-19)*
 
-## Track 3 — New Egypt-native topics
+## Track 3 — New Egypt-native topics ⬅️ in progress
 
 Categories in the upstream catalog with **no Egypt coverage at all**: Criminal Law,
 Family / Personal Status, Intellectual Property, Immigration, Real Estate purchase.
 
-- [ ] `egy-criminal-procedure` — arrest, bail, criminal complaint, police report.
-      Zero overlap with existing skills. *(added: 2026-10-19)*
-- [ ] `egy-family-law` — marriage, divorce, custody, inheritance, personal status.
-      Zero overlap. Large and sensitive; expect heavy `🟡` marking. *(added: 2026-10-19)*
-- [ ] `egy-ip-registration` — trademark, patent, copyright. **WIPO Lex carries
-      verified English translations of Egyptian IP law**, so this is one of the
-      best-sourced topics available. *(added: 2026-10-19)*
+🔬 **Three corpus-research agents launched 2026-10-19** (criminal procedure, family law,
+IP). They write **only** `research/egyptian-corpus/06-`, `07-` and `08-`; the skills are
+written afterwards, from the finished corpus. **Do not write a skill for a topic whose
+corpus file is still being written** — every legal proposition must trace to it.
+
+- [ ] `egy-criminal-procedure` — arrest, custody, bail, complaint, public prosecution.
+      Corpus: `06-criminal-procedure-egypt.md` 🔬 *building*
+- [ ] `egy-family-law` — marriage, divorce, khul', custody, maintenance, inheritance.
+      Corpus: `07-family-law-egypt.md` 🔬 *building*. ⚠️ **The most
+      misinformation-heavy topic in Egyptian law** — most-discussed by non-lawyers and
+      by campaigning organisations with a position. Expect heavy `🟡`. The key
+      verification: **whether a new consolidated personal status law has actually
+      passed**, since a reform was under active debate through 2024–2026
+- [ ] `egy-ip-registration` — trademark, patent, copyright. Corpus:
+      `08-intellectual-property-egypt.md` 🔬 *building*. **WIPO Lex carries verified
+      English translations of Egyptian IP law**, so this is the best-sourced topic
+      available. Note `RISK-GRID.md` §3 deliberately does **not** state IP scope and
+      defers to this skill
 - [ ] `egy-real-estate-purchase` — buying property, registry, notarisation, title
       check. ⚠️ Medium overlap with `egy-rental-agreement` on الشهر العقاري mechanics;
       consider extending that skill's `references/` instead. *(added: 2026-10-19)*
@@ -91,9 +116,12 @@ skill's `references/` rather than creating a new directory.
       *(done: 2026-10-19)*
 - [x] **The EN↔AR parity check is now a script**, not a chat transcript. It caught two
       real defects the moment it ran (see `history.md`). *(done: 2026-10-19)*
-- [ ] Consider a minimal CI workflow that runs `validate.py`. `.github/workflows/` does
-      not exist in this fork. Note that CI here would be **advisory only** — the sync
-      arrives by merge, so nothing upstream reads it. *(added: 2026-10-19)*
+- [x] **`.github/workflows/validate.yml`** — runs `validate.py` and
+      `register-egypt.py --check` on push to `egypt-edition`/`main` and on PRs.
+      ⚠️ Warnings do **not** fail the build, deliberately: gating on a heuristic
+      extractor would train everyone to ignore it, and then the real defect hides in
+      the noise. Only FAILURES exit 1. Advisory only — the sync arrives by merge, so
+      nothing upstream reads this. *(done: 2026-10-19)*
 
 ### ⚠️ Read this before "fixing" a validator warning
 

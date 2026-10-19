@@ -25,6 +25,9 @@
 | Lease review, rent increase, old vs new tenancy, eviction grounds | `egy-rental-agreement` | |
 | Tax registration, VAT, ETA e-invoicing, records for audit | `egy-tax-and-einvoicing` | Carries **no rates** by design |
 | Which court, fees, filing, service, appeal, enforcement | `egy-court-filing-guide` | |
+| Explaining legal material to a non-lawyer, client updates, plain Arabic, "what does this mean for me" | `egy-client-explanation` | Owns the **register** rules. ⚠️ States no law itself |
+| Building a chronology or timeline from a matter file, statement of facts, date disputes | `egy-chronology-builder` | Owns date provenance and deadline computation |
+| Deciding whether to **sign** a commercial contract (not reviewing it) | `egy-commercial-contract-review` → `references/RISK-GRID.md` | The founder-facing half of the flagship. **Not** a separate skill — see the 40% rule in `roadmap.md` |
 
 ---
 
@@ -53,7 +56,10 @@ skill. Changes to either propagate widely — grep before editing.
 References point at **the English sibling by default**, including from Arabic skills,
 because `references/` only exists in EN for most topics. The Arabic twins carry their
 own `references/` only where the material is language-dependent (glossary, templates,
-audit grids, clause checks).
+audit grids, clause checks, risk grids). Five AR twins have their own today:
+`egy-commercial-contract-review-ar` (3), `egy-context-operations-ar` (3),
+`egy-ecommerce-compliance-ar` (2), `egy-employment-contract-ar` (1),
+`egy-legal-notice-ar` (1).
 
 ---
 

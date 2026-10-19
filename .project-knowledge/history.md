@@ -177,6 +177,38 @@
   **documented blind spots** and a warning is not proof of a defect. A gate that cries wolf
   teaches everyone to ignore it. *(2026-10-19)*
 
+- **A ported skill must be *method-first*.** Both new Track 2 skills assert almost no new
+  Egyptian law; they point at skills that have verified it. That is what makes a port
+  cheap to add safely — the risk in porting is not the method, it is the jurisdiction
+  assumptions smuggled in with it. `chronology-builder` is the worked example: its
+  *method* (source per entry, privilege screen, significance tagging) is neutral, but its
+  core safety mechanism was **CPR 31.22**, and translating that would have imported an
+  English procedure Egypt does not have. *(2026-10-19)*
+
+- **Port judgment: 2 ported, 1 extended, 2 rejected — and the rejections matter more
+  than the ports.** `disclosure-list` was rejected because Egypt has **no disclosure
+  regime**, so an Egyptian version would have to *invent* a procedure rather than
+  translate one. `case-briefer` was rejected because it is US legal *education* and
+  presumes **binding precedent**, which Egyptian Cassation principles are not. A port
+  that quietly asserts a procedure or a doctrine Egypt does not have is worse than no
+  port, because it looks authoritative. *(2026-10-19)*
+
+- **`contract-risk-analyzer` was extended, not ported.** Its overlap with
+  `egy-commercial-contract-review` exceeded the ~40% rule, so it became
+  `references/RISK-GRID.md` on the existing skill rather than a 13th directory. The
+  Egyptian value-add is the **defaults** column: the Civil Code is supplétive, so
+  omitting a clause **chooses the default**, and the default is often worse than what
+  could have been negotiated. Art. 226 is the clean example — it sets the default
+  interest rate, and it differs between a civil and a commercial agreement.
+  *(2026-10-19)*
+
+- **The Arabic twin rule is narrower on disk than the schema says.** `schema.md` calls
+  `README.md` REQUIRED, but 11 of 14 AR twins have none — and the AR twins that carry
+  their own `references/` are only those whose material is **language-dependent**
+  (glossary, templates, audit grids, clause checks, risk grids); the rest cite the EN
+  sibling. **Match the disk, not the schema**, and note the discrepancy rather than
+  "fixing" 11 directories. *(2026-10-19)*
+
 ---
 
 ## The measurement worth remembering

@@ -14,7 +14,9 @@ awesome-legal-skills-Egy/
 │                                           264 upstream. Regenerate with register-egypt.py
 ├── .github/
 │   ├── FUNDING.yml
-│   └── ISSUE_TEMPLATE/
+│   ├── ISSUE_TEMPLATE/
+│   └── workflows/
+│       └── validate.yml                  ✅ runs validate.py + register-egypt.py --check
 ├── .project-knowledge/
 │   ├── INDEX.md                          ⭐ start here
 │   ├── roadmap.md                        ⭐ pre-flight check — current goal + backlog
@@ -33,11 +35,17 @@ awesome-legal-skills-Egy/
 │       ├── 02-data-protection-privacy-consumer.md   801 lines
 │       ├── 03-employment-courts-aml-banking.md    2,481 lines
 │       ├── 04-practical-operations-egypt.md       1,485 lines
-│       └── 05-tenancy-egypt.md                      725 lines
-└── skills/                               288 dirs
+│       ├── 05-tenancy-egypt.md                      725 lines
+│       ├── 06-criminal-procedure-egypt.md          🔬 in progress (Track 3)
+│       ├── 07-family-law-egypt.md                  🔬 in progress (Track 3)
+│       └── 08-intellectual-property-egypt.md       🔬 in progress (Track 3)
+└── skills/                               292 dirs
     ├── <upstream-skill>/                 ⛔ DO NOT EDIT — 264 tracked, overwritten on sync
-    ├── egy-<topic>/                      ✅ EN Egypt skill
-    └── egy-<topic>-ar/                   ✅ AR twin of the above
+    ├── egy-<topic>/                      ✅ EN Egypt skill   (14)
+    └── egy-<topic>-ar/                   ✅ AR twin of the above (14)
+
+⚠️ The three `🔬` corpus files exist only once the Track 3 research agents finish. Do not
+write a skill for a topic whose corpus file is still being written.
 ```
 
 **Legend:** ⛔ never write · ⭐ primary reference · ✅ yours to edit

@@ -1,17 +1,20 @@
 # awesome-legal-skills-Egy — Knowledge Index
 
 > Last updated: **2026-10-19**
-> Status: **Installable ✅ — 24 Egypt skills (12 EN/AR pairs) registered as 12 plugins**
-> Stack: Markdown + YAML frontmatter · validated with `scripts/validate.py` (Python 3) · no runtime
-> Current goal: **port more upstream skills and add Egypt-native topics (criminal
-> procedure, family law, IP registration)** — the "make it installable" goal is **done**.
+> Status: **28 Egypt skills (14 EN/AR pairs) · 14 plugins registered · 3 Track-3 corpora in flight**
+> Stack: Markdown + YAML frontmatter · validated with `scripts/validate.py` (Python 3) + CI · no runtime
+> Current goal: **Track 3 — three new Egypt-native topics (criminal procedure, family law,
+> IP registration).** The corpora are being researched now, and the skills follow the
+> corpus — never the other way round. Tracks 1 (installable), 2 (ports) and 4
+> (engineering) are all **done**.
 
 ## What This Project Does
 
-An **Egyptian-law edition** of the Lawve legal-skills catalog. It adds 12 practical
-Egyptian topics — company setup, commercial contracts, employment, tenancy,
-e-commerce, tax, court filing, legal notices and research — as **24 skills**
-(12 English + 12 Arabic), each backed by a hand-verified legislative corpus.
+An **Egyptian-law edition** of the Lawve legal-skills catalog. It adds 14 practical
+Egyptian topics — company setup, commercial contracts, employment, tenancy, e-commerce,
+tax, court filing, legal notices, research, explaining law to a client and building a
+chronology — as **28 skills** (14 English + 14 Arabic), each backed by a
+hand-verified legislative corpus.
 
 It exists because the upstream catalog is US/EU-centric and the user is **not a
 lawyer** working in Egypt. The skills are original work (`CC-BY-4.0`) written in new
@@ -38,7 +41,7 @@ replaces tracked directories wholesale.
 | `features.md` | What the edition covers by need, plus the legal findings that reshaped whole skills, and what was deliberately NOT ported | Onboarding, explaining the edition, checking whether a topic exists |
 | `integrations.md` | Exa MCP, Firecrawl MCP, the upstream sync contract, `marketplace.json`, GitHub branches, exact data contracts | Touching research tooling, or registering/distributing skills |
 | `roadmap.md` | **Current goal**, the 4 build tracks, known bugs, and the 25-item research backlog | **Before starting any task** — this is the pre-flight check |
-| `history.md` | Removed items, 11 fixed defects, 16 architectural decisions | Debugging, reviewing why something is the way it is |
+| `history.md` | Removed items, 11 fixed defects, 20 architectural decisions | Debugging, reviewing why something is the way it is |
 | `sessions.md` | Session-by-session log | Reviewing work history |
 | `scripts/validate.py` | All five validation checks + EN↔AR parity + registration. **Exit 1 on failure — CI-safe.** Its docstring is the reference for FAIL-vs-WARN and known extractor blind spots | Before **every** commit; after any Arabic output |
 | `scripts/register-egypt.py` | Injects/restores the 12 Egypt plugin entries in `.claude-plugin/marketplace.json`. **Idempotent** | After any `upstream/main` merge; when adding a new Egypt skill |
