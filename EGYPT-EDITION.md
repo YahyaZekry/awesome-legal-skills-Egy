@@ -87,14 +87,14 @@ Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contami
 | Skill | Covers |
 |---|---|
 | `egy-context-operations` | EGP, national ID / commercial-registry / tax formats, governorates, phone formats, portals (GAFI, customs, tax, social insurance, NTRA, CBE), e-signature & electronic seal, cheques, mobile wallets, what gets filed online vs in person, EN↔AR glossary |
-| `egy-legal-research` | AlQalam, the Egyptian Gazette, Court of Cassation seasonal principles, NTLEX, gazette-notice discipline, how a citation gets verified |
+| `egy-legal-research` | The two-gazette distinction (الجريدة الرسمية vs الوقائع المصرية), the source ladder from `elpai.idsc.gov.eg` and the MoJ encyclopedia to WIPO Lex, the portal false friends, Court of Cassation principles and why they are **not binding precedent**, how a citation gets verified |
 
 ### Business
 | Skill | Covers |
 |---|---|
 | `egy-company-setup` | GAFI incorporation (JSC / LLC / branches), free zones, the actual document list, what's notarised, realistic elapsed time vs official time |
 | `egy-commercial-contract-review` | Clause-by-clause review under Egyptian law. NDAs, services, supply, distribution, SaaS. Parties, scope, price in EGP, delivery, penalties, penalty clauses, force majeure, governing law, dispute resolution, court vs arbitration |
-| `egy-employment-contract` | Labour Law 12/2003 contract types, probation, hours, leave, social insurance 148/2019, the no-penalty cases, termination |
+| `egy-employment-contract` | Labour Law **14/2025** contract types (**which repealed 12/2003**), probation, hours, leave, social insurance 148/2019, the no-penalty cases, termination |
 | `egy-invoice-and-payment-terms` | EGP invoicing, cheques & promissory notes, due dates, late payment, collection, keeping the evidence |
 | `egy-ecommerce-compliance` | Consumer Protection 181/2018 mandatory disclosures, returns, data protection 151/2020 for an online shop |
 | `egy-tax-and-einvoicing` | Tax registration, VAT, ETA e-invoicing, record-keeping |
@@ -105,7 +105,7 @@ Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contami
 | `egy-legal-notice` | Drafting إنذار and demands — notices to vacate, debt demands, employment warnings. Tone, required content, what it legally starts, delivery |
 | `egy-rental-agreement` | Lease review, old vs new lease, rent increases, renewal, eviction grounds, utility and maintenance split |
 | `egy-employment-dispute` | Labour Court route, time limits, what evidence to gather, drafting a claim |
-| `egy-court-filing-guide` | Court structure, which court has which case, fees, electronic litigation 172/2018, first appearance, Cassation |
+| `egy-court-filing-guide` | Court structure, which court has which case, the **EGP 40,000 / 5,000 / 100,000** limits, why the 2024–25 fee tariffs are **not statutory**, service deadlines, execution. ⚠️ **Law 172/2018 is a Customs amendment, not e-litigation** |
 
 ## What the research overturned
 

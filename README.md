@@ -413,3 +413,14 @@ Although we take strong measures to uphold the quality and safety of this list, 
 # Acknowledgments
 
 Huge thanks to every contributor who has shared their work here, you're the reason this list keeps growing. And to everyone who has starred, forked, or simply bookmarked this repo: your support means more than you think. Finally, a hat tip to the Anthropic team, who developed the Skills standard and published the examples that got us all started.
+
+---
+
+<details>
+<summary>🧠 AI Context</summary>
+
+This project uses the [project-knowledge](https://github.com/YahyaZekry/project-knowledge-skill) skill to maintain a `.project-knowledge/` folder — a living, AI-readable map of the codebase. Every AI session loads only the files relevant to the current task instead of scanning from scratch.
+
+Built by [Yahya Zekry](https://github.com/YahyaZekry/project-knowledge-skill).
+
+</details>

@@ -1,0 +1,10 @@
+# Session Log
+
+> Part of awesome-legal-skills-Egy/.project-knowledge/ | Last updated: 2026-10-19
+> **Append-only.** Never edit past entries.
+
+| Date | Summary |
+|------|---------|
+| 2026-10-12 | **Egypt edition started.** Configured Exa + Firecrawl MCP in the operator's global opencode config, both verified. Built `research/egyptian-corpus/` — 5 files covering commercial/corporate/contract, data protection & consumer, employment/courts/AML/banking, practical operations, and tenancy. Shipped the first 8 skills (EN+AR), then `egy-company-setup`, `egy-invoice-and-payment-terms` and `egy-rental-agreement`. Applied 3 corrections to already-pushed files (glossary row 60 furnished-lease inversion, corpus judicial fee figures, eviction guidance). Pushed branch `egypt-edition`. |
+| 2026-10-13 | **Edition completed.** Added `egy-legal-research`, `egy-court-filing-guide`, `egy-tax-and-einvoicing`, `egy-employment-dispute` (EN) and the remaining Arabic twins. Final state: **12 skills × 2 languages = 24 directories, 54 markdown files, 8,860 lines**; corpus 5 files / 6,356 lines. Validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contamination. Three defects found and fixed — two of them in **English** files and caught only by Arabic agents reading the translation back against the source. |
+| 2026-10-19 | **Project knowledge initialised.** Reviewed the repo state: confirmed no Egypt skill is upstream-sync-tracked, and that `.github/` has no workflows so the sync arrives by `upstream/main` merge (risk is merge conflicts, not silent deletion). Discovered the Egypt skills are **registered nowhere** — `marketplace.json` has 0 Egypt entries, so they are invisible to the plugin system. Discovered `EGYPT-EDITION.md` lines 86–108 are **stale** (Labour Law 12/2003, e-litigation 172/2018, AlQalam/NTLEX — all three superseded). Created `.project-knowledge/` with the build conventions, the five validators and their false-positive modes, the trigger map, and the 25-item research backlog. User set the next goal: **port more upstream skills, add Egypt-native topics, and make the edition installable.** |
