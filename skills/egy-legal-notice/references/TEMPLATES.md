@@ -230,3 +230,14 @@ Keep, for each notice:
 ⚠️ **A screenshot is not a payment record, and a chat thread is not proof of
 service.** Route what matters through a channel that produces a minute or a
 receipt.
+
+## References
+
+- `skills/egy-rental-agreement/` — the Egyptian tenancy regime, expiry, and the
+  eviction grounds
+- `skills/egy-employment-contract/` — Labour Law 14/2025, the **Art. 141**
+  checklist, and the disciplinary warning
+- `skills/egy-context-operations/` — Arabic drafting conventions, identifiers, the
+  working week, and the **Art. 18** deadline rule
+- `skills/egy-legal-notice-ar/` — the Arabic edition of this skill, if you need to
+  compare the wording against a notice you have received

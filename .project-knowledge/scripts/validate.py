@@ -14,11 +14,22 @@ WHAT THIS CHECKS, AND WHY EACH ONE EXISTS
 2. Frontmatter      parses as YAML; name == directory; description >= 80 chars
 3. References       every `references/...` path in a SKILL.md resolves
 4. Contamination    stray scripts, replacement chars, digit runs, duplicated words
-5. Parity           EN vs AR on article numbers, law numbers, URLs, markers
+5. Parity           EN vs AR on heading structure, article numbers, law numbers,
+                    URLs, markers
 6. Registration     marketplace.json is valid and its Egypt entries resolve
 
 Checks 2 and 5 are the ones that caught real shipped defects. Check 4 is noisy by
 nature — see NOISE below and read past it.
+
+A note on the heading half of check 5, added later than the rest: it is the only
+**structural** check here, and the only parity check that is a hard failure by
+construction rather than by judgement, because it extracts nothing from prose. The
+other parity checks read Arabic that inflects and abbreviates, so they warn; this one
+compares a level sequence, which is exact. It immediately found a real asymmetry: the
+Arabic TEMPLATES.md carried a References section the English lacked. ⚠️ Its fence
+handling is load-bearing — every skill's "Output format" block contains a `#` heading
+inside a ```markdown template, and counting those reports a phantom mismatch on
+almost every pair.
 
 KNOWN NOISE (deliberately excluded rather than "fixed")
 -------------------------------------------------------
@@ -97,6 +108,7 @@ DIGIT_RUN = re.compile(r"(?:[0-9]{4,}\s*){3,}")
 DUP_WORD = re.compile(r"([\u0600-\u06FF]{3,})\s+\1\b")
 GLUE = re.compile(r"[\u0600-\u06FF]{2,}_[\u0600-\u06FF]{2,}")
 URL = re.compile(r"`([a-z0-9][a-z0-9.\-]*\.(?:gov\.eg|com|org|net|eg|int|io)[^`]*)`")
+HEADING = re.compile(r"^(#{1,6})\s+(.*)$")
 
 # Article citations, applied to canonicalised text (see canon()).
 #   `Art. 5` · `Arts. 149-150` · `Art. 4 bis` · `Art. 148(c)` · `Art. 43(6)`
@@ -184,6 +196,33 @@ def urls(text: str) -> Counter:
 def markers(text: str) -> Counter:
     """Actual occurrence counts, not presence."""
     return Counter({k: text.count(v) for k, v in MARKERS.items() if v in text})
+
+
+def headings(text: str) -> list[tuple[int, str]]:
+    """
+    (level, text) for each heading, in order, **ignoring fenced code blocks**.
+
+    ⚠️ The fence handling is not optional, and it is the whole reason this is not a
+    one-liner. Every skill carries an "Output format" section whose body is a
+    ```markdown template, and that template's first line is itself a `#` heading
+    (`# [the client's question]`). Counting it as a real heading reports a phantom
+    mismatch on nearly every pair, and a check that is wrong most of the time is a
+    check nobody reads.
+    """
+    out: list[tuple[int, str]] = []
+    fence: str | None = None
+    for line in text.splitlines():
+        stripped = line.strip()
+        if fence is None:
+            if stripped.startswith("```") or stripped.startswith("~~~"):
+                fence = stripped[:3]
+                continue
+            m = HEADING.match(line)
+            if m:
+                out.append((len(m.group(1)), m.group(2).strip()))
+        elif stripped.startswith(fence):
+            fence = None
+    return out
 
 
 def egy_skill_dirs() -> list[Path]:
@@ -289,6 +328,34 @@ def check_parity(dirs: list[Path], fail: list[str], warn: list[str]) -> None:
             return out
 
         a, b = blob(d), blob(ar)
+
+        # Heading STRUCTURE. `schema.md` has always required the level sequence to
+        # match between twins, and nothing enforced it until now. Levels only — the
+        # heading TEXT is translated by design, so comparing text would fail on
+        # every pair.
+        #
+        # Unlike the article/law-number checks below, this one is deterministic
+        # (no extraction from inflected prose), so it is a hard failure. A heading
+        # present in one language and absent from the other is silent content
+        # loss — which is precisely what the parity check exists to catch.
+        for fname in sorted(set(a) & set(b)):
+            he, ha = headings(a[fname]), headings(b[fname])
+            le = [lvl for lvl, _ in he]
+            la = [lvl for lvl, _ in ha]
+            if le != la:
+                n = min(len(le), len(la))
+                at = next((i for i in range(n) if le[i] != la[i]), n)
+                where = ""
+                if at < n:
+                    where = (
+                        f", first divergence at heading #{at + 1}: "
+                        f"EN h{he[at][0]} {he[at][1][:44]!r} vs "
+                        f"AR h{ha[at][0]} {ha[at][1][:44]!r}"
+                    )
+                fail.append(
+                    f"parity: {d.name}/{fname} heading structure differs{where}. "
+                    f"EN={len(le)} headings {le} | AR={len(la)} headings {la}"
+                )
 
         # Articles: EN declares them, AR repeats them. A difference is worth a
         # look but is NOT a hard invariant — the Arabic legitimately uses list

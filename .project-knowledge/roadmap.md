@@ -111,7 +111,7 @@ skill's `references/` rather than creating a new directory.
 
 ## Track 4 — Engineering / infrastructure
 
-- [x] **`.project-knowledge/scripts/validate.py`** — all five checks in one runnable
+- [x] **`.project-knowledge/scripts/validate.py`** — all six checks in one runnable
       script, exit 1 on failure, safe to wire into CI. Run it before every commit.
       *(done: 2026-10-19)*
 - [x] **The EN↔AR parity check is now a script**, not a chat transcript. It caught two
@@ -122,6 +122,25 @@ skill's `references/` rather than creating a new directory.
       extractor would train everyone to ignore it, and then the real defect hides in
       the noise. Only FAILURES exit 1. Advisory only — the sync arrives by merge, so
       nothing upstream reads this. *(done: 2026-10-19)*
+- [x] **Heading-structure parity** in `validate.py` — the level sequence of every file
+      present in both languages must match exactly. It is the **only parity sub-check
+      that is a hard failure**, because it is *structural*: it extracts nothing from
+      inflected Arabic, so it has **no false-positive mode**. That is the shape to aim
+      for in any future check. It found a real asymmetry within the hour.
+      ⚠️ Its fence handling is load-bearing — every skill's "Output format" block
+      contains a `#` heading inside a ```markdown template, so counting those would
+      report a phantom mismatch on nearly every pair. *(done: 2026-10-19)*
+- [ ] ⚠️ **Figures are still not verified — the largest remaining hole.** EGP amounts,
+      deadlines, percentages and thresholds are compared by eye across 14 pairs. They
+      are exactly the class of thing that is both **load-bearing** (a wrong deadline or
+      a wrong 7% cap is a real defect) and **extractable** (numerals and dates are not
+      prose). Highest-value check left to write, and it should be structural like the
+      heading check rather than heuristic. *(added: 2026-10-19)*
+- [ ] ⚠️ **"Heading agrees with its own body" should stay manual** — it compares a
+      heading's *claim* against the list beneath it, which no extractor here can do.
+      Still the highest-yield manual check: it found *"three hard rules"* over a
+      **four**-item list, and *"the one-year cure"* over a body saying five years.
+      *(added: 2026-10-19)*
 
 ### ⚠️ Read this before "fixing" a validator warning
 

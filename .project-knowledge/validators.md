@@ -6,15 +6,22 @@
 > checker gets ignored and the real defect hides in the noise.
 
 ✅ **These are now checked in as a single runnable script:**
-`python3 .project-knowledge/scripts/validate.py` — all five checks plus EN↔AR parity
-and marketplace registration, exit 1 on failure, safe to wire into CI.
-The code below is the original heredoc form, kept as the reference for *what each
-check means and how it misfires*. **Prefer the script.**
+`python3 .project-knowledge/scripts/validate.py` — **all six checks** (pairing,
+frontmatter, references, contamination, parity, registration), exit 1 on any failure,
+safe to wire into CI. The code below is the original heredoc form, kept as the
+reference for *what each check means and how it misfires*. **Prefer the script.**
 
 ⚠️ **The script found a real shipped defect on its first run** (an Arabic URL ejected
 from its sentence into a stray code fence), and then **five bugs in itself** that had
 produced 29 false failures and zero real ones. Read its docstring for the FAIL-vs-WARN
 split and the documented extractor blind spots before acting on any warning.
+
+⚠️⚠️ **A later addition is the one parity sub-check that is a hard failure: heading
+structure.** It is structural — it compares a level sequence and extracts nothing from
+inflected Arabic — so unlike the article/law-number checks it has **no false-positive
+mode**. Its fence handling is load-bearing (see §3a). Within an hour of being written it
+found a real asymmetry in `egy-legal-notice`. **When a structural check is available,
+prefer it to a heuristic one** — the failure is the signal.
 
 ---
 
@@ -107,7 +114,33 @@ def grab(p, pat):
 PY
 ```
 
-**Check all four:**
+### 3a. Heading structure — **FAIL**, and the only *structural* check here
+
+**Catches:** a section present in one language and absent from the other. This is
+silent content loss, which is exactly what parity is for.
+
+**Levels only.** The heading **text** is translated by design, so comparing text would
+fail on every pair. Compare the level sequence instead — `[1, 2, 3, 2, 2]` must match
+exactly. Verified to compare **22 files across 14 pairs**.
+
+⚠️ **The fence handling is load-bearing, and it is the whole reason this is not a
+one-liner.** Every skill carries an **Output format** section whose body is a
+`markdown` template, and **the template's first line is itself a `#` heading** —
+`# [the client's question]`. Counting those reports a phantom mismatch on nearly every
+pair, and a check that is wrong most of the time is a check nobody reads. Fenced blocks
+must be tracked and skipped.
+
+⚠️ **This is the one parity sub-check that is a FAIL rather than a WARN**, because it
+extracts nothing from inflected prose. The other four read Arabic that inflects,
+abbreviates and omits — so they warn. This one compares a sequence, which is exact.
+
+**And it earned that status on its first run**, by finding a real asymmetry nobody had
+noticed: the Arabic `egy-legal-notice-ar/references/TEMPLATES.md` carried a
+`## المراجع` section that the English lacked. Fixed by giving the **English** the same
+cross-links, not by deleting the Arabic one.
+
+### 3b. The four extracted sub-checks
+
 - Article numbers (ranges expanded, `bis`/`مكرر` normalised)
 - Law numbers
 - Backticked **URLs** — this caught a real typo
@@ -116,6 +149,19 @@ PY
 **Noisy?** Only if the extractor is wrong. One parity script reported a spurious
 mismatch caused by **four bugs in the extractor itself**, not the file. If a mismatch
 appears, verify the extractor before editing content.
+
+⚠️ **Documented extractor blind spots — do NOT "fix" the Arabic to silence these:**
+genuine content is regularly reported absent because Arabic expresses it differently.
+Observed and hand-verified as false positives in this repo:
+
+| Form | English | Arabic | Why the extractor misses it |
+|---|---|---|---|
+| Limbs as prose | `Art. 31(1)(3)` | `البند ٣ من الفقرة الأولى من المادة ٣١` | no numeric limb to match |
+| Paragraph, prose | `Art. 378(2)` | `مع الفقرة (٢) منها` | ditto |
+| Range, no article word | `Arts. 39–48` | `٣٩–٤٨ من القانون رقم ٤٩ لسنة ١٩٧٧` | no `مادة` before the range |
+| List construction | `Law 49/1977 and Law 136/1981` | `القوانين رقم ٤٩ لسنة ١٩٧٧ ورقم ١٣٦ لسنة ١٩٨١` | the law word appears **once**, so later numbers have nothing to anchor on |
+| Dual | `Arts. 25–26` | `المادتان ٢٥ و٢٦` | the dual form is not the plural `مواد` |
+| Assimilated prefix | `Art. 15` | `للمادة ١٥` | the lam merges into the article and **the alif disappears** — so `ال?` does not cover it (`ال?` means "alif, then optional lam"; `للمادة` has no alif at all) |
 
 ---
 
@@ -157,7 +203,17 @@ No script. These caught defects **every automated check missed**:
 |---|---|---|
 | Frontmatter + refs | Clean | Always |
 | Contamination | ⚠️ Noisy — allow-list it | Always, but read past the noise |
-| EN↔AR parity | **Highest** | After every Arabic file |
+| **Heading structure** | **Exact — FAIL, no false positives** | After every Arabic file |
+| EN↔AR parity (extracted) | **Highest** for content | After every Arabic file |
 | URL reconciliation | High — caught a real one | After any reference edit |
 | Internal consistency | **Highest, manual** | Before every commit |
 | Heuristic "suspicious token" scans | ❌ Too noisy to use | Skip — it flagged indentation and brand names |
+
+⚠️ **Heading structure is now automated, but §5's other manual checks are not, and
+cannot easily be.** *"Heading agrees with its own body"* is a semantic check — it
+compares a heading's claim against the list beneath it, which no extractor here can
+do. It found a heading saying *"three hard rules"* over a **four**-item list, and a
+heading saying *"the one-year cure"* while the body said the cure reaches arrears
+**worth more than five years**. **That class of defect is still only found by reading.**
+Both were in **English** files — the bilingual build finds them by making someone read
+the translation against its source, not by parsing.

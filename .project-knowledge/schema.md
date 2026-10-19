@@ -76,15 +76,19 @@ resolves to the right skill.
 
 Verified programmatically after every batch:
 
-| Invariant | Check |
+| Invariant | Where it is enforced, and with what teeth |
 |-----------|-------|
-| Exactly one `egy-x-ar` per `egy-x` | 0 orphans both directions |
-| Article numbers match **in value** | Set-diff EN vs AR |
-| Law numbers match in value | Set-diff EN vs AR |
-| URLs match exactly | Set-diff of backticked URLs |
-| Heading count + order match | One-to-one |
-| Emoji markers match | ✅ ❌ ⚠️ 🟡 → counts equal |
-| Figures match | EGP amounts, deadlines, percentages, thresholds |
+| Exactly one `egy-x-ar` per `egy-x` | ✅ `validate.py` check 1 — **FAIL** |
+| **Heading count + order match** | ✅ `validate.py` check 5 — **FAIL**, as a **level sequence**. The only parity sub-check with **no false-positive mode**, because it extracts nothing from prose. Fenced blocks must be skipped — see `validators.md` §3a |
+| URLs match exactly | ✅ `validate.py` check 5 — **FAIL**. A URL present in one language only is always a defect, not a judgement call |
+| Article numbers match **in value** | ⚠️ `validate.py` check 5 — **WARN**. Extracted from inflected Arabic, so it has real blind spots — `validators.md` §3b lists them, all hand-verified as false positives |
+| Law numbers match in value | ⚠️ **WARN**, same reason |
+| Emoji markers match | ⚠️ **WARN** (`drift:`) — usually stylistic. Eyeball and move on |
+| Figures match | ❌ **NOT automated** — EGP amounts, deadlines, percentages and thresholds still need a human eye. This is the largest remaining hole |
+
+⚠️ **Prefer structural to heuristic wherever a choice exists.** The automatable invariants
+above are the ones where the two languages must agree on something that is *not* prose.
+Everything else becomes a warning, and warnings get skimmed.
 
 **Deliberate asymmetries — do not "fix" these:**
 - Arabic cites each article twice (`المادة ٥٩٨ (Art 598)`) → higher numeral count
