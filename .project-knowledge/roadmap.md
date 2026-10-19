@@ -86,19 +86,30 @@ IP). They write **only** `research/egyptian-corpus/06-`, `07-` and `08-`; the sk
 written afterwards, from the finished corpus. **Do not write a skill for a topic whose
 corpus file is still being written** — every legal proposition must trace to it.
 
-- [ ] `egy-criminal-procedure` — arrest, custody, bail, complaint, public prosecution.
-      Corpus: `06-criminal-procedure-egypt.md` 🔬 *building*
+- [x] `egy-criminal-procedure` — arrest, custody, bail, complaint, public prosecution.
+      Corpus: `06-criminal-procedure-egypt.md` ✅ **1,715 lines / 258 verified**. Skill
+      shipped EN + AR, scenario-first, built around the three clocks.
+      *(done: 2026-10-19)*
 - [ ] `egy-family-law` — marriage, divorce, khul', custody, maintenance, inheritance.
-      Corpus: `07-family-law-egypt.md` 🔬 *building*. ⚠️ **The most
+      Corpus: `07-family-law-egypt.md` 🔬 *building — nothing on disk yet*. ⚠️ **The most
       misinformation-heavy topic in Egyptian law** — most-discussed by non-lawyers and
       by campaigning organisations with a position. Expect heavy `🟡`. The key
       verification: **whether a new consolidated personal status law has actually
       passed**, since a reform was under active debate through 2024–2026
 - [ ] `egy-ip-registration` — trademark, patent, copyright. Corpus:
-      `08-intellectual-property-egypt.md` 🔬 *building*. **WIPO Lex carries verified
-      English translations of Egyptian IP law**, so this is the best-sourced topic
-      available. Note `RISK-GRID.md` §3 deliberately does **not** state IP scope and
-      defers to this skill
+      `08-intellectual-property-egypt.md` 🔬 *building — 969 lines, **NOT yet
+      committed***. **WIPO Lex carries verified English translations of Egyptian IP
+      law**, so this is the best-sourced topic available. Note `RISK-GRID.md` §3
+      deliberately does **not** state IP scope and defers to this skill.
+      ⚠️ **Outstanding before it can be used: §10 (fee schedules), §11 and §12 (open
+      items) are cited throughout the file but not written** — the file stops at §9.8
+      and carries a footer, so it *reads* as finished
+- [ ] ⚠️ **Check every corpus file for dangling § references before writing a skill
+      from it.** This has now caught the same defect **twice** (06 and 08): an agent
+      stops mid-write, but the file keeps a plausible shape, a marker census and even
+      a closing "As of:" line. **`grep -c '§'` against the actual headings, and read the
+      last line.** A corpus file is not finished because it is long. *(added:
+      2026-10-19)*
 - [ ] `egy-real-estate-purchase` — buying property, registry, notarisation, title
       check. ⚠️ Medium overlap with `egy-rental-agreement` on الشهر العقاري mechanics;
       consider extending that skill's `references/` instead. *(added: 2026-10-19)*
