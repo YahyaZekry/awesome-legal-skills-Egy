@@ -71,7 +71,7 @@ Egyptian law and instead point at skills that have verified it. That is why they
 cheap to add safely, and it is the shape a port should take.
 
 - [x] **Register the new skills** in `register-egypt.py` and re-run it. Now **15**
-      plugins / 279 total, re-verified byte-identical on re-run. *(done: 2026-10-19)*
+      plugins / 280 total, re-verified byte-identical on re-run. *(done: 2026-10-19)*
 - [ ] ⚠️ **Do not port** US-state procedure, tribunal, or ISO/NIST/SOC 2 skills. An
       Egyptian version of an international criminal tribunal skill is worse than the
       original. Already recorded in `EGYPT-EDITION.md`. *(added: 2026-10-19)*
@@ -96,20 +96,23 @@ corpus file is still being written** — every legal proposition must trace to i
       by campaigning organisations with a position. Expect heavy `🟡`. The key
       verification: **whether a new consolidated personal status law has actually
       passed**, since a reform was under active debate through 2024–2026
-- [ ] `egy-ip-registration` — trademark, patent, copyright. Corpus:
-      `08-intellectual-property-egypt.md` 🔬 *building — 969 lines, **NOT yet
-      committed***. **WIPO Lex carries verified English translations of Egyptian IP
-      law**, so this is the best-sourced topic available. Note `RISK-GRID.md` §3
-      deliberately does **not** state IP scope and defers to this skill.
-      ⚠️ **Outstanding before it can be used: §10 (fee schedules), §11 and §12 (open
-      items) are cited throughout the file but not written** — the file stops at §9.8
-      and carries a footer, so it *reads* as finished
-- [ ] ⚠️ **Check every corpus file for dangling § references before writing a skill
-      from it.** This has now caught the same defect **twice** (06 and 08): an agent
-      stops mid-write, but the file keeps a plausible shape, a marker census and even
-      a closing "As of:" line. **`grep -c '§'` against the actual headings, and read the
-      last line.** A corpus file is not finished because it is long. *(added:
-      2026-10-19)*
+- [x] `egy-ip-registration` — trademark, patent, copyright. Corpus:
+      `08-intellectual-property-egypt.md` ✅ **1,336 lines / 291 verified, 22
+      affirmatively non-existent**. Skill shipped EN + AR, organised by **goal** rather
+      than by Book. **The best-sourced item in the edition** — WIPO Lex carries verified
+      English translations, and **Books One and Two have never been amended**, so the
+      article numbers are stable. *(done: 2026-10-19)*
+      ⚠️ **The one honest hole, disclosed in the skill rather than papered over: there
+      is NO published current trademark fee schedule.** Only a 2003 base figure, a
+      statutory ceiling, and an EGP 500 surcharge sourced from client alerts. The skill
+      tells the reader to give a **range, the layers, and the date**
+- [x] ⚠️ **Check every corpus file for dangling § references before writing a skill
+      from it.** This caught the same defect **twice** (06 and 08): an agent stops
+      mid-write, but the file keeps a plausible shape, a marker census and even a
+      closing "As of:" line. **Set-diff `§N.N` citations against the heading numbers,
+      and read the last line.** A corpus file is not finished because it is long —
+      **and 08 was caught by this check at 969 lines, then came back at 1,336 with
+      zero dangling references.** *(done: 2026-10-19)*
 - [ ] `egy-real-estate-purchase` — buying property, registry, notarisation, title
       check. ⚠️ Medium overlap with `egy-rental-agreement` on الشهر العقاري mechanics;
       consider extending that skill's `references/` instead. *(added: 2026-10-19)*

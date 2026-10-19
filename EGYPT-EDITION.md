@@ -80,14 +80,15 @@ Each entry ships as two skills: `egy-x` (EN) and `egy-x-ar` (AR).
 | `egy-client-explanation` | ✅ | ✅ |
 | `egy-chronology-builder` | ✅ | ✅ |
 | `egy-criminal-procedure` | ✅ | ✅ |
+| `egy-ip-registration` | ✅ | ✅ |
 
-**15 skills × 2 languages = 30 directories, 64 markdown files, 12,033 lines.**
-**Verified corpus: 6 files, 8,183 lines.**
+**16 skills × 2 languages = 32 directories, 66 markdown files, 12,857 lines.**
+**Verified corpus: 7 files, 9,520 lines.**
 
-⚠️ **In flight, not yet ready to count:** `07-family-law-egypt.md` and
-`08-intellectual-property-egypt.md` are still being written. **`08` currently ends
-mid-sentence**, so it is untracked on purpose — a corpus file is only committed once
-it is complete, because a truncated one looks finished.
+⚠️ **In flight, not yet ready to count:** `07-family-law-egypt.md` has not been written
+at all. Every committed corpus file is complete — that is checked, not assumed, because
+**two files already arrived looking finished while citing sections that did not exist**
+(see `roadmap.md` Track 3 and `history.md`).
 
 Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contamination.
 
@@ -112,6 +113,7 @@ Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contami
 | `egy-invoice-and-payment-terms` | EGP invoicing, cheques & promissory notes, due dates, late payment, collection, keeping the evidence |
 | `egy-ecommerce-compliance` | Consumer Protection 181/2018 mandatory disclosures, returns, data protection 151/2020 for an online shop |
 | `egy-tax-and-einvoicing` | Tax registration, VAT, ETA e-invoicing, record-keeping |
+| `egy-ip-registration` | Trademarks, patents, utility models, designs, copyright and trade secrets — **organised by goal, not by Book**. ⚠️ **Owns the Art. 185 recordal rule**: copyright protection is automatic, but **your licence or assignment binds nobody until it is recorded**. ⚠️ **Quotes no trademark fee without a date, because no current published schedule exists** |
 
 ### Personal
 | Skill | Covers |

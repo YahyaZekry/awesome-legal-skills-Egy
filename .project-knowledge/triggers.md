@@ -31,6 +31,9 @@
 | Arrest, police custody, bail, pretrial detention, "how long can they hold him" | `egy-criminal-procedure` | ⚠️ **The one skill that must open by saying the law is mid-change** — Law 150/1950 governs; Law 174/2025 applies **1 Oct 2027** |
 | Report a crime, محضر vs بلاغ vs شكوى, complaint deadlines, the victim's civil claim | `egy-criminal-procedure` | ⚠️ Owns the **three clocks**. Cross-references `egy-chronology-builder` for date provenance |
 | Criminal appeal, cassation, felony appeal after conviction | `egy-criminal-procedure` → `egy-court-filing-guide` | Criminal first (the 10/40/60-day clocks), then the filing mechanics |
+| Registering a brand, logo, patent, design; what IP costs in Egypt | `egy-ip-registration` | Organised by **goal**, not by Book. ⚠️ **Refuses to quote a fee without a date** |
+| Someone is copying you — counterfeit goods, pirated software, a stolen brand | `egy-ip-registration` → `egy-criminal-procedure` | IP first (the 8/15-day post-seizure deadlines, customs), then the criminal mechanics |
+| A book, album, film or software is being licensed, published or assigned | `egy-ip-registration` | ⚠️ **Owns the Art. 185 recordal rule** — protection is automatic, but the *deal* binds nobody until recorded |
 
 ---
 
@@ -75,7 +78,6 @@ audit grids, clause checks, risk grids). Five AR twins have their own today:
 |---|---|---|
 | `egy-nda-review` | "review this NDA", confidentiality clauses | ⚠️ High — `egy-commercial-contract-review` already covers NDAs. Add only if the NDA material outgrows a reference file |
 | `egy-family-law` | marriage, divorce, custody, inheritance, personal status | None — empty category today |
-| `egy-ip-registration` | trademark, patent, copyright registration in Egypt | None — WIPO Lex has verified EN translations |
 | `egy-debt-recovery` | enforcing a debt, execution, garnishment | ⚠️ Medium — overlaps `egy-invoice-and-payment-terms` (contract side) and `egy-court-filing-guide` (execution side). Would need a clear boundary |
 | `egy-real-estate-purchase` | buying property, registry, notarisation, title check | ⚠️ Medium — overlaps `egy-rental-agreement` on the الشهر العقاري mechanics |
 

@@ -242,6 +242,21 @@ PLUGINS = [
         "\"cassation\", \"القبض\", \"الحبس الاحتياطي\", \"النيابة العامة\", \"محضر\", "
         "\"بلاغ\", \"شكوى\", \"تلبس\", \"نقض\", \"الحبس\", \"إفراج\", \"كفالة\".",
     ),
+    (
+        "egy-ip-registration",
+        "Intellectual Property",
+        "Registering and enforcing intellectual property in Egypt for a small business, "
+        "freelancer or independent creator — trademarks, patents and utility models, "
+        "industrial designs, copyright, software and trade secrets. Covers the actual "
+        "registration steps and their statutory windows, the trademark renewal cliff, "
+        "the Art. 185 recordal rule that makes a copyright deal unenforceable against "
+        "third parties until it is registered, the Economic Courts, customs seizure, the "
+        "8-day and 15-day deadlines that kill a seizure order, and the fee layers. "
+        "Triggers: \"register trademark Egypt\", \"trademark\", \"patent\", \"copyright\", "
+        "\"trade secret\", \"counterfeit\", \"someone copied my\", \"علامة تجارية\", "
+        "\"تسجيل علامة\", \"براءة اختراع\", \"حقوق المؤلف\", \"الملكية الفكرية\", "
+        "\"تقليد\", \"سر تجاري\", \"تصميم صناعي\".",
+    ),
 ]
 
 

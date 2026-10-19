@@ -29,11 +29,11 @@ into context. Everything else is supporting material the agent reads on demand.
 
 | Metric | Value |
 |--------|-------|
-| Egypt skills | 30 directories (15 EN + 15 AR) |
-| Egypt markdown files | 64 |
-| Egypt markdown lines | 12,033 |
-| Corpus files | 6 committed (2 still in flight) |
-| Corpus lines | 8,183 committed |
+| Egypt skills | 32 directories (16 EN + 16 AR) |
+| Egypt markdown files | 66 |
+| Egypt markdown lines | 12,857 |
+| Corpus files | 7 committed (1 still unwritten) |
+| Corpus lines | 9,520 committed |
 | Upstream skill dirs | 288 (264 sync-tracked) |
 
 ---

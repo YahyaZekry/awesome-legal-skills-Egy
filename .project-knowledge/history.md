@@ -240,6 +240,21 @@ lines / 258 verified**, with §17 covering Law 174/2025 article by article.
   preserved §16's intact subsections; renumbering would have broken them. **Read the
   headings before concluding a section is missing.** *(2026-10-19)*
 
+- **A corpus file that says "I could not verify this" is more useful than one that
+  guesses — and it must be *delivered* that way.** `08-intellectual-property-egypt.md`
+  ended with **24 `🟡` items, each naming what was searched**, and **22 `❌` findings that
+  affirmatively contradict the common citation** — including two amending laws
+  (**131/2003**, **5/2010**) that **do not exist**, and a fee schedule that **cannot be
+  found because it is not published**. ⚠️ **The skill says so, in the client-facing text,
+  rather than quoting a number.** An Egyptian trademark fee quoted without a date is not
+  information; giving the **ceiling, the layers and the date** is. *(2026-10-19)*
+- **A `❌` finding is a deliverable, not a gap.** The IP file's most valuable content is
+  the list of things that **do not exist**: the phantom amending laws, the ITIDA
+  free-zone/export exemption, a separate software chapter, a sale or smell mark, a
+  geographical-indication register. **Each one is something a model or a website will
+  assert confidently**, and each one cost a search to refute. **Search for the
+  non-existence of a widely-repeated fact, and record it as a finding.** *(2026-10-19)*
+
 ---
 
 ## The measurement worth remembering

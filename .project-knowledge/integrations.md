@@ -91,10 +91,10 @@ print('egy skills sync-tracked:', egy or 'NONE — safe')
 | `name` | `lawve-ai` |
 | `version` | `2.0.0` |
 | `owner` | Lawve AI — `contact@lawve.ai` |
-| `plugins` | **279** entries — 264 upstream + 15 Egypt |
+| `plugins` | **280** entries — 264 upstream + 16 Egypt |
 | Plugin shape | `{name, source, description, version, author, license, category, skills[], strict}` |
-| Egypt entries | **15** (`egy-*`) |
-| Egypt categories | 2 new: **`Property Law`** (tenancy) and **`Criminal Law`** (criminal procedure). `Criminal Law` was already an upstream category; `Property Law` was added |
+| Egypt entries | **16** (`egy-*`) |
+| Egypt categories | 1 new: **`Property Law`** (tenancy). `Criminal Law`, `Intellectual Property` and `Litigation` were already upstream categories; only `Family Law` would need adding |
 
 Each upstream plugin points at one skill directory: `"skills": ["./skills/<name>"]`.
 **Each Egypt plugin points at two** — both languages:
