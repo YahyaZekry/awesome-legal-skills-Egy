@@ -3000,6 +3000,162 @@
       "category": "Vibe Coding",
       "skills": ["./skills/vs-code-extension-antoine-louis"],
       "strict": false
+    },
+    {
+      "name": "egy-context-operations",
+      "source": "./",
+      "description": "Egyptian operational context for any legal or business matter in Egypt: EGP and currency amounts, national ID / commercial-registry / tax-number formats, governorates, phone formats, the portals that actually work (GAFI, customs, tax, social insurance, NTRA, CBE) including the widely-cited ones that do not, e-signature and electronic seal, cheques, mobile wallets (InstaPay, Meeza), what gets filed online vs in person, and a 92-term English-Arabic legal glossary. Use as the foundation skill for any Egyptian matter. Triggers: \"Egypt\", \"Egyptian\", \"EGP\", \"مصر\", \"الرقم القومي\", \"السجل التجاري\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Legal Operations",
+      "skills": ["./skills/egy-context-operations", "./skills/egy-context-operations-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-legal-research",
+      "source": "./",
+      "description": "Find and verify Egyptian law. Covers the Official Gazette (الجريدة الرسمية) vs al-Waqa'i' al-Misriyya (الوقائع المصرية) distinction, the source ladder from the Cabinet's ELP portal and the Ministry of Justice legislation encyclopedia to WIPO Lex, Court of Cassation principles and annual volumes, and how to verify a citation before relying on it. Records the portals that are false friends and why Egyptian Cassation principles are not binding precedent. Use when asked to find an Egyptian statute, check whether a law is still in force, locate a court judgment or Cassation principle, or verify a citation you were given. Triggers: \"Egyptian law\", \"find the law\", \"is this law current\", \"Court of Cassation\", \"Gazette\", \"قانون مصري\", \"الجريدة الرسمية\", \"محكمة النقض\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Legal Research",
+      "skills": ["./skills/egy-legal-research", "./skills/egy-legal-research-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-commercial-contract-review",
+      "source": "./",
+      "description": "Clause-by-clause review of commercial contracts under Egyptian law — NDAs, services, supply, distribution and SaaS. Parties and capacity, scope, price in EGP, delivery, penalty clauses, force majeure, hardship (Civil Code Art. 147(2)), governing law, and court vs arbitration under Law 27/1994. Flags the interest ceiling in Art. 227(1) and the rule that a penalty clause is a ceiling rather than a floor. Carries a citation-traps table of commonly-asserted wrong references. Triggers: \"review this contract\", \"Egyptian contract\", \"عقد\", \"مراجعة عقد\", \"شرط جزائي\", \"القانون المدني\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Commercial Law",
+      "skills": ["./skills/egy-commercial-contract-review", "./skills/egy-commercial-contract-review-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-company-setup",
+      "source": "./",
+      "description": "Setting up and structuring a company in Egypt: the choice between a joint-stock company and a limited liability company, GAFI incorporation, free zones, the actual document list, what must be notarised, commercial-registry registration, and realistic elapsed times as against GAFI's published figures. Triggers: \"set up a company in Egypt\", \"GAFI\", \"incorporate\", \"ش.م.م\", \"تأسيس شركة\", \"السجل التجاري\", \"المنطقة الحرة\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Corporate Law",
+      "skills": ["./skills/egy-company-setup", "./skills/egy-company-setup-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-employment-contract",
+      "source": "./",
+      "description": "The employer side of Egyptian labour law under Law 14/2025, which repealed Law 12/2003 on 1 September 2025. Contract types (indefinite, fixed-term, probation), working hours and overtime, the leave schedule, social insurance under Law 148/2019, the cases in which no penalty may be imposed, internal regulations for employers with 10 or more workers, investigation procedure, and lawful termination. Triggers: \"employment contract Egypt\", \"hire in Egypt\", \"labour law\", \"عقد عمل\", \"قانون العمل\", \"فترة الاختبار\", \"إنهاء الخدمة\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Employment Law",
+      "skills": ["./skills/egy-employment-contract", "./skills/egy-employment-contract-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-employment-dispute",
+      "source": "./",
+      "description": "Bringing or defending an employment claim in Egypt. Unpaid wages and the one-year limitation under Civil Code Art. 378 with the Art. 378(2) oath requirement, unlawful dismissal and severance at two months' wages per year of service, social-insurance and payslip evidence, the specialised labour courts, and the Art. 7 exemption from judicial fees for worker claims. Triggers: \"unpaid wages Egypt\", \"wrongful dismissal\", \"severance\", \"labour court\", \"أجور\", \"فصل تعسفي\", \"تعويض الفصل\", \"دعوى عمالية\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Employment Law",
+      "skills": ["./skills/egy-employment-dispute", "./skills/egy-employment-dispute-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-invoice-and-payment-terms",
+      "source": "./",
+      "description": "Egyptian invoicing, payment terms and debt recovery: what an invoice must carry, due dates, late payment, the agreed-interest ceiling in Civil Code Art. 227(1), cheques and promissory notes, bounced-cheque consequences, revenue stamp, and the evidence to keep. Also covers prescription — what interrupts it (Art. 383/384) and the rule in Art. 387 that the court may not apply it of its own motion. Triggers: \"invoice Egypt\", \"payment terms\", \"late payment\", \"bounced cheque\", \"فاتورة\", \"شيك\", \"تفقيط\", \"ضريبة الدمغة\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Commercial Law",
+      "skills": ["./skills/egy-invoice-and-payment-terms", "./skills/egy-invoice-and-payment-terms-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-ecommerce-compliance",
+      "source": "./",
+      "description": "Compliance for an online shop or digital service in Egypt. Consumer Protection Law 181/2018 and Law 20/2024, the mandatory Arabic-language rule for ads, invoices, receipts and contracts, the pre-contract disclosures, the order-correction window, returns, and the rule that consumer rights may not be waived. Plus personal data obligations under Law 151/2020 and its Executive Regulations. Triggers: \"e-commerce Egypt\", \"online shop\", \"consumer protection\", \"returns policy\", \"متجر إلكتروني\", \"حماية المستهلك\", \"سياسة الاستبدال\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Data Protection",
+      "skills": ["./skills/egy-ecommerce-compliance", "./skills/egy-ecommerce-compliance-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-legal-notice",
+      "source": "./",
+      "description": "Drafting legal notices and demands in Egypt — the إنذار. Notices to vacate, debt demands, contractual-breach notices, and internal employment warnings. Tone, required content, what each notice legally starts, delivery by bailiff, the service-hours rule, and the practical rule that an informal message does not interrupt prescription. Ships with ready templates in both languages. Triggers: \"legal notice Egypt\", \"demand letter\", \"notice to vacate\", \"إنذار\", \"إنذار بالإخلاء\", \"مطالبة بدين\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Legal Drafting",
+      "skills": ["./skills/egy-legal-notice", "./skills/egy-legal-notice-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-rental-agreement",
+      "source": "./",
+      "description": "Reviewing and negotiating a lease in Egypt after the 2025 reform. The distinction between the old and new tenancy regimes, the mandatory annual rent increase under Law 164/2025, deposit limits, registration at the real-estate registry, renewal, the closed list of eviction grounds, and why a lease expiring is not an eviction. Covers the utilities and maintenance split, and the ban on key money. Triggers: \"lease Egypt\", \"rental agreement\", \"eviction\", \"rent increase\", \"إيجار\", \"عقد إيجار\", \"إيجار قديم\", \"إخلاء\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Property Law",
+      "skills": ["./skills/egy-rental-agreement", "./skills/egy-rental-agreement-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-tax-and-einvoicing",
+      "source": "./",
+      "description": "Egyptian tax registration and electronic invoicing. That income tax and VAT are separate registrations, the tax card, VAT Law 67/2016, the ETA e-invoicing and e-receipt platform with its integration SDK and eSeal certificate, what invoices must carry, revenue stamp, and the records that survive an audit. Deliberately carries no tax rates — those must be confirmed against the ETA. Triggers: \"tax Egypt\", \"VAT\", \"e-invoicing\", \"tax card\", \"البطاقة الضريبية\", \"ضريبة القيمة المضافة\", \"فاتورة إلكترونية\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Compliance",
+      "skills": ["./skills/egy-tax-and-einvoicing", "./skills/egy-tax-and-einvoicing-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-court-filing-guide",
+      "source": "./",
+      "description": "Navigating Egyptian courts: the court structure, which court has jurisdiction over which case, the pecuniary limits and finality thresholds, judicial fees and which are exempt, how to file and serve, the deadlines and how official holidays extend them, electronic litigation, and execution and enforcement. Triggers: \"file a case Egypt\", \"which court\", \"court fees\", \"appeal\", \"enforce a judgment\", \"محكمة\", \"رفع دعوى\", \"رسوم قضائية\", \"تنفيذ حكم\".",
+      "version": "2026.10.13",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Litigation",
+      "skills": ["./skills/egy-court-filing-guide", "./skills/egy-court-filing-guide-ar"],
+      "strict": false
     }
   ]
 }

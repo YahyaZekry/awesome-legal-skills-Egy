@@ -5,8 +5,16 @@
 > and — equally important — how it produces **false positives**, because a noisy
 > checker gets ignored and the real defect hides in the noise.
 
-None of these are checked into the repo. They were run as heredocs. Copy the pattern
-from here rather than rebuilding it.
+✅ **These are now checked in as a single runnable script:**
+`python3 .project-knowledge/scripts/validate.py` — all five checks plus EN↔AR parity
+and marketplace registration, exit 1 on failure, safe to wire into CI.
+The code below is the original heredoc form, kept as the reference for *what each
+check means and how it misfires*. **Prefer the script.**
+
+⚠️ **The script found a real shipped defect on its first run** (an Arabic URL ejected
+from its sentence into a stray code fence), and then **five bugs in itself** that had
+produced 29 false failures and zero real ones. Read its docstring for the FAIL-vs-WARN
+split and the documented extractor blind spots before acting on any warning.
 
 ---
 

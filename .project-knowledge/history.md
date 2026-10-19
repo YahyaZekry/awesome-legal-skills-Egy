@@ -17,6 +17,34 @@
 
 ## Fixed
 
+- **`skills/egy-context-operations-ar/references/PAYMENTS.md`** — the FRA domain had been
+  **ejected out of its sentence into a stray fenced code block**, leaving the Arabic
+  sentence ending on a dangling `:**` with nothing after it. The English reads *"Check the
+  FRA register (`fra.gov.eg`) before naming a licensed lender in anything you write."*
+  Restored inline to match. Found by the new URL set-parity check **on its first run** —
+  a direct read-through had missed it. *(fixed: 2026-10-19)*
+
+- **`.project-knowledge/scripts/validate.py` — five extractor bugs, all producing false
+  failures, found before the checker was trusted.** Recorded because the same traps will
+  recur on any Arabic text:
+  1. **Arabic-Indic digits were never folded to ASCII.** `٦٧ لسنة ٢٠١٦` vs `67/2016`, so
+     *every* law number looked missing from the Arabic side. Made silent by the fact that
+     Python's `\d` **does** match Arabic-Indic digits — the extractor captured the
+     numerals and they simply never compared equal.
+  2. **`README.md` was included in the parity comparison.** It is a human-facing summary
+     with no parity contract, and the English ones cite law numbers inline, so it
+     manufactured hundreds of false "missing in AR" reports.
+  3. **Arabic law numbers carry the law's name between the word and the number** —
+     `قانون الإثبات رقم ٢٥ لسنة ١٩٦٨`. A `\s*` gap cannot cross a law's name.
+  4. **`\bقانون` can never match inside `القانون`** — Arabic letters are word characters,
+     so the *most common* citation form was invisible. The `\b` was the bug.
+  5. **`ال?` means "alif, then optional lam", NOT "optional ال".** In `للمادة` the
+     preposition's lam **assimilates** into the definite article and the alif disappears
+     entirely, so that whole form failed to match — and with it Art. 604.
+
+  Net effect: 29 reported failures, of which **zero** were real content defects.
+  *(fixed: 2026-10-19)*
+
 - **`EGYPT-EDITION.md` lines 86–108 — stale per-skill description tables.** Three
   entries contradicted the research that followed and were corrected:
   - *"Labour Law 12/2003 contract types"* → now **14/2025, which repealed 12/2003**
@@ -118,6 +146,36 @@
 
 - **`.project-knowledge/` created** to carry build conventions, validators, the
   trigger map and the research backlog across sessions. *(2026-10-19)*
+
+- **Registering the Egypt skills: append to `.claude-plugin/marketplace.json` through an
+  idempotent generator — not a separate manifest.** A separate manifest is **not possible**:
+  Claude Code discovers a marketplace only at `.claude-plugin/marketplace.json`, one per
+  repo, so the entries have to live in that file. Durability comes from the script instead —
+  `register-egypt.py` is re-runnable, restoring the 12 entries after any `upstream/main`
+  merge with no duplicates and upstream order untouched (verified byte-identical on re-run).
+  *(2026-10-19)*
+
+- **`register-egypt.py` edits the file as text, not as JSON.** `json.dumps(indent=2)` does
+  **not** reproduce the upstream file (243 KB vs 235 KB — the real one keeps `skills` arrays
+  inline), so a round-trip would reformat all 264 upstream entries. Textual injection gives a
+  **+156 / −0** diff for a 12-entry change. *(2026-10-19)*
+
+- **12 plugins, each listing both language directories — not 24.** Skill selection happens on
+  frontmatter, so an English prompt never loads the Arabic skill even though it is installed.
+  One install serves both languages. *(2026-10-19)*
+
+- **One new category: `Property Law`.** The upstream 26 have no bucket for a residential
+  lease, and filing it under "Commercial Law" would be wrong. The planned
+  `egy-real-estate-purchase` needs the same bucket, so the addition pays for itself twice.
+  *(2026-10-19)*
+
+- **`validate.py` separates FAIL from WARN deliberately.** FAIL is reserved for what is
+  unambiguously wrong and always fixable — unparseable frontmatter, dangling references,
+  contamination, a missing EN/AR twin, a URL present in only one language, a registration
+  entry pointing at nothing. Article- and law-number differences are WARN, because Arabic
+  inflects, prefixes, abbreviates and uses list constructions, so the extractor has
+  **documented blind spots** and a warning is not proof of a defect. A gate that cries wolf
+  teaches everyone to ignore it. *(2026-10-19)*
 
 ---
 

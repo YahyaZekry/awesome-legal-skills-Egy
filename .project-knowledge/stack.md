@@ -16,11 +16,11 @@ into context. Everything else is supporting material the agent reads on demand.
 |----------|---------|
 | Content format | Markdown + YAML frontmatter (Anthropic Skills standard) |
 | Languages | English + Modern Standard Arabic (native-written, not translated) |
-| Validation | Python 3 + PyYAML ad-hoc scripts (not checked in — see `validators.md`) |
+| Validation | `scripts/validate.py` — Python 3 + PyYAML, **checked in**, exit 1 on failure |
 | VCS | git, branch `egypt-edition`, remote `origin` = YahyaZekry fork |
 | Upstream | `upstream` = `lawve-ai/awesome-legal-skills` |
 | Research tooling | Exa MCP + Firecrawl MCP |
-| Distribution | `.claude-plugin/marketplace.json` (generated) — Egypt skills not yet registered |
+| Distribution | `.claude-plugin/marketplace.json` — **12 Egypt plugins registered** (264 upstream + 12) |
 | Deployment | None. Consumers clone or install as a Claude Code plugin |
 
 ---
@@ -47,7 +47,10 @@ the literal invocations used during the build.
 |---------|--------------|
 | `git log --oneline -10` | Recent history |
 | `find skills/egy-* -name '*.md' \| wc -l` | Count Egypt content |
-| `python3 - <<'PY' … PY` | Ad-hoc validation — see `validators.md` for the five real ones |
+| **`python3 .project-knowledge/scripts/validate.py`** | **The gate — run before every commit.** Exit 1 on failure |
+| `python3 .project-knowledge/scripts/validate.py --no-parity` | Fast pass without the EN/AR diff |
+| **`python3 .project-knowledge/scripts/register-egypt.py`** | Register/restore the 12 Egypt plugins. Idempotent |
+| `python3 .project-knowledge/scripts/register-egypt.py --check` | Dry run of the above |
 | `git push origin egypt-edition` | Publish (see `integrations.md` for the PR link) |
 
 ⚠️ **Never run a formatter, linter, or mass-rewrite over `skills/`** — 264 of the 288

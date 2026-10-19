@@ -1,11 +1,10 @@
 # awesome-legal-skills-Egy — Knowledge Index
 
 > Last updated: **2026-10-19**
-> Status: **Egypt edition complete (12 EN/AR pairs) — next: expand + make installable**
-> Stack: Markdown + YAML frontmatter · validated with ad-hoc Python 3 · no runtime
-> Current goal: **port more upstream skills, add Egypt-native topics (criminal
-> procedure, family law, IP registration), and register the skills so they can
-> actually be installed as a plugin.**
+> Status: **Installable ✅ — 24 Egypt skills (12 EN/AR pairs) registered as 12 plugins**
+> Stack: Markdown + YAML frontmatter · validated with `scripts/validate.py` (Python 3) · no runtime
+> Current goal: **port more upstream skills and add Egypt-native topics (criminal
+> procedure, family law, IP registration)** — the "make it installable" goal is **done**.
 
 ## What This Project Does
 
@@ -39,8 +38,10 @@ replaces tracked directories wholesale.
 | `features.md` | What the edition covers by need, plus the legal findings that reshaped whole skills, and what was deliberately NOT ported | Onboarding, explaining the edition, checking whether a topic exists |
 | `integrations.md` | Exa MCP, Firecrawl MCP, the upstream sync contract, `marketplace.json`, GitHub branches, exact data contracts | Touching research tooling, or registering/distributing skills |
 | `roadmap.md` | **Current goal**, the 4 build tracks, known bugs, and the 25-item research backlog | **Before starting any task** — this is the pre-flight check |
-| `history.md` | Removed items, 9 fixed defects, 12 architectural decisions | Debugging, reviewing why something is the way it is |
+| `history.md` | Removed items, 11 fixed defects, 16 architectural decisions | Debugging, reviewing why something is the way it is |
 | `sessions.md` | Session-by-session log | Reviewing work history |
+| `scripts/validate.py` | All five validation checks + EN↔AR parity + registration. **Exit 1 on failure — CI-safe.** Its docstring is the reference for FAIL-vs-WARN and known extractor blind spots | Before **every** commit; after any Arabic output |
+| `scripts/register-egypt.py` | Injects/restores the 12 Egypt plugin entries in `.claude-plugin/marketplace.json`. **Idempotent** | After any `upstream/main` merge; when adding a new Egypt skill |
 
 > Only files that exist are listed. `routes.md`, `hooks.md` and `components.md` were
 > not created — this project has no routes, hooks or components. Their roles are
@@ -56,7 +57,8 @@ replaces tracked directories wholesale.
 | Writing or editing a skill | `schema.md` + `triggers.md` + `history.md` |
 | Writing an **Arabic** file | `schema.md` + `validators.md` + the glossary at `skills/egy-context-operations/references/GLOSSARY-EN-AR.md` |
 | Adding a new Egypt topic | `triggers.md` (overlap check) + `schema.md` |
-| **Making skills installable / registering plugins** | `integrations.md` + `roadmap.md` Track 1 |
+| **Making skills installable / registering plugins** | `integrations.md` §4 + `scripts/register-egypt.py` |
+| Running the validation gate | `scripts/validate.py` (its docstring), then `validators.md` |
 | Verifying or researching a citation | `systems.md` → corpus-first pipeline + `skills/egy-legal-research/` |
 | Working with MCP research tools | `integrations.md` (⚠️ read the Firecrawl failure mode) |
 | Touching anything under `skills/` | `integrations.md` → sync safety check **first** |
@@ -66,7 +68,7 @@ replaces tracked directories wholesale.
 
 ---
 
-## The three things a new session must not get wrong
+## The four things a new session must not get wrong
 
 1. **Never edit an existing upstream skill directory, and never add Egypt skills
    inside the `LAWVE_SYNC_START` / `END` README block.** 264 directories are
@@ -83,6 +85,14 @@ replaces tracked directories wholesale.
    duplicated words, half-finished sentences. Blockquote templates are the highest
    risk. See `validators.md` — and read its false-positive section, because the scan
    reported 188 issues in one run and only **two** were real.
+
+4. **Never edit Arabic content to silence a `validate.py` warning.** Warnings are
+   `review:` or `drift:`. The extractor reads Arabic that inflects, prefixes, abbreviates
+   and uses list constructions, so it has documented blind spots — in the session that
+   built it, the checker reported **29 failures of which zero were real**. Fix the
+   extractor, or confirm against the source that something is genuinely missing. A
+   confident wrong fix is worse than the warning, because nobody re-checks a thing that
+   now looks right.
 
 ---
 

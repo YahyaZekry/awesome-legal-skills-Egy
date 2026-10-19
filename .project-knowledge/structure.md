@@ -10,10 +10,19 @@ awesome-legal-skills-Egy/
 │   ├── lawve-logo.png
 │   └── .lawve-sync.json                  ⛔ READ-ONLY — upstream sync map (264 tracked)
 ├── .claude-plugin/
-│   └── marketplace.json                  ⛔ GENERATED — 264 plugins, no Egypt entries
+│   └── marketplace.json                  ⚠️ GENERATED + 12 Egypt entries injected after
+│                                           264 upstream. Regenerate with register-egypt.py
 ├── .github/
 │   ├── FUNDING.yml
 │   └── ISSUE_TEMPLATE/
+├── .project-knowledge/
+│   ├── INDEX.md                          ⭐ start here
+│   ├── roadmap.md                        ⭐ pre-flight check — current goal + backlog
+│   ├── schema.md, triggers.md, validators.md, systems.md, features.md,
+│   │   integrations.md, structure.md, stack.md, history.md, sessions.md
+│   └── scripts/
+│       ├── validate.py                   ✅ all 5 checks + EN↔AR parity + registration
+│       └── register-egypt.py             ✅ idempotent marketplace.json injector
 ├── CONTRIBUTING.md
 ├── EGYPT-EDITION.md                      ⭐ Egypt edition source of truth (190 lines)
 ├── LICENSE                               CC BY-NC-ND 4.0 (upstream)
@@ -64,7 +73,9 @@ language — not a translation pair.
 | File | Purpose | Why it matters |
 |------|---------|----------------|
 | `research/egyptian-corpus/` | Verified legislative corpus | **The citation rule says every legal proposition traces here.** Without it, skills cannot be written or checked |
-| `EGYPT-EDITION.md` | Build conventions + roster | Source of truth for the roster (marketplace.json gets rewritten). ⚠️ Its per-skill tables at lines 86–108 are **stale** — see `roadmap.md` |
+| `EGYPT-EDITION.md` | Build conventions + roster | Source of truth for the roster. ✅ Its per-skill tables at lines 86–108 were stale and were **fixed 2026-10-19** — see `history.md` Fixed |
+| `.project-knowledge/scripts/validate.py` | The validation gate | Run before every commit. Exit 1 on failure. **Read its docstring before acting on a warning** — it documents which findings are real and which are extractor blind spots |
+| `.project-knowledge/scripts/register-egypt.py` | Marketplace registration | Idempotent — re-run after any upstream merge to restore the 12 Egypt plugin entries |
 | `skills/egy-context-operations/references/GLOSSARY-EN-AR.md` | 92-term authoritative EN↔AR vocabulary | **Read before writing any Arabic.** Row 60 carries a corrected tenancy rule |
 | `skills/egy-context-operations/references/PORTALS.md` | Every Egyptian portal, HTTP-tested | Carries the false-friend traps (`gcc.gov.eg`, `alqalam.idsc.gov.eg`) |
 | `skills/egy-legal-research/SKILL.md` | The verification discipline | Records the Firecrawl failure mode and the source ladder |

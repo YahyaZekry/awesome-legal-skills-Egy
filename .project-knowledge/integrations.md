@@ -61,8 +61,9 @@ upstream author (Antoine Louis, Samuel Compagnon / notnotsamuel), never by an ac
 in this fork. The sync arrives by **merging `upstream/main`**.
 
 → **Consequence:** the risk to Egypt work is **merge conflicts**, not silent deletion.
-Registering Egypt entries in `marketplace.json` is viable, but expect a conflict on the
-next upstream merge. Verify this assumption before relying on it.
+✅ **Mitigated (2026-10-19):** `register-egypt.py` is idempotent, so a conflicted or
+clobbered `marketplace.json` is restored by re-running one command. The conflict is now
+an inconvenience rather than a loss. *(Assumption still unverified — see roadmap Track 1.)*
 
 **Safety check before touching anything under `skills/`:**
 
@@ -90,14 +91,40 @@ print('egy skills sync-tracked:', egy or 'NONE — safe')
 | `name` | `lawve-ai` |
 | `version` | `2.0.0` |
 | `owner` | Lawve AI — `contact@lawve.ai` |
-| `plugins` | 264 entries across 26 categories |
+| `plugins` | **276** entries — 264 upstream + 12 Egypt |
 | Plugin shape | `{name, source, description, version, author, license, category, skills[], strict}` |
-| Egypt entries | **0** |
+| Egypt entries | **12** (`egy-*`) |
+| Egypt categories | 1 new: **`Property Law`** (tenancy); the rest reuse the upstream set |
 
-Each plugin points at one skill directory: `"skills": ["./skills/<name>"]`.
+Each upstream plugin points at one skill directory: `"skills": ["./skills/<name>"]`.
+**Each Egypt plugin points at two** — both languages:
 
-→ **Egypt skills are invisible to the plugin system.** They exist on disk only. Making
-them installable is tracked in `roadmap.md`.
+```json
+"skills": ["./skills/egy-rental-agreement", "./skills/egy-rental-agreement-ar"]
+```
+
+→ **The Egypt skills are now installable.** One install serves both languages, and
+because skill selection is by frontmatter, an English prompt never loads the Arabic
+skill even though it is installed.
+
+### ⚠️ Editing this file: use the generator, never hand-edit
+
+```bash
+python3 .project-knowledge/scripts/register-egypt.py --check   # dry run
+python3 .project-knowledge/scripts/register-egypt.py           # apply / restore
+```
+
+It is **idempotent** — re-running replaces the Egypt block rather than duplicating it,
+verified byte-identical. Run it after any `upstream/main` merge. It refuses to run if a
+skill directory is missing or if the file's trailing structure has changed.
+
+**It injects text; it does not round-trip JSON.** `json.dumps(indent=2)` does **not**
+reproduce the upstream file — 243 KB vs 235 KB, because the real file keeps `skills`
+arrays inline. A JSON round-trip would reformat all 264 upstream entries. Textual
+injection gives a **+156 / −0** diff.
+
+Also note the upstream file carries **no trailing comma** convention and raw UTF-8 (not
+`\u` escapes) — the generator matches both.
 
 ---
 
@@ -124,3 +151,35 @@ amendment chain, source URL, and an "as of" date. `🟡` items may not be stated
 **Parity contract:** EN and AR twins must match on article numbers, law numbers, URLs,
 heading order, markers, and figures — with the documented deliberate asymmetries
 (see `schema.md`).
+
+⚠️ **But only URL sets and structure are enforced as hard failures.** `validate.py` runs
+the article/law-number comparison as a **warning**, because the extractor reads Arabic
+that inflects, prefixes, abbreviates and uses list constructions, and it therefore has
+documented blind spots. A warning means *a human should glance*, not *something is
+broken*. **Do not edit Arabic content to silence a warning** without confirming against
+the source that something is genuinely missing — a confident wrong fix is worse than the
+warning, because nobody re-checks a thing that now looks right.
+
+---
+
+## 6. Validation + registration scripts
+
+Both live in `.project-knowledge/scripts/`. Neither is sync-managed.
+
+| Script | Purpose | Idempotent | Exit code |
+|--------|---------|-----------|-----------|
+| `validate.py` | All five checks: pairing, frontmatter/YAML, references, contamination, EN↔AR parity, plus registration | yes | **1 on failure** — CI-safe |
+| `register-egypt.py` | Injects/restores the 12 Egypt plugin entries | yes (byte-identical) | non-zero on refusal |
+
+```bash
+python3 .project-knowledge/scripts/validate.py              # full run
+python3 .project-knowledge/scripts/validate.py --no-parity   # skip the EN/AR diff
+python3 .project-knowledge/scripts/validate.py --quiet       # failures only
+```
+
+`validate.py`'s docstring is the authoritative reference for **which findings are
+FAIL vs WARN**, the excluded noise (glossary, brand names, `(Art N)` markers), and the
+list of known extractor blind spots. It also holds the one Arabic detail that broke the
+checker three separate times: `ال?` in a regex means "alif, then optional lam", **not**
+"optional `ال`" — and in `للمادة` the preposition's lam assimilates into the definite
+article, leaving no alif at all.

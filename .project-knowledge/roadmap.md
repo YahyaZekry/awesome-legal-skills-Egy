@@ -13,26 +13,38 @@ skill's advice if wrong.
 
 ---
 
-## Track 1 — Make it installable ⬅️ highest leverage
+## Track 1 — Make it installable ✅ DONE (2026-10-19)
 
-The 24 Egypt skills exist on disk but are **invisible to the plugin system**:
-`marketplace.json` has **0** Egypt entries and is generated upstream.
+The 24 Egypt skills existed on disk but were **invisible to the plugin system**:
+`marketplace.json` had **0** Egypt entries and is generated upstream.
 
-- [ ] **Create a separate, non-sync-managed plugin manifest** so Egypt registration
-      survives an upstream merge. Preferred over editing the generated file.
-      *(added: 2026-10-19)*
-- [ ] **OR** append 12 plugin entries to `.claude-plugin/marketplace.json` — viable
-      because there is no CI in this fork (the sync arrives by merge), but expect a
-      conflict on the next `upstream/main` merge. *(added: 2026-10-19)*
-- [ ] **Verify the merge assumption** by reading how `lawve-ai` ships its sync, before
-      committing to either approach. *(added: 2026-10-19)*
-- [ ] Decide the plugin granularity: **24 separate plugins** (one per language) vs
-      **12 plugins each listing both** `skills/egy-x` and `skills/egy-x-ar`.
-      Recommend 12 — a plugin listing both directories lets one install serve both
-      languages. *(added: 2026-10-19)*
-- [ ] Assign a `category` per plugin — reuse the upstream 26 categories where possible
-      (`Commercial Law`, `Corporate Law`, `Employment Law`, `Data Protection`,
-      `Litigation`) rather than inventing a parallel taxonomy. *(added: 2026-10-19)*
+**Decision — append to `marketplace.json`, driven by an idempotent generator.**
+A "separate manifest" is not possible: Claude Code discovers a marketplace only at
+`.claude-plugin/marketplace.json`, at the repo root, one per repo. So the entries must
+go in that file — and the durability problem is solved by script instead.
+
+- [x] **`.project-knowledge/scripts/register-egypt.py`** injects the 12 entries.
+      **Idempotent** — re-run it after any `upstream/main` merge and the entries are
+      restored, with no duplicates and upstream order untouched. Verified byte-identical
+      on re-run. Has `--check` for a dry run. Refuses to run if a skill directory is
+      missing or the upstream file's shape has changed. *(done: 2026-10-19)*
+- [x] **Edits text, not JSON.** `json.dumps(indent=2)` does NOT reproduce the upstream
+      file (243 KB vs 235 KB — the real file keeps `skills` arrays inline). A round-trip
+      would reformat all 264 upstream entries. Injection produces a **+156 / −0** diff.
+      *(done: 2026-10-19)*
+- [x] **Granularity: 12 plugins, each listing both `skills/egy-x` and `skills/egy-x-ar`.**
+      One install serves both languages, and skill selection is per-frontmatter, so an
+      English prompt never loads the Arabic skill even though it is installed.
+      *(done: 2026-10-19)*
+- [x] **Categories reuse the upstream 26**, with **one addition: `Property Law`** — a
+      residential lease is not commercial law, and the planned `egy-real-estate-purchase`
+      needs the same bucket. *(done: 2026-10-19)*
+- [x] **Plugin names = the EN directory names.** Upstream convention is
+      `<topic>-<author>`, but `egy-` is already unique against all 264 upstream names and
+      is far clearer in a plugin list. *(done: 2026-10-19)*
+- [ ] ⚠️ **Still to verify the merge assumption** by reading how `lawve-ai` ships its
+      sync. The generator makes a conflict survivable rather than fatal, so this is now
+      low priority. *(added: 2026-10-19)*
 
 ## Track 2 — Port more upstream skills
 
@@ -74,14 +86,35 @@ skill's `references/` rather than creating a new directory.
 
 ## Track 4 — Engineering / infrastructure
 
-- [ ] **Check in the five validators** as `scripts/validate.py`. Today they exist only
-      in this folder and the session history — nothing enforces them on a new commit.
-      *(added: 2026-10-19)*
-- [ ] Add a **parity-check script** EN↔AR that runs on demand. This is the check that
-      caught real shipped defects; it should not live in a chat transcript.
-      *(added: 2026-10-19)*
-- [ ] Consider a minimal CI workflow that runs frontmatter + contamination + parity.
-      Note: `.github/workflows/` does not exist in this fork. *(added: 2026-10-19)*
+- [x] **`.project-knowledge/scripts/validate.py`** — all five checks in one runnable
+      script, exit 1 on failure, safe to wire into CI. Run it before every commit.
+      *(done: 2026-10-19)*
+- [x] **The EN↔AR parity check is now a script**, not a chat transcript. It caught two
+      real defects the moment it ran (see `history.md`). *(done: 2026-10-19)*
+- [ ] Consider a minimal CI workflow that runs `validate.py`. `.github/workflows/` does
+      not exist in this fork. Note that CI here would be **advisory only** — the sync
+      arrives by merge, so nothing upstream reads it. *(added: 2026-10-19)*
+
+### ⚠️ Read this before "fixing" a validator warning
+
+`validate.py` splits findings into **FAIL** (unambiguously wrong, always fixable) and
+**WARN**. Warnings are `review:` (a human should glance) or `drift:` (mention-count
+differences, usually stylistic).
+
+**A warning is not proof of a defect.** The extractor reads Arabic that inflects,
+prefixes and abbreviates, so it has documented blind spots:
+
+| Blind spot | Example seen in this repo |
+|---|---|
+| Article ranges with no preceding article word | `٣٩–٤٨ من القانون رقم ٤٩ لسنة ١٩٧٧` |
+| Limbs written as Arabic prose, not a Latin letter | `البند ٣ من الفقرة الأولى من المادة ٣١` (EN: `Art. 31(1)(3)`) |
+| List constructions naming "law" only once | `القوانين رقم ٤٩ لسنة ١٩٧٧ ورقم ١٣٦ لسنة ١٩٨١` — the later numbers have no `قانون` to anchor on |
+| Ranges split differently between languages | EN `224–232` vs AR `224–225` |
+
+**Never edit the Arabic to silence a warning without confirming against the source that
+something is genuinely missing.** A confident wrong fix is worse than the warning,
+because nobody re-checks a thing that now looks right. This is the same failure mode as
+the overturned-facts table in `EGYPT-EDITION.md`.
 
 ---
 

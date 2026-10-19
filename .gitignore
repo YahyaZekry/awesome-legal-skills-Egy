@@ -1,0 +1,3 @@
+# Python bytecode from the .project-knowledge scripts
+__pycache__/
+*.pyc
