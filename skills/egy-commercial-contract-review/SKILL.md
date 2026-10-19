@@ -107,6 +107,11 @@ Do this before clause work. It sets the default rules.
 
 ### Step 3 — Clause-by-clause
 
+⚠️ **If the client is the one signing, and is not a lawyer, start with
+`references/RISK-GRID.md` instead.** It names the five clauses that actually move the
+money, what each does to them in plain terms, and what to ask for — which is usually
+what they actually asked you. Then work the rest through the full checklist.
+
 Work `references/CLAUSE-CHECKS.md` top to bottom. For each clause: what it says,
 what Egyptian law does with it, the risk, the redline, the fallback.
 
@@ -237,6 +242,11 @@ claim" beats "this is not legal advice".]
 ## References
 
 - `references/CLAUSE-CHECKS.md` — the clause-by-clause working checklist
+- `references/RISK-GRID.md` — ⚠️ **for a client who is signing, not reviewing.**
+  The five clauses that decide their exposure, what each does in plain terms, the
+  Egyptian default that applies if it is left out, and what to negotiate. Also states
+  the three ceilings (Art. 227(1), Arts. 224/225, Art. 148(2)) that change what a
+  signed number is actually worth
 - `references/DISPUTE-RESOLUTION.md` — governing law, court vs arbitration, the
   Egyptian traps, and drafting text for each
 - `research/egyptian-corpus/01-commercial-corporate-contract.md` — the verified

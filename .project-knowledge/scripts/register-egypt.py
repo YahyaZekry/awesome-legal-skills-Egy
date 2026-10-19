@@ -46,7 +46,7 @@ TAIL = "\n  ]\n}\n"
 EXISTING_EGYPT = re.compile(r'\n    \{\n      "name": "egy-')
 
 AUTHOR = "Egypt Edition (Lawve catalog)"
-VERSION = "2026.10.13"
+VERSION = "2026.10.19"
 LICENSE = "CC-BY-4.0"
 
 # (plugin name, category, description)
@@ -198,6 +198,33 @@ PLUGINS = [
         "extend them, electronic litigation, and execution and enforcement. Triggers: "
         "\"file a case Egypt\", \"which court\", \"court fees\", \"appeal\", \"enforce a "
         "judgment\", \"محكمة\", \"رفع دعوى\", \"رسوم قضائية\", \"تنفيذ حكم\".",
+    ),
+    (
+        "egy-client-explanation",
+        "Legal Operations",
+        "Turning dense legal material into advice a non-lawyer in Egypt can actually act "
+        "on — a client update, a board summary, a risk note, or the explanation you owe a "
+        "family member. Covers the four things that go wrong specifically in Egypt: "
+        "explaining across a register rather than a language, the gap between winning and "
+        "collecting (execution is a separate stage under Law 13/1968), the client's "
+        "imported mental model of how courts work, and the numbers you cannot honestly "
+        "give. Includes the rules for writing the Arabic version and a worked unpaid-wage "
+        "example. Triggers: \"explain this to the client\", \"plain Arabic\", \"what does "
+        "this mean for me\", \"make this client-ready\", \"اشرح لي\", \"يعني إيه\", "
+        "\"فهمني العقد\", \"أشرح للعميل\".",
+    ),
+    (
+        "egy-chronology-builder",
+        "Litigation",
+        "Build a litigation chronology for an Egyptian matter from the documents "
+        "themselves — every entry attributed to its source document, with a "
+        "professional-secrecy screen, case-theory significance tagging, and deadlines "
+        "computed rather than narrated. Covers the three Egyptian date problems that break "
+        "chronologies silently: Arabic-Indic numerals and day/month ordering, Hijri dates "
+        "sitting alongside Gregorian on official documents, and the fact that under Law "
+        "25/1968 Art. 15 some document dates are not provable against third parties at "
+        "all. Triggers: \"chronology\", \"timeline\", \"statement of facts\", "
+        "\"تسلسل زمني\", \"الوقائع\", \"ترتيب الأحداث\", \"صحيفة الدعوى\", \"محضر\".",
     ),
 ]
 
