@@ -1,6 +1,6 @@
 # Stack
 
-> Part of awesome-legal-skills-Egy/.project-knowledge/ | Last updated: 2026-10-19
+> Part of awesome-legal-skills-Egy/.project-knowledge/ | Last updated: 2026-10-29
 
 ## What kind of project this is
 
@@ -20,7 +20,7 @@ into context. Everything else is supporting material the agent reads on demand.
 | VCS | git, branch `egypt-edition`, remote `origin` = YahyaZekry fork |
 | Upstream | `upstream` = `lawve-ai/awesome-legal-skills` |
 | Research tooling | Exa MCP + Firecrawl MCP |
-| Distribution | `.claude-plugin/marketplace.json` — **12 Egypt plugins registered** (264 upstream + 12) |
+| Distribution | `.claude-plugin/marketplace.json` — **19 Egypt plugins registered** (264 upstream + 19 = 283) |
 | Deployment | None. Consumers clone or install as a Claude Code plugin |
 
 ---
@@ -29,12 +29,12 @@ into context. Everything else is supporting material the agent reads on demand.
 
 | Metric | Value |
 |--------|-------|
-| Egypt skills | 32 directories (16 EN + 16 AR) |
-| Egypt markdown files | 66 |
-| Egypt markdown lines | 12,857 |
-| Corpus files | 7 committed (1 still unwritten) |
-| Corpus lines | 9,520 committed |
-| Upstream skill dirs | 288 (264 sync-tracked) |
+| Egypt skills | 38 directories (19 EN + 19 AR) |
+| Egypt markdown files | 76 |
+| Egypt markdown lines | 15,683 |
+| Corpus files | 10 committed |
+| Corpus lines | 12,902 committed |
+| Upstream skill dirs | 302 in `skills/` (264 sync-tracked + 38 Egypt) |
 
 ---
 
@@ -49,11 +49,11 @@ the literal invocations used during the build.
 | `find skills/egy-* -name '*.md' \| wc -l` | Count Egypt content |
 | **`python3 .project-knowledge/scripts/validate.py`** | **The gate — run before every commit.** Exit 1 on failure |
 | `python3 .project-knowledge/scripts/validate.py --no-parity` | Fast pass without the EN/AR diff |
-| **`python3 .project-knowledge/scripts/register-egypt.py`** | Register/restore the 12 Egypt plugins. Idempotent |
+| **`python3 .project-knowledge/scripts/register-egypt.py`** | Register/restore the 19 Egypt plugins (per-plugin versions). Idempotent |
 | `python3 .project-knowledge/scripts/register-egypt.py --check` | Dry run of the above |
 | `git push origin egypt-edition` | Publish (see `integrations.md` for the PR link) |
 
-⚠️ **Never run a formatter, linter, or mass-rewrite over `skills/`** — 264 of the 288
+⚠️ **Never run a formatter, linter, or mass-rewrite over `skills/`** — 264 of the 302
 directories are upstream-managed and will be overwritten by the next sync anyway.
 Only ever touch `skills/egy-*`.
 

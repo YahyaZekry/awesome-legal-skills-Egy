@@ -1,6 +1,6 @@
 # Project Structure
 
-> Part of awesome-legal-skills-Egy/.project-knowledge/ | Last updated: 2026-10-19
+> Part of awesome-legal-skills-Egy/.project-knowledge/ | Last updated: 2026-10-29
 
 ## File tree
 
@@ -26,7 +26,7 @@ awesome-legal-skills-Egy/
 │       ├── validate.py                   ✅ all 5 checks + EN↔AR parity + registration
 │       └── register-egypt.py             ✅ idempotent marketplace.json injector
 ├── CONTRIBUTING.md
-├── EGYPT-EDITION.md                      ⭐ Egypt edition source of truth (190 lines)
+├── EGYPT-EDITION.md                      ⭐ Egypt edition source of truth (228 lines)
 ├── LICENSE                               CC BY-NC-ND 4.0 (upstream)
 ├── README.md                             ⛔ sync block between LAWVE_SYNC_START/END
 ├── research/
@@ -36,43 +36,49 @@ awesome-legal-skills-Egy/
 │       ├── 03-employment-courts-aml-banking.md    2,481 lines
 │       ├── 04-practical-operations-egypt.md       1,485 lines
 │       ├── 05-tenancy-egypt.md                      725 lines
-│       ├── 06-criminal-procedure-egypt.md          🔬 in progress (Track 3)
-│       ├── 07-family-law-egypt.md                  🔬 in progress (Track 3)
-│       └── 08-intellectual-property-egypt.md       🔬 in progress (Track 3)
-└── skills/                               292 dirs
+│       ├── 06-criminal-procedure-egypt.md         1,715 lines
+│       ├── 07-family-law-egypt.md                 1,818 lines
+│       ├── 08-intellectual-property-egypt.md      1,336 lines
+│       ├── 09-real-estate-purchase-egypt.md         794 lines
+│       └── 10-debt-recovery-egypt.md                778 lines
+└── skills/                               302 dirs
     ├── <upstream-skill>/                 ⛔ DO NOT EDIT — 264 tracked, overwritten on sync
-    ├── egy-<topic>/                      ✅ EN Egypt skill   (14)
-    └── egy-<topic>-ar/                   ✅ AR twin of the above (14)
-
-⚠️ The three `🔬` corpus files exist only once the Track 3 research agents finish. Do not
-write a skill for a topic whose corpus file is still being written.
+    ├── egy-<topic>/                      ✅ EN Egypt skill   (19)
+    └── egy-<topic>-ar/                   ✅ AR twin of the above (19)
 ```
 
 **Legend:** ⛔ never write · ⭐ primary reference · ✅ yours to edit
 
 ---
 
-## The 12 Egypt skill pairs
+## The 19 Egypt skill pairs
 
 Every `egy-x` has exactly one `egy-x-ar`. Same topic, written natively in each
-language — not a translation pair.
+language — not a translation pair. ⚠️ The newer topics (Track 3) ship **SKILL.md
+only** — the earlier EN skills carry a README, and `references/` exists only where
+the material is reusable (19 reference files across the edition, all resolve).
 
-| Directory | Files | References |
-|-----------|-------|-----------|
-| `egy-context-operations` | SKILL, README | `GLOSSARY-EN-AR.md`, `PORTALS.md`, `PAYMENTS.md` |
-| `egy-commercial-contract-review` | SKILL, README | `CLAUSE-CHECKS.md`, `DISPUTE-RESOLUTION.md` |
-| `egy-ecommerce-compliance` | SKILL, README | `AUDIT-GRID.md`, `COPY-CHECKS.md` |
-| `egy-legal-notice` | SKILL, README | `TEMPLATES.md` |
-| `egy-company-setup` | SKILL, README | — |
-| `egy-invoice-and-payment-terms` | SKILL, README | — |
-| `egy-employment-contract` | SKILL, README | — (AR adds `TEMPLATES.md`) |
-| `egy-employment-dispute` | SKILL, README | — |
-| `egy-rental-agreement` | SKILL, README | — |
-| `egy-tax-and-einvoicing` | SKILL, README | — |
-| `egy-court-filing-guide` | SKILL, README | — |
-| `egy-legal-research` | SKILL, README | — |
-
-17 reference files across the edition. All resolve — verified.
+| Directory | EN files | AR files | References |
+|-----------|-------|-----------|------------|
+| `egy-context-operations` | SKILL, README | SKILL | GLOSSARY-EN-AR, PORTALS, PAYMENTS — **both languages** |
+| `egy-commercial-contract-review` | SKILL, README | SKILL, README | CLAUSE-CHECKS, DISPUTE-RESOLUTION, RISK-GRID — **both languages** |
+| `egy-ecommerce-compliance` | SKILL, README | SKILL | AUDIT-GRID, COPY-CHECKS — **both languages** |
+| `egy-legal-notice` | SKILL, README | SKILL | TEMPLATES — **both languages** |
+| `egy-employment-contract` | SKILL, README | SKILL | TEMPLATES — **AR only** |
+| `egy-company-setup` | SKILL, README | SKILL | — |
+| `egy-invoice-and-payment-terms` | SKILL, README | SKILL | — |
+| `egy-employment-dispute` | SKILL, README | SKILL | — |
+| `egy-rental-agreement` | SKILL, README | SKILL | — |
+| `egy-tax-and-einvoicing` | SKILL, README | SKILL | — |
+| `egy-court-filing-guide` | SKILL, README | SKILL | — |
+| `egy-legal-research` | SKILL, README | SKILL | — |
+| `egy-client-explanation` | SKILL, README | SKILL | — |
+| `egy-chronology-builder` | SKILL, README | SKILL | — |
+| `egy-criminal-procedure` | SKILL | SKILL | — |
+| `egy-ip-registration` | SKILL | SKILL | — |
+| `egy-family-law` | SKILL | SKILL | — |
+| `egy-real-estate-purchase` | SKILL | SKILL | — |
+| `egy-debt-recovery` | SKILL | SKILL | — |
 
 ---
 

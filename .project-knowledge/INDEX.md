@@ -1,19 +1,21 @@
 # awesome-legal-skills-Egy — Knowledge Index
 
-> Last updated: **2026-10-19**
-> Status: **28 Egypt skills (14 EN/AR pairs) · 14 plugins registered · 3 Track-3 corpora in flight**
+> Last updated: **2026-10-29**
+> Status: **Edition complete — 19 Egypt topics · 38 skills (19 EN/AR pairs) · 76 markdown
+> files · 15,683 lines · 19 plugins registered (283 total) · 10 corpus files / 12,902 lines**
 > Stack: Markdown + YAML frontmatter · validated with `scripts/validate.py` (Python 3) + CI · no runtime
-> Current goal: **Track 3 — three new Egypt-native topics (criminal procedure, family law,
-> IP registration).** The corpora are being researched now, and the skills follow the
-> corpus — never the other way round. Tracks 1 (installable), 2 (ports) and 4
-> (engineering) are all **done**.
+> Current goal: **None active — all four build tracks are done** (installable, ports,
+> Egypt-native topics, engineering). The edition lives on branch `egypt-edition`
+> (pushed through `e4be8b4`); the open decisions are the PR/merge to `main`, and the
+> ~60-item research backlog in `roadmap.md`.
 
 ## What This Project Does
 
-An **Egyptian-law edition** of the Lawve legal-skills catalog. It adds 14 practical
+An **Egyptian-law edition** of the Lawve legal-skills catalog. It adds 19 practical
 Egyptian topics — company setup, commercial contracts, employment, tenancy, e-commerce,
-tax, court filing, legal notices, research, explaining law to a client and building a
-chronology — as **28 skills** (14 English + 14 Arabic), each backed by a
+tax, court filing, legal notices, research, explaining law to a client, building a
+chronology, criminal procedure, IP registration, family law, real-estate purchase and
+debt recovery — as **38 skills** (19 English + 19 Arabic), each backed by a
 hand-verified legislative corpus.
 
 It exists because the upstream catalog is US/EU-centric and the user is **not a
@@ -33,18 +35,18 @@ replaces tracked directories wholesale.
 | File | Contents | Load when… |
 |------|----------|------------|
 | `stack.md` | What kind of project this is, content inventory, dev commands, env | Setting up, counting content, wondering why there's no build step |
-| `structure.md` | File tree, the 12 skill pairs, key files, ⛔ read-only markers | Navigating the repo, adding a skill or reference file |
+| `structure.md` | File tree, the 19 skill pairs, key files, ⛔ read-only markers | Navigating the repo, adding a skill or reference file |
 | `schema.md` | Skill directory contract, frontmatter schema, EN/AR pairing invariants, corpus format, confidence markers | Writing or editing any skill — **read first** |
 | `triggers.md` | Routing map: which skill loads on what, deliberate adjacencies, planned-skill overlap risks | Before writing a new skill (avoid overlap) or debugging wrong-skill selection |
 | `validators.md` | The five validation checks with working code, and **each one's false-positive modes** | Before committing anything; after any Arabic output |
 | `systems.md` | The four systems: upstream sync (destructive), corpus-first research, EN/AR paired build, validation gate | Understanding *why* the workflow is shaped this way |
 | `features.md` | What the edition covers by need, plus the legal findings that reshaped whole skills, and what was deliberately NOT ported | Onboarding, explaining the edition, checking whether a topic exists |
 | `integrations.md` | Exa MCP, Firecrawl MCP, the upstream sync contract, `marketplace.json`, GitHub branches, exact data contracts | Touching research tooling, or registering/distributing skills |
-| `roadmap.md` | **Current goal**, the 4 build tracks, known bugs, and the 25-item research backlog | **Before starting any task** — this is the pre-flight check |
-| `history.md` | Removed items, 11 fixed defects, 20 architectural decisions | Debugging, reviewing why something is the way it is |
+| `roadmap.md` | Build tracks (all four done), known bugs, and the research backlog (**60 open items** — 42 arrived with corpus 07/09/10) | **Before starting any task** — this is the pre-flight check |
+| `history.md` | Removed items, 11 fixed defects, 28+ architectural decisions | Debugging, reviewing why something is the way it is |
 | `sessions.md` | Session-by-session log | Reviewing work history |
 | `scripts/validate.py` | All five validation checks + EN↔AR parity + registration. **Exit 1 on failure — CI-safe.** Its docstring is the reference for FAIL-vs-WARN and known extractor blind spots | Before **every** commit; after any Arabic output |
-| `scripts/register-egypt.py` | Injects/restores the 12 Egypt plugin entries in `.claude-plugin/marketplace.json`. **Idempotent** | After any `upstream/main` merge; when adding a new Egypt skill |
+| `scripts/register-egypt.py` | Injects/restores the 19 Egypt plugin entries in `.claude-plugin/marketplace.json` (per-plugin versions via `PLUGIN_VERSIONS`). **Idempotent** | After any `upstream/main` merge; when adding a new Egypt skill |
 
 > Only files that exist are listed. `routes.md`, `hooks.md` and `components.md` were
 > not created — this project has no routes, hooks or components. Their roles are
