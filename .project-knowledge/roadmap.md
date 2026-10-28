@@ -1,6 +1,6 @@
 # Roadmap
 
-> Part of awesome-legal-skills-Egy/.project-knowledge/ | Last updated: 2026-10-19
+> Part of awesome-legal-skills-Egy/.project-knowledge/ | Last updated: 2026-10-28
 > **Pre-flight check: read this before starting any task.**
 
 ## Current Goal
@@ -8,8 +8,9 @@
 Take the Egypt edition beyond the 12 completed EN/AR pairs: **port more upstream
 skills, add Egypt-native topics the catalog doesn't cover (criminal procedure, family
 law, IP registration), and make the skills installable as a plugin.** Alongside that,
-close the **25 open UNVERIFIED legal items** below, since several would change a
-skill's advice if wrong.
+close the **open UNVERIFIED legal items** below — 18 of them arrived with the
+family-law corpus (2026-10-28) — since several would change a skill's advice if
+wrong.
 
 ---
 
@@ -90,12 +91,21 @@ corpus file is still being written** — every legal proposition must trace to i
       Corpus: `06-criminal-procedure-egypt.md` ✅ **1,715 lines / 258 verified**. Skill
       shipped EN + AR, scenario-first, built around the three clocks.
       *(done: 2026-10-19)*
-- [ ] `egy-family-law` — marriage, divorce, khul', custody, maintenance, inheritance.
-      Corpus: `07-family-law-egypt.md` 🔬 *building — nothing on disk yet*. ⚠️ **The most
-      misinformation-heavy topic in Egyptian law** — most-discussed by non-lawyers and
-      by campaigning organisations with a position. Expect heavy `🟡`. The key
-      verification: **whether a new consolidated personal status law has actually
-      passed**, since a reform was under active debate through 2024–2026
+- [x] `egy-family-law` — marriage, divorce, khul', custody, maintenance, inheritance.
+      Corpus: `07-family-law-egypt.md` ✅ **1,818 lines / 291 verified / 43 unverified /
+      22 affirmatively non-existent**, with a dated re-check line in §1.2. Skill shipped
+      EN + AR, scenario-first, opening with the two structural traps. **The headline
+      verification held: as of 28 October 2026 there is still NO new consolidated
+      personal-status law** — three bills (Muslim family law, Christian family law,
+      the solidarity Fund) referred to a joint committee (Cabinet approval 29 Apr 2026;
+      the two family bills 4 May 2026; the Fund bill 12 Oct 2026), none enacted, latest
+      reporting still calling them drafts. Corrections carried as deliverables: the
+      marriage age lives in **Art. 31 bis of Law 143/1994** (❌ not the Child Law),
+      the Art. 293 fine is **EGP 5,000 since 2020** (❌ not 500), the inheritance-
+      withholding offence sits in **Law 77/1943 Art. 49 via Law 219/2017** (❌ not the
+      Penal Code), custody ends at **15 for girl and boy alike** and the child
+      **chooses** after, visitation is **never enforced by force**, and ❌ **there is
+      no DNA statute**. *(done: 2026-10-28)*
 - [x] `egy-ip-registration` — trademark, patent, copyright. Corpus:
       `08-intellectual-property-egypt.md` ✅ **1,336 lines / 291 verified, 22
       affirmatively non-existent**. Skill shipped EN + AR, organised by **goal** rather
@@ -195,12 +205,15 @@ the overturned-facts table in `EGYPT-EDITION.md`.
 
 ---
 
-## Research backlog — 25 open UNVERIFIED items
+## Research backlog — open UNVERIFIED items
 
 All are marked `🟡`/`⚠️` in their skill and **must not be stated as fact** until
-checked against a primary source. Preferred source: the Ministry of Justice
-encyclopedia at `serviceapi.egyptianlaws.com` (it carries SCC rulings inline), then
-the ELP at `elpai.idsc.gov.eg`, then the relevant authority.
+checked against a primary source. ⚠️ The former preferred source — the Ministry of
+Justice encyclopedia at `serviceapi.egyptianlaws.com` — has been serving **HTTP 500**
+since late October 2026. While it is down, the working order is: the Official
+Gazette page scans at `moj.gov.eg:73/Doc/001/<id>.pdf` (`curl -k`, port 73 — they
+are page images), `lawhub.info/eg/?p=NNNN` for verbatim statute text, then the ELP
+at `elpai.idsc.gov.eg`, then the relevant authority.
 
 ### Would change advice if wrong — prioritise
 
@@ -297,6 +310,51 @@ the ELP at `elpai.idsc.gov.eg`, then the relevant authority.
       *(added: 2026-10-12)*
 - [ ] ⚠️ **Realistic incorporation elapsed times** — practitioners contradict GAFI's
       published figures. *(added: 2026-10-12)*
+
+### Family law (corpus 07) — 18 items arrived 2026-10-28
+
+Corpus §12 carries the full table with what was searched for each. The
+advice-affecting ones, condensed:
+
+- [ ] 🟡 **The court fee (رسم) for the claims outside the Art. 3(2) exemption** — خلع،
+      مهر/جهاز، الميراث، إشهاد الوراثة. The biggest gap; ask the registry for a written
+      تقدير. Corpus §10.4
+- [ ] 🟡 **The two experts' fees** under Law 10/2004 annexed Art. 11 — the largest real
+      cost in a contested case. Corpus §8.3
+- [ ] 🟡 **Law 119/1952 (الولاية على المال) is NOT READ.** Read it before advising on a
+      minor's money. Corpus §5.7
+- [ ] 🟡 **What CPC Art. 250 preserves** against Law 10/2004 Art. 14's no-cassation rule
+      — the whole scope of the cassation question. Corpus §8.6
+- [ ] 🟡 **The ordinary domestic appeal period** in personal-status cases (Art. 61
+      states only the 60-day rule for a person domiciled abroad). Corpus §8.6
+- [ ] 🟡 **Whether custody for a non-Muslim couple** is governed by Law 25/1929 Art. 20
+      or the community's own rules — the unification covers estates, wills and
+      capacity, not custody. Corpus §1.3, §12 row 12
+- [ ] 🟡 **The classical Hanafi custody conditions** (a mother's remarriage and the
+      like) — ❌ not in the statute read; check current Cassation before warning
+      anyone. Corpus §12 row 17
+- [ ] 🟡 **The text of the three 2026 bills** (355 articles; the Christian family bill;
+      the Fund bill) — contents are press-reported, not read. Corpus §1.2, §12 row 13
+- [ ] 🟡 **Law 142/2006's amendment of Law 10/2004 promulgating Art. 2** — do not quote
+      the pre-2006 transfer rule as current. Corpus §12 row 14
+- [ ] ⚠️ **MoJ Decision 1150/2010** (visitation regulation) — secondary quotation only;
+      its quotas may not be quoted as law. Corpus §5.4, §12 row 4
+- [ ] 🟡 **The instrument fixing the Fund's EGP 500/month cap** — practice figure
+      sourced to Nasser Bank's page; statute has no cap. Corpus §4.6, §12 row 5
+- [ ] 🟡 **The Justice-Minister decision under Law 1/2000 Art. 69** (how تسليم/ضم/رؤية
+      enforcement is actually carried out). Corpus §9.2, §12 row 3
+- [ ] 🟡 **The District judge's pecuniary finality threshold (النصاب الانتهائى)** on
+      which Art. 9(أولاً)(4) depends — do not state a finality amount. Corpus §8.4
+- [ ] 🟡 **Whether a DNA report is admitted and what weight it carries in practice** —
+      the statute's ❌ silence is the verified part. Corpus §6.3, §12 row 16
+- [ ] 🟡 **The pre-marriage medical examination decision** (diseases list and validity
+      period). Corpus §2.3, §12 row 15
+- [ ] 🟡 **Whether unstamped/unpaid Fund levies block documentation at the counter.**
+      Corpus §10.2, §12 row 18
+- [ ] 🟡 **Whether the settlement office is required in a confessional divorce.**
+      Corpus §8.2, §12 row 11
+- [ ] ⚠️ **Official Gazette issue-number conflicts** for Laws 176/2020 and 215/2017 —
+      reproduce both forms rather than choosing. Corpus §5.7, §12 row 6
 
 ---
 

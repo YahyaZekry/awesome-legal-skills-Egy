@@ -255,6 +255,41 @@ lines / 258 verified**, with §17 covering Law 174/2025 article by article.
   assert confidently**, and each one cost a search to refute. **Search for the
   non-existence of a widely-repeated fact, and record it as a finding.** *(2026-10-19)*
 
+- **Check what survived on disk before re-doing work.** The family-law corpus was
+  written during a session that then died on rate limits, twice; the checkpoint
+  summary recorded *"nothing on disk"* — yet `07-family-law-egypt.md` surfaced at
+  1,810 lines, **complete** (proper §13 trap-list ending, closing paragraph intact).
+  The same thing had already happened once with corpus 08. ⚠️ **A lost checkpoint is
+  not a lost file**: run `wc -l`, `grep -n '^#'` and read the last line before
+  relaunching anything. *(2026-10-28)*
+
+- **The §-reference checker must allow three heading levels.** The family corpus uses
+  `### N.N.N` sub-sub-headings legitimately — **11 of them** (e.g. §3.3.3 نشوز,
+  §4.5.2 automatic deduction, §4.5.4 the criminal complaint). The first set-diff
+  reported three dangling references; the extraction regex was truncating at
+  `#{1,2}` and again at a two-dot number pattern. ⚠️ **Fix the checker, not the
+  corpus**: a `§N.N.N` citation is an error only when no heading at any level carries
+  the number. *(2026-10-28)*
+
+- **Re-check the volatile claim on the file's own as-of date.** The family corpus
+  went to disk as of 2026-10-19; committed on 2026-10-28. Rather than silently
+  trusting the older date, the single most volatile proposition — *no new
+  consolidated personal-status law* — was **re-verified against fresh reporting**
+  (24 Oct and 28 Aug 2026 pieces still describing the three bills as drafts), and
+  the file carries a **dated re-check line** in §1.2 saying so. ⚠️ **A corpus can
+  be committed late without becoming stale — if the staleness question is asked and
+  the answer is written into the file.** *(2026-10-28)*
+
+- **Family law is where the confessional structure first becomes load-bearing.**
+  Every commercial skill could cite one statute; family law cannot. The corpus
+  establishes: personal status is allocated by **promulgating Art. 3 of Law 1/2000**
+  (Muslims → statutes + **أرجح الأقوال الحنفية**; non-Muslims → their own shari'a;
+  unified for all Egyptians → **inheritance, wills, capacity**), and **Law 462/1955
+  was repealed by promulgating Art. 4** — so citing 462/1955 as the current rule is
+  a real error, not a stylistic one. The skill refuses to give Hanafi-default
+  doctrine (custody disqualifications, بطلان grounds, the wali) article numbers,
+  and refuses cross-confessional advice. *(2026-10-28)*
+
 ---
 
 ## The measurement worth remembering

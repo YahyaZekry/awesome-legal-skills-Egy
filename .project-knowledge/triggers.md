@@ -34,6 +34,13 @@
 | Registering a brand, logo, patent, design; what IP costs in Egypt | `egy-ip-registration` | Organised by **goal**, not by Book. ⚠️ **Refuses to quote a fee without a date** |
 | Someone is copying you — counterfeit goods, pirated software, a stolen brand | `egy-ip-registration` → `egy-criminal-procedure` | IP first (the 8/15-day post-seizure deadlines, customs), then the criminal mechanics |
 | A book, album, film or software is being licensed, published or assigned | `egy-ip-registration` | ⚠️ **Owns the Art. 185 recordal rule** — protection is automatic, but the *deal* binds nobody until recorded |
+| Marriage or its documentation — the 18 rule, mahr, قائمة المنقولات, عرفي marriages | `egy-family-law` | ⚠️ **Opens by correcting the home of the rule**: Art. 31 bis of **Law 143/1994**, ❌ not the Child Law; sanction is **disciplinary**. عرفي: divorce and نسب reachable, money usually lost on denial |
+| "He said you're divorced" — طلاق, مراجعة, the paperwork | `egy-family-law` | Owns **Art. 3** (three-in-one = ONE divorce), the **30-day documentation duty**, and the proof rules of Law 1/2000 Art. 21 |
+| A wife wants out — choosing between خلع and judicial تطليق | `egy-family-law` | The route table is the answer: خلع costs **her own financial rights** and is **بائن**, non-appealable, **children's rights survive**; the non-maintenance divorce is **رجعي** — the trap |
+| Maintenance — claiming it, the arrears bar, the collection ladder, the criminal complaint | `egy-family-law` → `egy-criminal-procedure` | Owns the **one-year arrears bar** and the **four-step ladder in its order** (Fund → deduction → Art. 76 bis 30-day imprisonment → Penal Code Art. 293 complaint **last**). ⚠️ **The fine is EGP 5,000 since 2020**, ❌ not 500 — and 500/month is the **Fund cap**, a different thing |
+| Custody, visitation, the children's housing | `egy-family-law` | Owns the **15-year rule** (girl and boy alike, then the child **chooses**, no custody wage from 15), «**ولا ينفذ حكم الرؤية قهراً**», and the **two SCC subtractions** on housing |
+| Someone died — inheritance, wills, the withholding offence | `egy-family-law` | Shares need the **full family tree**. **الوصية الواجبة** in the same application. ⚠️ The withholding offence is **Law 77/1943 Art. 49 (Law 219/2017)**, ❌ not the Penal Code; ❌ no DNA statute |
+| "The new family law" — is it law yet? | `egy-family-law` | **No — as of 28 Oct 2026** three bills sit in a joint committee. ⚠️ Also owns the confessional-structure rule: cite **promulgating Art. 3 of Law 1/2000**, never the repealed Law 462/1955 |
 
 ---
 

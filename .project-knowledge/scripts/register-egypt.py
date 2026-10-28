@@ -257,6 +257,28 @@ PLUGINS = [
         "\"تسجيل علامة\", \"براءة اختراع\", \"حقوق المؤلف\", \"الملكية الفكرية\", "
         "\"تقليد\", \"سر تجاري\", \"تصميم صناعي\".",
     ),
+    (
+        "egy-family-law",
+        "Family Law",
+        "Egyptian family law (personal status, الأحوال الشخصية) for someone who is not a "
+        "lawyer — documenting a marriage, the marriage age and its enforcement, mahr and "
+        "the قائمة المنقولات, عرفي (undocumented) marriages and what they can and cannot "
+        "prove, the four divorce routes (unilateral طلاق, خلع, judicial تطليق, فسخ) and "
+        "how to choose, the money a divorced wife is owed (عدة، متعة، مؤخر، جهاز), "
+        "maintenance (نفقة) and its one-year arrears bar, the collection ladder (the Fund, "
+        "garnishment, coercive imprisonment, the criminal complaint), custody (حضانة) and "
+        "its exact age rule, visitation (رؤية) and the fact it is never enforced by force, "
+        "the children's housing rule and its two constitutional subtractions, parentage "
+        "(نسب) and the absence of any DNA statute, inheritance and wills (الميراث "
+        "والوصية), the criminal offence of withholding an inheritance (Law 219/2017), and "
+        "the family courts — the free settlement office, fee exemptions, the one-file "
+        "rule, and appeal/enforcement timing. As of 28 October 2026 there is NO new "
+        "consolidated personal-status law; three bills sit in a joint committee. "
+        "Triggers: \"divorce Egypt\", \"khul\", \"خلع\", \"custody\", \"حضانة\", "
+        "\"visitation\", \"رؤية\", \"maintenance\", \"نفقة\", \"mahr\", \"المهر\", "
+        "\"عرفي\", \"inheritance\", \"ميراث\", \"will\", \"وصية\", \"family court\", "
+        "\"محكمة الأسرة\", \"wali\", \"ولي\", \"متعة\", \"طلاق\", \"نفقة مؤقتة\".",
+    ),
 ]
 
 

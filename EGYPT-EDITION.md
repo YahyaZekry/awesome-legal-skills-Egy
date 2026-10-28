@@ -81,14 +81,16 @@ Each entry ships as two skills: `egy-x` (EN) and `egy-x-ar` (AR).
 | `egy-chronology-builder` | ✅ | ✅ |
 | `egy-criminal-procedure` | ✅ | ✅ |
 | `egy-ip-registration` | ✅ | ✅ |
+| `egy-family-law` | ✅ | ✅ |
 
-**16 skills × 2 languages = 32 directories, 66 markdown files, 12,857 lines.**
-**Verified corpus: 7 files, 9,520 lines.**
+**17 skills × 2 languages = 34 directories, 68 markdown files, 14,571 lines.**
+**Verified corpus: 8 files, 11,330 lines.**
 
-⚠️ **In flight, not yet ready to count:** `07-family-law-egypt.md` has not been written
-at all. Every committed corpus file is complete — that is checked, not assumed, because
-**two files already arrived looking finished while citing sections that did not exist**
-(see `roadmap.md` Track 3 and `history.md`).
+All eight corpus files are complete and committed — every one mechanically checked
+(no dangling section references, proper ending) and content-verified against
+retrieved primary text. `07-family-law-egypt.md` — the most misinformation-heavy
+topic — carries a dated re-check line: as of **28 October 2026** there is still
+**no new consolidated personal-status law**; three bills sit in a joint committee.
 
 Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contamination.
 
@@ -123,6 +125,7 @@ Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contami
 | `egy-employment-dispute` | Labour Court route, time limits, what evidence to gather, drafting a claim |
 | `egy-court-filing-guide` | Court structure, which court has which case, the **EGP 40,000 / 5,000 / 100,000** limits, why the 2024–25 fee tariffs are **not statutory**, service deadlines, execution. ⚠️ **Law 172/2018 is a Customs amendment, not e-litigation** |
 | `egy-criminal-procedure` | Arrest, the constitutional **24-hour rule**, the **mandatory lawyer** (Arts. 124–125), interrogation, pretrial detention and its **exact ceilings**, bail and its alternatives, **محضر vs بلاغ vs شكوى**, limitation, the victim's civil claim, and the appeal clocks. ⚠️ **The code in force is still Law 150/1950** — Law 174/2025 applies from **1 October 2027** |
+| `egy-family-law` | The four divorce routes and how to choose, the money a divorcée is owed, maintenance and its **one-year arrears bar** plus the four-step collection ladder, custody and visitation (**never enforced by force**), the children's housing and its **two SCC subtractions**, inheritance and wills, the **Law 219/2017 withholding offence**, and the family courts. ⚠️ **Opens with the two structural traps**: there is **no new consolidated family law** (three bills in committee as of 28 Oct 2026), and personal status is **confessional** — cite promulgating Art. 3 of Law 1/2000, never the repealed Law 462/1955 |
 
 ## What the research overturned
 
@@ -156,6 +159,13 @@ of them would have sounded authoritative.
 | National ID has a published Luhn check digit | **Not published** — that's folklore |
 | **Egyptian law has no hardship clause, like English law** | **Civil Code Art. 147(2)** has one, and voids any agreement to the contrary |
 | District Court limit is EGP 200,000 | **EGP 40,000** (amended by Laws 191/2020, 157/2024) |
+| Marriage age sits in the Child Law | **Art. 31 bis of the Civil Status Law 143/1994** (added by Law 126/2008) — and its sanction is **disciplinary against the registrar only**; ❌ no "16 with the guardian's consent" exception exists |
+| "أنتِ طالق ثلاثاً" = three divorces | **One** — Law 25/1929 Art. 3: a divorce coupled with a number falls once |
+| The Art. 293 maintenance fine is EGP 500 | **EGP 5,000 since Law 6/2020** — the 500 text is pre-2020; **EGP 500/month** is the Family Insurance Fund's payment cap, a different thing entirely |
+| Custody reverts to the father when the boy turns 15 | Custody ends at **15 for girl and boy alike** (Law 4/2005); **the child then chooses**, and from 15 there is **no custody wage** |
+| "الوصية لوارث باطلة" | **One-third is valid to an heir** — Law 71/1946 Art. 37; only the excess waits for the heirs' consent after death |
+| A visitation order is enforced with the police | **«ولا ينفذ حكم الرؤية قهراً»** — never by force; the sanction is temporary transfer of custody |
+| "Egypt's new family law has passed" | **Not as of 28 October 2026** — three bills (Muslim family law, Christian family law, the solidarity Fund) sit in a joint parliamentary committee; the "EGP 200,000 child-marriage penalty" belongs to a 2022 draft that never became law |
 
 Two more that changed whole skills:
 
@@ -178,7 +188,11 @@ until you have checked the raw file.
 The best single source found was the **Ministry of Justice legislation encyclopedia
 at `serviceapi.egyptianlaws.com`**, which carries **Supreme Constitutional Court
 rulings annotated inline** — two tenancy statutes were obtained from it without
-touching a paywalled database.
+touching a paywalled database. ⚠️ **It has been serving HTTP 500 since late
+October 2026** — while it is down, the working substitutes are the Official
+Gazette page scans at `moj.gov.eg:73/Doc/001/<id>.pdf` (needs `curl -k`, port 73;
+they are images — read them as rendered pages) and `lawhub.info/eg/?p=NNNN` for
+verbatim statute text.
 
 ## What gets an Egypt edition
 
