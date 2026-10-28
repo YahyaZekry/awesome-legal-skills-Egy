@@ -41,6 +41,9 @@
 | Custody, visitation, the children's housing | `egy-family-law` | Owns the **15-year rule** (girl and boy alike, then the child **chooses**, no custody wage from 15), «**ولا ينفذ حكم الرؤية قهراً**», and the **two SCC subtractions** on housing |
 | Someone died — inheritance, wills, the withholding offence | `egy-family-law` | Shares need the **full family tree**. **الوصية الواجبة** in the same application. ⚠️ The withholding offence is **Law 77/1943 Art. 49 (Law 219/2017)**, ❌ not the Penal Code; ❌ no DNA statute |
 | "The new family law" — is it law yet? | `egy-family-law` | **No — as of 28 Oct 2026** three bills sit in a joint committee. ⚠️ Also owns the confessional-structure rule: cite **promulgating Art. 3 of Law 1/2000**, never the repealed Law 462/1955 |
+| Buying property, وعد بيع, off-plan, the الشهر العقارى, transfer tax, foreign ownership, Sinai/desert/agricultural land, cracks in a new build | `egy-real-estate-purchase` | ⚠️ **Opens with the registry truth**: ownership passes by registration, not by signing. Owns the **land-type check before money moves** (agricultural ban, desert-law regime, **Sinai = void without approvals**), the 2.5% transfer tax window, and the defect split (1-year bar vs **Art. 651's ten-year guarantee**) |
+| Someone owes me money, unpaid invoice, bounced cheque, freezing assets, garnishing a salary | `egy-debt-recovery` | ⚠️ **Opens with the سند تنفيذي rule** (Art. 280): nothing is taken except through an executory instrument. Owns أمر الأداء (Arts. 201–210), the conservatory/garnishment machinery (Arts. 316–352 — **15-day تقرير**, **8-day notice**, **3-year state-body renewal**), the limitations table, and the cheque toolkit (518 → 525 → 534 → صلح). Contract/invoicing side stays with `egy-invoice-and-payment-terms` |
+| "They garnished my wages / there is an attachment on my money" — the debtor's side | `egy-debt-recovery` | The debtor's section: the **15-day تقرير** duty on the employer, protected assets (Arts. 305–309), **75% of wages untouchable** (Art. 309), and the **substitute-deposit release** (Arts. 302/303) |
 
 ---
 
@@ -80,13 +83,16 @@ audit grids, clause checks, risk grids). Five AR twins have their own today:
 
 > For the porting work in `roadmap.md`. **Check against the table above before
 > building** — several candidates partly overlap existing skills.
+> ⚠️ Two former candidates here — `egy-debt-recovery` and `egy-real-estate-purchase`
+> — were **built as standalone pairs on 2026-10-28** and moved to the routing table
+> above; their overlap risks were resolved by boundary, not by merging (debt:
+> collection machinery vs contract side; real estate: purchase vs tenancy).
 
 | Candidate | Would load on | Overlap risk |
 |---|---|---|
 | `egy-nda-review` | "review this NDA", confidentiality clauses | ⚠️ High — `egy-commercial-contract-review` already covers NDAs. Add only if the NDA material outgrows a reference file |
-| `egy-family-law` | marriage, divorce, custody, inheritance, personal status | None — empty category today |
-| `egy-debt-recovery` | enforcing a debt, execution, garnishment | ⚠️ Medium — overlaps `egy-invoice-and-payment-terms` (contract side) and `egy-court-filing-guide` (execution side). Would need a clear boundary |
-| `egy-real-estate-purchase` | buying property, registry, notarisation, title check | ⚠️ Medium — overlaps `egy-rental-agreement` on the الشهر العقاري mechanics |
+| ~~`egy-debt-recovery`~~ | enforcing a debt, execution, garnishment | **Built 2026-10-28** — boundary: this skill owns the collection machinery; `egy-invoice-and-payment-terms` keeps the contract side |
+| ~~`egy-real-estate-purchase`~~ | buying property, registry, title check | **Built 2026-10-28** — boundary: purchase side; `egy-rental-agreement` keeps the tenancy side |
 
 **Rule for new topics:** if a candidate is more than ~40% covered by an existing
 skill, extend that skill's `references/` instead of creating a new directory.

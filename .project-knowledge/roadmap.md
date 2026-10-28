@@ -77,7 +77,7 @@ cheap to add safely, and it is the shape a port should take.
       Egyptian version of an international criminal tribunal skill is worse than the
       original. Already recorded in `EGYPT-EDITION.md`. *(added: 2026-10-19)*
 
-## Track 3 — New Egypt-native topics ⬅️ in progress
+## Track 3 — New Egypt-native topics ✅ DONE (2026-10-28)
 
 Categories in the upstream catalog with **no Egypt coverage at all**: Criminal Law,
 Family / Personal Status, Intellectual Property, Immigration, Real Estate purchase.
@@ -123,12 +123,31 @@ corpus file is still being written** — every legal proposition must trace to i
       and read the last line.** A corpus file is not finished because it is long —
       **and 08 was caught by this check at 969 lines, then came back at 1,336 with
       zero dangling references.** *(done: 2026-10-19)*
-- [ ] `egy-real-estate-purchase` — buying property, registry, notarisation, title
-      check. ⚠️ Medium overlap with `egy-rental-agreement` on الشهر العقاري mechanics;
-      consider extending that skill's `references/` instead. *(added: 2026-10-19)*
-- [ ] `egy-debt-recovery` — enforcing a debt. ⚠️ Medium overlap on both sides
-      (`egy-invoice-and-payment-terms` for the contract, `egy-court-filing-guide` for
-      execution). Needs a clear boundary before building. *(added: 2026-10-19)*
+- [x] `egy-real-estate-purchase` — buying property, registry, title check, transfer
+      tax, restricted lands, defects. Corpus: `09-real-estate-purchase-egypt.md` ✅
+      **794 lines**, as-of **2026-10-28**. Built as a **standalone pair** (user
+      decision, 2026-10-28) rather than extending `egy-rental-agreement` — the
+      purchase side (ownership transfer, وعد بيع, fees/taxes, foreign/restricted
+      land, defects) is distinct work from the tenancy side. Skill shipped EN + AR,
+      opening with the registry truth. Headline verified: **Law 151/2026 Art. 43**
+      (2.5% transfer tax, unregistered contracts and heirs included, 60-day window),
+      **Law 3/2026** (100,000 EGP property-tax exemption; ❌ 24,000 stale,
+      ❌ 50,000 was draft-stage), Law 9/2022 Art. 10 مكررا possession route,
+      Law 186/2020 Art. 35 مكرر utilities refusal, and ❌ the phantom
+      "Law 143/2017 registration law" (two laws numbered 143 exist: 143/1981 desert,
+      143/1994 civil status). *(done: 2026-10-28)*
+- [x] `egy-debt-recovery` — enforcing a debt end-to-end. Corpus:
+      `10-debt-recovery-egypt.md` ✅ **778 lines**, as-of **2026-10-28**. Boundary
+      set by instrument, not by stage: this skill owns the *collection* machinery
+      (orders, attachments, execution, the cheque as a weapon), while
+      `egy-invoice-and-payment-terms` keeps the contract/ invoicing side and
+      `egy-court-filing-guide` keeps court mechanics. Skill shipped EN + AR. Headline
+      verified: أوامر الأداء **Arts. 201–210** (≥5-day demand → 3-day order → 3-month
+      service → 10-day تظلم → Art. 210 garnishment combo), **Art. 309 wages = one
+      quarter** (❌ the 20–50% figures are Kuwaiti), the **Art. 350 three-year
+      state-body renewal trap**, **Art. 534 cheque crime** verbatim ×2 with the
+      صلح extinguisher, and ❌ **أمر بالإحضار / "Law 10/1953" does not exist in the
+      Egyptian CPC**. *(done: 2026-10-28)*
 
 **Rule:** if a candidate is more than ~40% covered by an existing skill, extend that
 skill's `references/` rather than creating a new directory.
@@ -355,6 +374,70 @@ advice-affecting ones, condensed:
       Corpus §8.2, §12 row 11
 - [ ] ⚠️ **Official Gazette issue-number conflicts** for Laws 176/2020 and 215/2017 —
       reproduce both forms rather than choosing. Corpus §5.7, §12 row 6
+
+### Real-estate purchase (corpus 09) — 12 items arrived 2026-10-28
+
+Corpus §11 carries the full table with what was searched for each. Condensed:
+
+- [ ] 🟡 **Current registration-fee tiers** (500/1,000/1,500/2,000, max 3,900) rest on
+      MoJ press statements + the EREP platform — a statutory tariff text was not
+      located. Corpus §6.2
+- [ ] 🟡 **The Art. 35 مكرر refusal list** (Law 186/2020) — which utilities are
+      enumerated; the operative detail is in the regulation, not retrieved.
+      Corpus §3.3
+- [ ] 🟡 **Committee-practice detail of the Law 9/2022 Art. 10 مكررا route** —
+      documents list and processing time in practice, not read. Corpus §6.3
+- [ ] 🟡 **Law 151/2026 Art. 43's full exclusion list and the conditioned five-year
+      in-kind-share rule** — retrieved text covers the core; quote the exact
+      sub-paragraphs after a second read. Corpus §5.1
+- [ ] 🟡 **Whether Law 3/2026's 100,000 exemption needs an annual filing to claim
+      it** — the mechanism was not verified. Corpus §5.4
+- [ ] 🟡 **Cassation 7910/91 ق's own text** — carried from elwatannews reporting
+      (6 March 2026), not the judgment. Corpus §4.2
+- [ ] 🟡 **The GAFI gate's internal procedure** (مكتب تملك غير المصريين) — steps
+      and timing from practice, not read. Corpus §7
+- [ ] 🟡 **Law 143/1981 as amended by Law 11/2024** — the 2024 amendment's
+      substantive content was not retrieved. Corpus §8.2
+- [ ] 🟡 **Decree-Law 14/2012's latest circular** (33/2022) — circular text not read;
+      the statute chain is verified. Corpus §8.3
+- [ ] 🟡 **Whether spousal consent is required for a registered sale** — practice
+      varies; no statutory text located. Corpus §3.1
+- [ ] 🟡 **The 37-day registration timeline** — official statement, not a statutory
+      text. Corpus §6.2
+- [ ] 🟡 **Off-plan developer-liability specifics** (regulation of developers, escrow)
+      — not researched; mention conceptually only. Corpus §9
+
+### Debt recovery (corpus 10) — 12 items arrived 2026-10-28
+
+Corpus §12 carries the full list. Condensed:
+
+- [ ] 🟡 **Operative CPC pecuniary thresholds** after the 191/2020 + 157/2024 chain
+      (Arts. 41, 42/1, 43, 47/1, 248, 480) — retrieve both amending laws' gazette
+      texts and compute the current figures. Corpus corrections #9
+- [ ] 🟡 **A civil-judgment lapse rule** — searched; found only the commercial rule
+      (Comm. Code Art. 68) and the suspension rule (CC Art. 382). Either locate it
+      or convert to a ❌ finding with the search trail. Corpus §6.1
+- [ ] 🟡 **Bill-of-exchange / promissory-note prescription** (Commercial Code Book
+      Five) — not re-read; the cheque file (531) is verified. Corpus §6.3
+- [ ] 🟡 **Art. 326's current cap figures** (garnishment interest/expenses) and
+      **Art. 378's newspaper-notice threshold** — displayed figures stale.
+      Corpus §5.2, §7.4
+- [ ] 🟡 **The bankruptcy (الإفلاس) instrument number** — the regime exists; not
+      verified; do not cite a number until read. Corpus backlog
+- [ ] 🟡 **Pension (معاشات) garnishment rules** under the social-insurance statutes.
+      Corpus §8.3
+- [ ] 🟡 **Tax and social-insurance arrears collection** — state-execution tracks,
+      out of scope here. Corpus backlog
+- [ ] 🟡 **CPC Arts. 318, 321–324, 475–478, 289** — read in the full text but not
+      separately re-quoted. Corpus §5.1, §7.3, §7.7
+- [ ] 🟡 **Cassation 4135/94 ق full text** (no-protest recourse rule) — secondary
+      carry only. Corpus §10
+- [ ] 🟡 **أوامر الأداء Art. 210 footnote (*)** amendment origin (probably
+      Law 23/1992) not confirmed. Corpus §3.1
+- [ ] 🟡 **The orammat-on-petitions amendment note (*)** on Art. 197 — confirm the
+      تظلم route's current shape. Corpus §3.2
+- [ ] 🟡 **Law 174/2025's cheque-relevant provisions** — verify when the new CPCrim
+      enters force 1 October 2027. Corpus §6.4
 
 ---
 

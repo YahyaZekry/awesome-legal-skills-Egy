@@ -82,15 +82,20 @@ Each entry ships as two skills: `egy-x` (EN) and `egy-x-ar` (AR).
 | `egy-criminal-procedure` | ✅ | ✅ |
 | `egy-ip-registration` | ✅ | ✅ |
 | `egy-family-law` | ✅ | ✅ |
+| `egy-real-estate-purchase` | ✅ | ✅ |
+| `egy-debt-recovery` | ✅ | ✅ |
 
-**17 skills × 2 languages = 34 directories, 68 markdown files, 14,571 lines.**
-**Verified corpus: 8 files, 11,330 lines.**
+**19 skills × 2 languages = 38 directories, 76 markdown files, 15,683 lines.**
+**Verified corpus: 10 files, 12,902 lines.**
 
-All eight corpus files are complete and committed — every one mechanically checked
+All ten corpus files are complete and committed — every one mechanically checked
 (no dangling section references, proper ending) and content-verified against
 retrieved primary text. `07-family-law-egypt.md` — the most misinformation-heavy
 topic — carries a dated re-check line: as of **28 October 2026** there is still
 **no new consolidated personal-status law**; three bills sit in a joint committee.
+`09-real-estate-purchase-egypt.md` and `10-debt-recovery-egypt.md` are built on the
+**2026-10-28** source pass (Law 151/2026's transfer tax, Law 3/2026's property-tax
+exemption, the CPC full text and the Commercial Code consolidated cheque block).
 
 Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contamination.
 
@@ -126,6 +131,8 @@ Final validation: 0 pairing orphans, 0 frontmatter/reference failures, 0 contami
 | `egy-court-filing-guide` | Court structure, which court has which case, the **EGP 40,000 / 5,000 / 100,000** limits, why the 2024–25 fee tariffs are **not statutory**, service deadlines, execution. ⚠️ **Law 172/2018 is a Customs amendment, not e-litigation** |
 | `egy-criminal-procedure` | Arrest, the constitutional **24-hour rule**, the **mandatory lawyer** (Arts. 124–125), interrogation, pretrial detention and its **exact ceilings**, bail and its alternatives, **محضر vs بلاغ vs شكوى**, limitation, the victim's civil claim, and the appeal clocks. ⚠️ **The code in force is still Law 150/1950** — Law 174/2025 applies from **1 October 2027** |
 | `egy-family-law` | The four divorce routes and how to choose, the money a divorcée is owed, maintenance and its **one-year arrears bar** plus the four-step collection ladder, custody and visitation (**never enforced by force**), the children's housing and its **two SCC subtractions**, inheritance and wills, the **Law 219/2017 withholding offence**, and the family courts. ⚠️ **Opens with the two structural traps**: there is **no new consolidated family law** (three bills in committee as of 28 Oct 2026), and personal status is **confessional** — cite promulgating Art. 3 of Law 1/2000, never the repealed Law 462/1955 |
+| `egy-real-estate-purchase` | What a signed contract actually gives you (**not ownership** — registration at the الشهر العقارى passes title), the registry check, the **وعد بيع** and **POA-for-sale** traps, the Art. 35 مكرر utilities refusal, the possession route (Law 9/2022 Art. 10 مكررا, ≤500 EGP), real registration fees (tiers, **max 3,900 EGP**, ≤37 days), the **2.5% transfer tax** (Law 151/2026 Art. 43, 60-day window, unregistered contracts and heirs included), the property-tax **100,000 EGP exemption** (Law 3/2026), foreign buyers (Law 230/1996), restricted lands (agricultural, desert, **Sinai = void without approvals**), and the **one-year defect bar vs the ten-year structural guarantee** (CC Arts. 449/452/651) |
+| `egy-debt-recovery` | The rule that **nothing can be taken except through a سند تنفيذي** (Art. 280), the **أمر الأداء** five-step route (Arts. 201–210) with its garnishment combo (Art. 210), conservatory attachment and garnishment at third parties (**the 15-day تقرير, the 8-day notice, the 3-year state-body renewal trap** — Arts. 316–352), what **cannot** be attached (Arts. 305–309 — **wages at one quarter**), every limitation clock in one table (15y/5y/7y/10y-judgment/1y-3y cheque/3y cheque-crime), the **bounced-cheque toolkit** (Art. 518 bank statement, Art. 525 attachment without bond, **Art. 534 crime and the صلح that extinguishes it**), the execution book (Arts. 274–488), and the debtor's side — the substitute-deposit release (Arts. 302/303) and protected assets |
 
 ## What the research overturned
 

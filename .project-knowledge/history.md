@@ -302,3 +302,36 @@ schema validation, contamination scanning, and a direct read-through.
 source.** That is the strongest argument in this project for building bilingually
 rather than translating at the end: a single-language review catches content errors,
 but it does not catch a file disagreeing with itself.
+
+## Added 2026-10-28 (Track 3 close-out)
+
+- **The duplication scanner caught a true-positive that was not a typo.**
+  «المواد ٩ و١٠ و١١ و١٢ و١٢ مكرر» — Art. 12 *and* Art. 12 bis written adjacently —
+  was flagged as a duplicated word (`و١٢ و١٢`). The content was correct; the scan
+  cannot see the بيس distinction. Rephrased («المواد ٩ إلى ١٢ و١٢ مكرر») rather than
+  weakening the scanner: the rule stays strict, the prose adapts. *(2026-10-28)*
+
+- **Verify the "current" figure against the amendment footnotes, not the displayed
+  text.** The consolidated Commercial Code text shows the cheque presentation period
+  as **six months (domestic)** — and its own footnote records that Law 156/2004
+  replaced the paragraph. A government page quoting "3 أشهر" is the pre-2004 text.
+  Both "the displayed text" and "the memory" were wrong in different ways; the
+  footnote chain was the truth. *(2026-10-28)*
+
+- **A phantom instrument can survive two independent searches.** "Law 10/1953"
+  (أمر بالإحضار) returned nothing relevant twice, across different query shapes —
+  and the phrase itself belongs to the regional CPC family. Treat "could not locate
+  the instrument" as a finding to record (❌), not as an excuse to keep searching.
+  *(2026-10-28)*
+
+- **One law number, two statutes.** Two Egyptian laws are numbered 143 —
+  143/**1981** (desert lands) and 143/**1994** (civil status). A third, "143/2017
+  registration law", circulates and does not exist. When a year-and-number citation
+  fails to resolve, check whether the *number* belongs to a different year before
+  concluding the law does not exist. *(2026-10-28)*
+
+- **Per-plugin versions in the register script.** A single global `VERSION` would
+  rewrite seventeen unchanged entries' version strings on every bump. A
+  `PLUGIN_VERSIONS` dict keyed by plugin name defaults to the global and lets each
+  build stamp only its own plugins — re-runs stay byte-identical for everything
+  else. *(2026-10-28)*

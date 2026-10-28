@@ -3221,6 +3221,32 @@
       "category": "Family Law",
       "skills": ["./skills/egy-family-law", "./skills/egy-family-law-ar"],
       "strict": false
+    },
+    {
+      "name": "egy-real-estate-purchase",
+      "source": "./",
+      "description": "Egyptian real-estate purchase — buying, selling or inheriting property, for someone who is not a lawyer. That ownership passes only by registration at the real-estate registry (الشهر العقارى), not by signing; the وعد بيع promise-of-sale trap and its judgment route; the POA-for-sale trap (Cassation 7910/91 ق); unregistered-sale consequences and the Art. 35 مكرر refusal of unregistered buyers by state bodies and utilities (Law 186/2020); the possession-based registration route (Law 9/2022 Art. 10 مكررا, ≤500 EGP fee); the real registration fees (area tiers, maximum 3,900 EGP, ≤37 days); the 2.5% property-disposition tax (Law 151/2026 Art. 43, 60-day window, unregistered contracts and heirs included); the annual property tax and its 100,000 EGP exemption (Law 3/2026); foreign buyers (Law 230/1996); restricted lands — agricultural, desert, and Sinai where contracts are void without approvals; and the defect rules (one-year bar per CC Arts. 449/452, the ten-year structural guarantee of CC Art. 651). Triggers: \"buying property Egypt\", \"registration\", \"الشهر العقارى\", \"وعد بيع\", \"off-plan\", \"transfer tax\", \"property tax\", \"foreigner\", \"Sinai\", \"شراء عقار\", \"تسجيل عقار\", \"عقد بدون تسجيل\".",
+      "version": "2026.10.28",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Property Law",
+      "skills": ["./skills/egy-real-estate-purchase", "./skills/egy-real-estate-purchase-ar"],
+      "strict": false
+    },
+    {
+      "name": "egy-debt-recovery",
+      "source": "./",
+      "description": "Egyptian debt collection, for the creditor and the debtor who is not a lawyer. That no money or property can be taken except through an executory instrument (CPC Art. 280); the payment order (أمر الأداء, CPC Arts. 201–210) — the ≥5-day demand, the 3-day order, the 3-month service window, and the Art. 210 garnishment combo; the conservatory attachment (Arts. 316–324) and garnishment at third parties (Arts. 325–352) with the 15-day تقرير, the full-amount judgment on a false declaration (Art. 343), and the 3-year state-body renewal trap (Art. 350); what cannot be attached (Arts. 305–309) and the one-quarter wage rule (Art. 309); the limitation clocks (15y civil, 5y periodic, 7y merchant, 10y judgment lapse in commercial claims, 1y/3y cheque, 3y cheque crime); interest (CC Art. 226 at 4%/5%; Commercial Code Art. 64 capped at the principal); the bounced-cheque toolkit (Art. 518 bank statement, Art. 525 attachment without a bond, Art. 534 crime and the صلح that extinguishes it); the execution book (Arts. 274–488: service, the 8-day إعلان العزم, sale, real-property execution, distribution); and the debtor's side — the 15-day declaration, the substitute-deposit release (Arts. 302/303) and protected assets. Triggers: \"owed money\", \"unpaid invoice\", \"bounced cheque\", \"شيك بدون رصيد\", \"garnish salary\", \"حجز الراتب\", \"freeze assets\", \"أمر أداء\", \"حجز تحفظي\", \"حجز لدى الغير\", \"تنفيذ\", \"سند تنفيذي\", \"تقادم\", \"payment order\".",
+      "version": "2026.10.28",
+      "author": {
+        "name": "Egypt Edition (Lawve catalog)"
+      },
+      "license": "CC-BY-4.0",
+      "category": "Litigation",
+      "skills": ["./skills/egy-debt-recovery", "./skills/egy-debt-recovery-ar"],
+      "strict": false
     }
   ]
 }
